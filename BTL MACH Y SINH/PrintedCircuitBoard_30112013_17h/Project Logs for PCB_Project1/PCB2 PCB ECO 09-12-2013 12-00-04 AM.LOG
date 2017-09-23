@@ -1,0 +1,237 @@
+Added Component: Designator=3,3V(CON2)
+Added Component: Designator=5V(CON2)
+Added Component: Designator=C3(SM-0805)
+Added Component: Designator=C4(SM-0805)
+Added Component: Designator=C5(CP1/2.5_SM)
+Added Component: Designator=C6(CP2/4)
+Added Component: Designator=C7(CP1/2)
+Added Component: Designator=C8(SM-0805)
+Added Component: Designator=C9(SM-0805)
+Added Component: Designator=C10(SM-0805)
+Added Component: Designator=C11(SM-0805)
+Added Component: Designator=C12(SM-0805)
+Added Component: Designator=C13(CP1/2)
+Added Component: Designator=C14(CP1/2)
+Added Component: Designator=D1(D2AN)
+Added Component: Designator=D2(D2A)
+Added Component: Designator=D3(D2A)
+Added Component: Designator=D_RST(D2A)
+Added Component: Designator=DOW(SW2)
+Added Component: Designator=ENCODER(CON3)
+Added Component: Designator=IN(CON2)
+Added Component: Designator=JP7(CON4)
+Added Component: Designator=L1(L/0.4)
+Added Component: Designator=LCD16x2A(LCD16X2)
+Added Component: Designator=LM1117-3.3(LM1117-SOP)
+Added Component: Designator=MENU(SW2)
+Added Component: Designator=OUT(CON2)
+Added Component: Designator=PROG_CONNECTOR(CON5)
+Added Component: Designator=PWM1(CON3)
+Added Component: Designator=PWM2(CON3)
+Added Component: Designator=R1(SM-0805)
+Added Component: Designator=R2(SM-0805)
+Added Component: Designator=R3(SM-0805)
+Added Component: Designator=R4(SM-0805)
+Added Component: Designator=R5(SM-0805)
+Added Component: Designator=R6(SM-0805)
+Added Component: Designator=R7(SM-0805)
+Added Component: Designator=R8(SM-1206)
+Added Component: Designator=R9(SM-1206)
+Added Component: Designator=REMOTE(CON2)
+Added Component: Designator=RES_VAR(VR)
+Added Component: Designator=SET(SW2)
+Added Component: Designator=SW0(SW2)
+Added Component: Designator=U1(SO-G28/C6.8)
+Added Component: Designator=U2(LM2576_SMD)
+Added Component: Designator=UART(CON4)
+Added Component: Designator=UP(SW2)
+Added Component: Designator=X1(XT2)
+Added Pin To Net: NetName=3.3VDC Pin=3,3V-1
+Added Pin To Net: NetName=3.3VDC Pin=D_RST-2
+Added Pin To Net: NetName=3.3VDC Pin=PROG_CONNECTOR-4
+Added Pin To Net: NetName=3.3VDC Pin=R5-2
+Added Pin To Net: NetName=3.3VDC Pin=R7-2
+Added Pin To Net: NetName=3.3VDC Pin=U1-17
+Added Pin To Net: NetName=3.3VDC Pin=UART-2
+Added Net: Name=3.3VDC
+Added Pin To Net: NetName=5VDC Pin=5V-2
+Added Pin To Net: NetName=5VDC Pin=C6-2
+Added Pin To Net: NetName=5VDC Pin=C7-1
+Added Pin To Net: NetName=5VDC Pin=C13-2
+Added Pin To Net: NetName=5VDC Pin=L1-2
+Added Pin To Net: NetName=5VDC Pin=LCD16x2A-2
+Added Pin To Net: NetName=5VDC Pin=LM1117-3.3-3
+Added Pin To Net: NetName=5VDC Pin=OUT-1
+Added Pin To Net: NetName=5VDC Pin=PWM1-2
+Added Pin To Net: NetName=5VDC Pin=PWM2-2
+Added Pin To Net: NetName=5VDC Pin=R1-2
+Added Pin To Net: NetName=5VDC Pin=R2-2
+Added Pin To Net: NetName=5VDC Pin=R3-2
+Added Pin To Net: NetName=5VDC Pin=R4-2
+Added Pin To Net: NetName=5VDC Pin=RES_VAR-1
+Added Pin To Net: NetName=5VDC Pin=U2-4
+Added Net: Name=5VDC
+Added Pin To Net: NetName=5V Pin=LCD16x2A-15
+Added Net: Name=5V
+Added Pin To Net: NetName=D4 Pin=LCD16x2A-11
+Added Pin To Net: NetName=D4 Pin=U1-22
+Added Net: Name=D4
+Added Pin To Net: NetName=D5 Pin=LCD16x2A-12
+Added Pin To Net: NetName=D5 Pin=U1-23
+Added Net: Name=D5
+Added Pin To Net: NetName=EN Pin=LCD16x2A-6
+Added Pin To Net: NetName=EN Pin=U1-1
+Added Net: Name=EN
+Added Pin To Net: NetName=GND Pin=3,3V-2
+Added Pin To Net: NetName=GND Pin=5V-1
+Added Pin To Net: NetName=GND Pin=C3-1
+Added Pin To Net: NetName=GND Pin=C4-1
+Added Pin To Net: NetName=GND Pin=C5-1
+Added Pin To Net: NetName=GND Pin=C6-1
+Added Pin To Net: NetName=GND Pin=C7-2
+Added Pin To Net: NetName=GND Pin=C8-1
+Added Pin To Net: NetName=GND Pin=C9-1
+Added Pin To Net: NetName=GND Pin=C10-1
+Added Pin To Net: NetName=GND Pin=C11-1
+Added Pin To Net: NetName=GND Pin=C12-1
+Added Pin To Net: NetName=GND Pin=C13-1
+Added Pin To Net: NetName=GND Pin=C14-1
+Added Pin To Net: NetName=GND Pin=D1-1
+Added Pin To Net: NetName=GND Pin=DOW-2
+Added Pin To Net: NetName=GND Pin=IN-1
+Added Pin To Net: NetName=GND Pin=LCD16x2A-1
+Added Pin To Net: NetName=GND Pin=LCD16x2A-16
+Added Pin To Net: NetName=GND Pin=LM1117-3.3-1
+Added Pin To Net: NetName=GND Pin=MENU-2
+Added Pin To Net: NetName=GND Pin=OUT-2
+Added Pin To Net: NetName=GND Pin=PROG_CONNECTOR-3
+Added Pin To Net: NetName=GND Pin=PWM1-3
+Added Pin To Net: NetName=GND Pin=PWM2-3
+Added Pin To Net: NetName=GND Pin=REMOTE-1
+Added Pin To Net: NetName=GND Pin=RES_VAR-3
+Added Pin To Net: NetName=GND Pin=SET-2
+Added Pin To Net: NetName=GND Pin=SW0-1
+Added Pin To Net: NetName=GND Pin=U1-5
+Added Pin To Net: NetName=GND Pin=U1-16
+Added Pin To Net: NetName=GND Pin=U2-3
+Added Pin To Net: NetName=GND Pin=U2-5
+Added Pin To Net: NetName=GND Pin=UART-1
+Added Pin To Net: NetName=GND Pin=UP-2
+Added Net: Name=GND
+Added Pin To Net: NetName=INT0 Pin=ENCODER-3
+Added Net: Name=INT0
+Added Pin To Net: NetName=NetC5_2 Pin=C5-2
+Added Pin To Net: NetName=NetC5_2 Pin=IN-2
+Added Pin To Net: NetName=NetC5_2 Pin=U2-1
+Added Net: Name=NetC5_2
+Added Pin To Net: NetName=NetC12_2 Pin=C12-2
+Added Pin To Net: NetName=NetC12_2 Pin=D_RST-1
+Added Pin To Net: NetName=NetC12_2 Pin=R5-1
+Added Pin To Net: NetName=NetC12_2 Pin=R6-1
+Added Pin To Net: NetName=NetC12_2 Pin=SW0-2
+Added Net: Name=NetC12_2
+Added Pin To Net: NetName=NetC14_2 Pin=C14-2
+Added Pin To Net: NetName=NetC14_2 Pin=LM1117-3.3-2
+Added Pin To Net: NetName=NetC14_2 Pin=LM1117-3.3-2
+Added Pin To Net: NetName=NetC14_2 Pin=R7-1
+Added Net: Name=NetC14_2
+Added Pin To Net: NetName=NetD1_2 Pin=D1-2
+Added Pin To Net: NetName=NetD1_2 Pin=L1-1
+Added Pin To Net: NetName=NetD1_2 Pin=U2-2
+Added Net: Name=NetD1_2
+Added Pin To Net: NetName=NetD2_2 Pin=D2-2
+Added Pin To Net: NetName=NetD2_2 Pin=PWM1-1
+Added Net: Name=NetD2_2
+Added Pin To Net: NetName=NetD3_2 Pin=D3-2
+Added Pin To Net: NetName=NetD3_2 Pin=PWM2-1
+Added Net: Name=NetD3_2
+Added Pin To Net: NetName=NetJP7_1 Pin=JP7-1
+Added Pin To Net: NetName=NetJP7_1 Pin=U1-13
+Added Net: Name=NetJP7_1
+Added Pin To Net: NetName=NetJP7_2 Pin=JP7-2
+Added Pin To Net: NetName=NetJP7_2 Pin=U1-12
+Added Net: Name=NetJP7_2
+Added Pin To Net: NetName=NetJP7_3 Pin=JP7-3
+Added Pin To Net: NetName=NetJP7_3 Pin=U1-11
+Added Net: Name=NetJP7_3
+Added Pin To Net: NetName=NetJP7_4 Pin=JP7-4
+Added Pin To Net: NetName=NetJP7_4 Pin=U1-8
+Added Net: Name=NetJP7_4
+Added Pin To Net: NetName=NetLCD16x2A_3 Pin=LCD16x2A-3
+Added Pin To Net: NetName=NetLCD16x2A_3 Pin=RES_VAR-2
+Added Net: Name=NetLCD16x2A_3
+Added Pin To Net: NetName=NetR8_1 Pin=R8-1
+Added Pin To Net: NetName=NetR8_1 Pin=REMOTE-2
+Added Net: Name=NetR8_1
+Added Pin To Net: NetName=NetR8_2 Pin=R8-2
+Added Pin To Net: NetName=NetR8_2 Pin=R9-1
+Added Net: Name=NetR8_2
+Added Pin To Net: NetName=OSC1 Pin=C3-2
+Added Pin To Net: NetName=OSC1 Pin=U1-6
+Added Pin To Net: NetName=OSC1 Pin=X1-2
+Added Net: Name=OSC1
+Added Pin To Net: NetName=OSC2 Pin=C4-2
+Added Pin To Net: NetName=OSC2 Pin=U1-7
+Added Pin To Net: NetName=OSC2 Pin=X1-1
+Added Net: Name=OSC2
+Added Pin To Net: NetName=PGC-D6 Pin=LCD16x2A-13
+Added Pin To Net: NetName=PGC-D6 Pin=PROG_CONNECTOR-1
+Added Pin To Net: NetName=PGC-D6 Pin=U1-24
+Added Net: Name=PGC-D6
+Added Pin To Net: NetName=PGD=D7 Pin=LCD16x2A-14
+Added Pin To Net: NetName=PGD=D7 Pin=PROG_CONNECTOR-2
+Added Pin To Net: NetName=PGD=D7 Pin=U1-25
+Added Net: Name=PGD=D7
+Added Pin To Net: NetName=PWM1 Pin=D2-1
+Added Pin To Net: NetName=PWM1 Pin=U1-10
+Added Net: Name=PWM1
+Added Pin To Net: NetName=PWM2 Pin=D3-1
+Added Pin To Net: NetName=PWM2 Pin=U1-9
+Added Net: Name=PWM2
+Added Pin To Net: NetName=RA3 Pin=R9-2
+Added Pin To Net: NetName=RA3 Pin=U1-2
+Added Net: Name=RA3
+Added Pin To Net: NetName=RA4 Pin=ENCODER-2
+Added Pin To Net: NetName=RA4 Pin=U1-3
+Added Net: Name=RA4
+Added Pin To Net: NetName=RA5 Pin=ENCODER-1
+Added Pin To Net: NetName=RA5 Pin=U1-4
+Added Net: Name=RA5
+Added Pin To Net: NetName=RS Pin=LCD16x2A-4
+Added Pin To Net: NetName=RS Pin=U1-27
+Added Net: Name=RS
+Added Pin To Net: NetName=RW Pin=LCD16x2A-5
+Added Pin To Net: NetName=RW Pin=U1-28
+Added Net: Name=RW
+Added Pin To Net: NetName=RX Pin=U1-15
+Added Pin To Net: NetName=RX Pin=UART-4
+Added Net: Name=RX
+Added Pin To Net: NetName=SW1 Pin=C8-2
+Added Pin To Net: NetName=SW1 Pin=MENU-1
+Added Pin To Net: NetName=SW1 Pin=R1-1
+Added Pin To Net: NetName=SW1 Pin=U1-18
+Added Net: Name=SW1
+Added Pin To Net: NetName=SW2 Pin=C9-2
+Added Pin To Net: NetName=SW2 Pin=R2-1
+Added Pin To Net: NetName=SW2 Pin=U1-19
+Added Pin To Net: NetName=SW2 Pin=UP-1
+Added Net: Name=SW2
+Added Pin To Net: NetName=SW3 Pin=C10-2
+Added Pin To Net: NetName=SW3 Pin=DOW-1
+Added Pin To Net: NetName=SW3 Pin=R3-1
+Added Pin To Net: NetName=SW3 Pin=U1-20
+Added Net: Name=SW3
+Added Pin To Net: NetName=SW4 Pin=C11-2
+Added Pin To Net: NetName=SW4 Pin=R4-1
+Added Pin To Net: NetName=SW4 Pin=SET-1
+Added Pin To Net: NetName=SW4 Pin=U1-21
+Added Net: Name=SW4
+Added Pin To Net: NetName=TX Pin=U1-14
+Added Pin To Net: NetName=TX Pin=UART-3
+Added Net: Name=TX
+Added Pin To Net: NetName=VPP Pin=PROG_CONNECTOR-5
+Added Pin To Net: NetName=VPP Pin=R6-2
+Added Pin To Net: NetName=VPP Pin=U1-26
+Added Net: Name=VPP
+Added Class: Name=MACH
+Added Room: Name=MACH

@@ -1,0 +1,92 @@
+Added Component: Designator=BT1(LED0805-Blue)
+Added Component: Designator=BT2(LED0805-Blue)
+Added Component: Designator=C701(CAP-B-22UF/16V)
+Added Component: Designator=C702(CAP-B-22UF/16V)
+Added Component: Designator=C703(CAP-B-22UF/16V)
+Added Component: Designator=CHARGER(CON4)
+Added Component: Designator=D701(Diode1206)
+Added Component: Designator=D702(Diode1206)
+Added Component: Designator=D703(Diode1206)
+Added Component: Designator=IC4(TP4056-1A)
+Added Component: Designator=POWER(CON2)
+Added Component: Designator=Q201(SOT23A)
+Added Component: Designator=R701(SM-0805)
+Added Component: Designator=R702(SM-0805)
+Added Component: Designator=R703(SM-0805)
+Added Component: Designator=R704(SM-0805)
+Added Component: Designator=R705(SM-0805)
+Added Component: Designator=VIN(CON2)
+Added Pin To Net: NetName=GND Pin=C701-2
+Added Pin To Net: NetName=GND Pin=C702-2
+Added Pin To Net: NetName=GND Pin=C703-2
+Added Pin To Net: NetName=GND Pin=CHARGER-4
+Added Pin To Net: NetName=GND Pin=IC4-3
+Added Pin To Net: NetName=VDD Pin=POWER-1
+Added Pin To Net: NetName=GND Pin=R703-1
+Added Pin To Net: NetName=GND Pin=R704-1
+Added Pin To Net: NetName=GND Pin=VIN-2
+Added Pin To Net: NetName=BAT1 Pin=C702-1
+Added Pin To Net: NetName=BAT1 Pin=CHARGER-1
+Added Pin To Net: NetName=BAT1 Pin=CHARGER-2
+Added Pin To Net: NetName=BAT1 Pin=IC4-5
+Added Net: Name=BAT1
+Added Pin To Net: NetName=BAT2 Pin=CHARGER-3
+Added Pin To Net: NetName=BAT2 Pin=D703-1
+Added Net: Name=BAT2
+Added Pin To Net: NetName=NetBT1_2 Pin=BT1-2
+Added Pin To Net: NetName=NetBT1_2 Pin=R701-2
+Added Net: Name=NetBT1_2
+Added Pin To Net: NetName=NetBT2_2 Pin=BT2-2
+Added Pin To Net: NetName=NetBT2_2 Pin=R702-2
+Added Net: Name=NetBT2_2
+Added Pin To Net: NetName=NetD701_2 Pin=D701-2
+Added Pin To Net: NetName=NetD701_2 Pin=D702-1
+Added Net: Name=NetD701_2
+Added Pin To Net: NetName=NetD702_2 Pin=D702-2
+Added Pin To Net: NetName=NetD702_2 Pin=R705-1
+Added Net: Name=NetD702_2
+Added Pin To Net: NetName=NetD703_2 Pin=D703-2
+Added Pin To Net: NetName=NetD703_2 Pin=Q201-3
+Added Net: Name=NetD703_2
+Added Pin To Net: NetName=NetIC4_2 Pin=IC4-2
+Added Pin To Net: NetName=NetIC4_2 Pin=R703-2
+Added Net: Name=NetIC4_2
+Added Pin To Net: NetName=NetIC4_6 Pin=IC4-6
+Added Pin To Net: NetName=NetIC4_6 Pin=R701-1
+Added Net: Name=NetIC4_6
+Added Pin To Net: NetName=NetIC4_7 Pin=IC4-7
+Added Pin To Net: NetName=NetIC4_7 Pin=R702-1
+Added Net: Name=NetIC4_7
+Added Pin To Net: NetName=VCC_SOON Pin=BT1-1
+Added Pin To Net: NetName=VCC_SOON Pin=BT2-1
+Added Pin To Net: NetName=VCC_SOON Pin=C701-1
+Added Pin To Net: NetName=VCC_SOON Pin=D701-1
+Added Pin To Net: NetName=VCC_SOON Pin=IC4-4
+Added Pin To Net: NetName=VCC_SOON Pin=IC4-8
+Added Pin To Net: NetName=VCC_SOON Pin=Q201-1
+Added Pin To Net: NetName=VCC_SOON Pin=R704-2
+Added Pin To Net: NetName=VCC_SOON Pin=VIN-1
+Added Net: Name=VCC_SOON
+Added Pin To Net: NetName=VDD_CHARGE Pin=C703-1
+Added Pin To Net: NetName=VDD_CHARGE Pin=POWER-2
+Added Pin To Net: NetName=VDD_CHARGE Pin=Q201-2
+Added Pin To Net: NetName=VDD_CHARGE Pin=R705-2
+Added Net: Name=VDD_CHARGE
+Added Member To Class: ClassName=CC2530Controller Member=Component BT1 LED
+Added Member To Class: ClassName=CC2530Controller Member=Component BT2 LED
+Added Member To Class: ClassName=CC2530Controller Member=Component C701 10uF/16V
+Added Member To Class: ClassName=CC2530Controller Member=Component C702 10uF/16V
+Added Member To Class: ClassName=CC2530Controller Member=Component C703 10uF/16V
+Added Member To Class: ClassName=CC2530Controller Member=Component CHARGER JP4
+Added Member To Class: ClassName=CC2530Controller Member=Component D701 3V3
+Added Member To Class: ClassName=CC2530Controller Member=Component D702 3V3
+Added Member To Class: ClassName=CC2530Controller Member=Component D703 3V3
+Added Member To Class: ClassName=CC2530Controller Member=Component IC4 TP4056-1A
+Added Member To Class: ClassName=CC2530Controller Member=Component POWER JP2
+Added Member To Class: ClassName=CC2530Controller Member=Component Q201 IRF9540
+Added Member To Class: ClassName=CC2530Controller Member=Component R701 330
+Added Member To Class: ClassName=CC2530Controller Member=Component R702 330
+Added Member To Class: ClassName=CC2530Controller Member=Component R703 1k
+Added Member To Class: ClassName=CC2530Controller Member=Component R704 10K
+Added Member To Class: ClassName=CC2530Controller Member=Component R705 10k
+Added Member To Class: ClassName=CC2530Controller Member=Component VIN JP2

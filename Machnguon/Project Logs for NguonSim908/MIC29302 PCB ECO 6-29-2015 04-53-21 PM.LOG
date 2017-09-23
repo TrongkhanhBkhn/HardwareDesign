@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=GND Pin=VIN-1
+Removed Pin From Net: NetName=IN Pin=VIN-2
+Added Pin To Net: NetName=IN Pin=VIN-1
+Added Pin To Net: NetName=GND Pin=VIN-2
+Added Room: Name=Sheet2

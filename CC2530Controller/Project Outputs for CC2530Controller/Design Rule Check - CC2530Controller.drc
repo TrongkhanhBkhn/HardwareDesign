@@ -1,0 +1,1074 @@
+Protel Design System Design Rule Check
+PCB File : D:\PROJECT\CC2530Controller\CC2530Controller.PcbDoc
+Date     : 9/2/2016
+Time     : 2:58:26 PM
+
+ERROR : More than 500 violations detected, DRC was stopped
+
+Processing Rule : Room CC2530Controller (Bounding Region = (0mil, 0mil, 2000mil, 1000mil) (InComponentClass('CC2530Controller'))
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=15mil) (Max=25mil) (Preferred=20mil) (InNet('VDD_5V'))
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=15mil) (Max=20mil) (Preferred=20mil) (InNet('V_BAT'))
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=15mil) (Max=25mil) (Preferred=20mil) (InNet('VCC_SOON'))
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=15mil) (Max=20mil) (Preferred=20mil) (InNet('VDD_SEMI'))
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=15mil) (Max=20mil) (Preferred=20mil) (InNet('VDD_3.3V'))
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+   Violation between Pad IC1-46(3648.474mil,3236.551mil)  Top Layer and 
+                     Pad IC1-65(3618.553mil,3236.551mil)  Multi-Layer
+   Violation between Pad IC1-45(3648.474mil,3207.024mil)  Top Layer and 
+                     Pad IC1-65(3618.553mil,3236.551mil)  Multi-Layer
+   Violation between Pad IC1-64(3618.553mil,3207.024mil)  Top Layer and 
+                     Pad IC1-65(3618.553mil,3236.551mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-65(3618.553mil,3236.551mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-65(3618.553mil,3236.551mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-65(3618.553mil,3236.551mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-65(3618.553mil,3236.551mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-65(3618.553mil,3236.551mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-65(3618.553mil,3236.551mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-65(3618.553mil,3236.551mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-65(3618.553mil,3236.551mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-65(3618.553mil,3236.551mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-65(3618.553mil,3236.551mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-65(3618.553mil,3236.551mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-65(3618.553mil,3236.551mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-65(3618.553mil,3236.551mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-65(3618.553mil,3236.551mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-65(3618.553mil,3236.551mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-65(3618.553mil,3236.551mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-65(3618.553mil,3236.551mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-65(3618.553mil,3236.551mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-65(3618.553mil,3236.551mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-65(3618.553mil,3236.551mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-65(3618.553mil,3236.551mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-65(3618.553mil,3236.551mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-65(3618.553mil,3236.551mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-65(3618.553mil,3236.551mil)  Multi-Layer
+   Violation between Pad IC1-43(3648.474mil,3147.968mil)  Top Layer and 
+                     Pad IC1-63(3618.553mil,3177.496mil)  Multi-Layer
+   Violation between Pad IC1-44(3648.474mil,3177.496mil)  Top Layer and 
+                     Pad IC1-63(3618.553mil,3177.496mil)  Multi-Layer
+   Violation between Pad IC1-62(3618.553mil,3147.968mil)  Top Layer and 
+                     Pad IC1-63(3618.553mil,3177.496mil)  Multi-Layer
+   Violation between Pad IC1-45(3648.474mil,3207.024mil)  Top Layer and 
+                     Pad IC1-63(3618.553mil,3177.496mil)  Multi-Layer
+   Violation between Pad IC1-64(3618.553mil,3207.024mil)  Top Layer and 
+                     Pad IC1-63(3618.553mil,3177.496mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-63(3618.553mil,3177.496mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-63(3618.553mil,3177.496mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-63(3618.553mil,3177.496mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-63(3618.553mil,3177.496mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-63(3618.553mil,3177.496mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-63(3618.553mil,3177.496mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-63(3618.553mil,3177.496mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-63(3618.553mil,3177.496mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-63(3618.553mil,3177.496mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-63(3618.553mil,3177.496mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-63(3618.553mil,3177.496mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-63(3618.553mil,3177.496mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-63(3618.553mil,3177.496mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-63(3618.553mil,3177.496mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-63(3618.553mil,3177.496mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-63(3618.553mil,3177.496mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-63(3618.553mil,3177.496mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-63(3618.553mil,3177.496mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-63(3618.553mil,3177.496mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-63(3618.553mil,3177.496mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-63(3618.553mil,3177.496mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-63(3618.553mil,3177.496mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-63(3618.553mil,3177.496mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-63(3618.553mil,3177.496mil)  Multi-Layer
+   Violation between Pad IC1-56(3707.529mil,3236.551mil)  Top Layer and 
+                     Pad IC1-61(3737.057mil,3236.551mil)  Multi-Layer
+   Violation between Pad IC1-55(3707.529mil,3207.024mil)  Top Layer and 
+                     Pad IC1-61(3737.057mil,3236.551mil)  Multi-Layer
+   Violation between Pad IC1-60(3737.057mil,3207.024mil)  Top Layer and 
+                     Pad IC1-61(3737.057mil,3236.551mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-61(3737.057mil,3236.551mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-61(3737.057mil,3236.551mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-61(3737.057mil,3236.551mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-61(3737.057mil,3236.551mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-61(3737.057mil,3236.551mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-61(3737.057mil,3236.551mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-61(3737.057mil,3236.551mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-61(3737.057mil,3236.551mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-61(3737.057mil,3236.551mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-61(3737.057mil,3236.551mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-61(3737.057mil,3236.551mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-61(3737.057mil,3236.551mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-61(3737.057mil,3236.551mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-61(3737.057mil,3236.551mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-61(3737.057mil,3236.551mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-61(3737.057mil,3236.551mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-61(3737.057mil,3236.551mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-61(3737.057mil,3236.551mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-61(3737.057mil,3236.551mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-61(3737.057mil,3236.551mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-61(3737.057mil,3236.551mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-61(3737.057mil,3236.551mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-61(3737.057mil,3236.551mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-61(3737.057mil,3236.551mil)  Multi-Layer
+   Violation between Pad IC1-53(3707.529mil,3147.968mil)  Top Layer and 
+                     Pad IC1-59(3737.057mil,3177.496mil)  Multi-Layer
+   Violation between Pad IC1-54(3707.529mil,3177.496mil)  Top Layer and 
+                     Pad IC1-59(3737.057mil,3177.496mil)  Multi-Layer
+   Violation between Pad IC1-58(3737.057mil,3147.968mil)  Top Layer and 
+                     Pad IC1-59(3737.057mil,3177.496mil)  Multi-Layer
+   Violation between Pad IC1-55(3707.529mil,3207.024mil)  Top Layer and 
+                     Pad IC1-59(3737.057mil,3177.496mil)  Multi-Layer
+   Violation between Pad IC1-60(3737.057mil,3207.024mil)  Top Layer and 
+                     Pad IC1-59(3737.057mil,3177.496mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-59(3737.057mil,3177.496mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-59(3737.057mil,3177.496mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-59(3737.057mil,3177.496mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-59(3737.057mil,3177.496mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-59(3737.057mil,3177.496mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-59(3737.057mil,3177.496mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-59(3737.057mil,3177.496mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-59(3737.057mil,3177.496mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-59(3737.057mil,3177.496mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-59(3737.057mil,3177.496mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-59(3737.057mil,3177.496mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-59(3737.057mil,3177.496mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-59(3737.057mil,3177.496mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-59(3737.057mil,3177.496mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-59(3737.057mil,3177.496mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-59(3737.057mil,3177.496mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-59(3737.057mil,3177.496mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-59(3737.057mil,3177.496mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-59(3737.057mil,3177.496mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-59(3737.057mil,3177.496mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-59(3737.057mil,3177.496mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-59(3737.057mil,3177.496mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-59(3737.057mil,3177.496mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-59(3737.057mil,3177.496mil)  Multi-Layer
+   Violation between Pad IC1-53(3707.529mil,3147.968mil)  Top Layer and 
+                     Pad IC1-57(3737.057mil,3118.441mil)  Multi-Layer
+   Violation between Pad IC1-58(3737.057mil,3147.968mil)  Top Layer and 
+                     Pad IC1-57(3737.057mil,3118.441mil)  Multi-Layer
+   Violation between Pad IC1-52(3707.529mil,3118.441mil)  Top Layer and 
+                     Pad IC1-57(3737.057mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-57(3737.057mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-57(3737.057mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-57(3737.057mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-57(3737.057mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-57(3737.057mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-57(3737.057mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-57(3737.057mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-57(3737.057mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-57(3737.057mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-57(3737.057mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-57(3737.057mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-57(3737.057mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-57(3737.057mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-57(3737.057mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-57(3737.057mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-57(3737.057mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-57(3737.057mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-57(3737.057mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-57(3737.057mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-57(3737.057mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-57(3737.057mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-57(3737.057mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-57(3737.057mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-57(3737.057mil,3118.441mil)  Multi-Layer
+   Violation between Pad IC1-46(3648.474mil,3236.551mil)  Top Layer and 
+                     Pad IC1-51(3678.002mil,3236.551mil)  Multi-Layer
+   Violation between Pad IC1-56(3707.529mil,3236.551mil)  Top Layer and 
+                     Pad IC1-51(3678.002mil,3236.551mil)  Multi-Layer
+   Violation between Pad IC1-45(3648.474mil,3207.024mil)  Top Layer and 
+                     Pad IC1-51(3678.002mil,3236.551mil)  Multi-Layer
+   Violation between Pad IC1-55(3707.529mil,3207.024mil)  Top Layer and 
+                     Pad IC1-51(3678.002mil,3236.551mil)  Multi-Layer
+   Violation between Pad IC1-50(3678.002mil,3207.024mil)  Top Layer and 
+                     Pad IC1-51(3678.002mil,3236.551mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-51(3678.002mil,3236.551mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-51(3678.002mil,3236.551mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-51(3678.002mil,3236.551mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-51(3678.002mil,3236.551mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-51(3678.002mil,3236.551mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-51(3678.002mil,3236.551mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-51(3678.002mil,3236.551mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-51(3678.002mil,3236.551mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-51(3678.002mil,3236.551mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-51(3678.002mil,3236.551mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-51(3678.002mil,3236.551mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-51(3678.002mil,3236.551mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-51(3678.002mil,3236.551mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-51(3678.002mil,3236.551mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-51(3678.002mil,3236.551mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-51(3678.002mil,3236.551mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-51(3678.002mil,3236.551mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-51(3678.002mil,3236.551mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-51(3678.002mil,3236.551mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-51(3678.002mil,3236.551mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-51(3678.002mil,3236.551mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-51(3678.002mil,3236.551mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-51(3678.002mil,3236.551mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-51(3678.002mil,3236.551mil)  Multi-Layer
+   Violation between Pad IC1-43(3648.474mil,3147.968mil)  Top Layer and 
+                     Pad IC1-49(3678.002mil,3177.496mil)  Multi-Layer
+   Violation between Pad IC1-44(3648.474mil,3177.496mil)  Top Layer and 
+                     Pad IC1-49(3678.002mil,3177.496mil)  Multi-Layer
+   Violation between Pad IC1-53(3707.529mil,3147.968mil)  Top Layer and 
+                     Pad IC1-49(3678.002mil,3177.496mil)  Multi-Layer
+   Violation between Pad IC1-54(3707.529mil,3177.496mil)  Top Layer and 
+                     Pad IC1-49(3678.002mil,3177.496mil)  Multi-Layer
+   Violation between Pad IC1-45(3648.474mil,3207.024mil)  Top Layer and 
+                     Pad IC1-49(3678.002mil,3177.496mil)  Multi-Layer
+   Violation between Pad IC1-55(3707.529mil,3207.024mil)  Top Layer and 
+                     Pad IC1-49(3678.002mil,3177.496mil)  Multi-Layer
+   Violation between Pad IC1-48(3678.002mil,3147.968mil)  Top Layer and 
+                     Pad IC1-49(3678.002mil,3177.496mil)  Multi-Layer
+   Violation between Pad IC1-50(3678.002mil,3207.024mil)  Top Layer and 
+                     Pad IC1-49(3678.002mil,3177.496mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-49(3678.002mil,3177.496mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-49(3678.002mil,3177.496mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-49(3678.002mil,3177.496mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-49(3678.002mil,3177.496mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-49(3678.002mil,3177.496mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-49(3678.002mil,3177.496mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-49(3678.002mil,3177.496mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-49(3678.002mil,3177.496mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-49(3678.002mil,3177.496mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-49(3678.002mil,3177.496mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-49(3678.002mil,3177.496mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-49(3678.002mil,3177.496mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-49(3678.002mil,3177.496mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-49(3678.002mil,3177.496mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-49(3678.002mil,3177.496mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-49(3678.002mil,3177.496mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-49(3678.002mil,3177.496mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-49(3678.002mil,3177.496mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-49(3678.002mil,3177.496mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-49(3678.002mil,3177.496mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-49(3678.002mil,3177.496mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-49(3678.002mil,3177.496mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-49(3678.002mil,3177.496mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-49(3678.002mil,3177.496mil)  Multi-Layer
+   Violation between Pad IC1-43(3648.474mil,3147.968mil)  Top Layer and 
+                     Pad IC1-47(3678.002mil,3118.441mil)  Multi-Layer
+   Violation between Pad IC1-53(3707.529mil,3147.968mil)  Top Layer and 
+                     Pad IC1-47(3678.002mil,3118.441mil)  Multi-Layer
+   Violation between Pad IC1-42(3648.474mil,3118.441mil)  Top Layer and 
+                     Pad IC1-47(3678.002mil,3118.441mil)  Multi-Layer
+   Violation between Track (3648.474mil,3104.474mil)(3670.221mil,3126.221mil)  Top Layer and 
+                     Pad IC1-47(3678.002mil,3118.441mil)  Multi-Layer
+   Violation between Pad IC1-52(3707.529mil,3118.441mil)  Top Layer and 
+                     Pad IC1-47(3678.002mil,3118.441mil)  Multi-Layer
+   Violation between Pad IC1-48(3678.002mil,3147.968mil)  Top Layer and 
+                     Pad IC1-47(3678.002mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-47(3678.002mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-47(3678.002mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-47(3678.002mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-47(3678.002mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-47(3678.002mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-47(3678.002mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-47(3678.002mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-47(3678.002mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-47(3678.002mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-47(3678.002mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-47(3678.002mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-47(3678.002mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-47(3678.002mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-47(3678.002mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-47(3678.002mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-47(3678.002mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-47(3678.002mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-47(3678.002mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-47(3678.002mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-47(3678.002mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-47(3678.002mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-47(3678.002mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-47(3678.002mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-47(3678.002mil,3118.441mil)  Multi-Layer
+   Violation between Pad IC1-43(3648.474mil,3147.968mil)  Top Layer and 
+                     Pad IC1-41(3618.553mil,3118.441mil)  Multi-Layer
+   Violation between Pad IC1-62(3618.553mil,3147.968mil)  Top Layer and 
+                     Pad IC1-41(3618.553mil,3118.441mil)  Multi-Layer
+   Violation between Pad IC1-42(3648.474mil,3118.441mil)  Top Layer and 
+                     Pad IC1-41(3618.553mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-41(3618.553mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-41(3618.553mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-41(3618.553mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-41(3618.553mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-41(3618.553mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-41(3618.553mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-41(3618.553mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-41(3618.553mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-41(3618.553mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-41(3618.553mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-41(3618.553mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-41(3618.553mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-41(3618.553mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-41(3618.553mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-41(3618.553mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-41(3618.553mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-41(3618.553mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-41(3618.553mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-41(3618.553mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-41(3618.553mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-41(3618.553mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-41(3618.553mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-41(3618.553mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-41(3618.553mil,3118.441mil)  Multi-Layer
+   Violation between Track (4407mil,3187mil)(4416mil,3187mil)  Bottom Layer and 
+                     Pad SHT11-2(4416mil,3187mil)  Multi-Layer
+Rule Violations :258
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=10mil) (All),(All)
+   Violation between Track (3648.474mil,3060.567mil)(3648.474mil,3104.474mil)  Top Layer and 
+                     Pad IC1-47(3678.002mil,3118.441mil)  Multi-Layer
+   Violation between Track (3648.474mil,3104.474mil)(3670.221mil,3126.221mil)  Top Layer and 
+                     Pad IC1-47(3678.002mil,3118.441mil)  Multi-Layer
+   Violation between Pad IC1-43(3648.474mil,3147.968mil)  Top Layer and 
+                     Pad IC1-41(3618.553mil,3118.441mil)  Multi-Layer
+   Violation between Pad IC1-62(3618.553mil,3147.968mil)  Top Layer and 
+                     Pad IC1-41(3618.553mil,3118.441mil)  Multi-Layer
+   Violation between Pad IC1-42(3648.474mil,3118.441mil)  Top Layer and 
+                     Pad IC1-41(3618.553mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-41(3618.553mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-41(3618.553mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-41(3618.553mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-41(3618.553mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-41(3618.553mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-41(3618.553mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-41(3618.553mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-41(3618.553mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-41(3618.553mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-41(3618.553mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-41(3618.553mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-41(3618.553mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-41(3618.553mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-41(3618.553mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-41(3618.553mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-41(3618.553mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-41(3618.553mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-41(3618.553mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-41(3618.553mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-41(3618.553mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-41(3618.553mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-41(3618.553mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-41(3618.553mil,3118.441mil)  Multi-Layer
+   Violation between Region (0 hole(s)) Top Layer and 
+                     Pad IC1-41(3618.553mil,3118.441mil)  Multi-Layer
+   Violation between Track (4407mil,3187mil)(4416mil,3187mil)  Bottom Layer and 
+                     Pad SHT11-2(4416mil,3187mil)  Multi-Layer
+   Violation between Track (3450mil,2547mil)(3464mil,2561mil)  Top Layer and 
+                     Pad D702-1(3464mil,2521mil)  Top Layer
+   Violation between Track (3344mil,2547mil)(3450mil,2547mil)  Top Layer and 
+                     Pad D702-1(3464mil,2521mil)  Top Layer
+   Violation between Track (3259mil,3243mil)(3534mil,3243mil)  Top Layer and 
+                     Pad C311-2(3511mil,3268mil)  Top Layer
+   Violation between Track (3259mil,3243mil)(3534mil,3243mil)  Top Layer and 
+                     Pad C311-1(3471mil,3268mil)  Top Layer
+   Violation between Via (3482mil,3299mil) Top Layer to Bottom Layer and 
+                     Pad C311-1(3471mil,3268mil)  Top Layer
+   Violation between Track (3757mil,3323mil)(3967mil,3323mil)  Top Layer and 
+                     Pad C241-2(3842mil,3299mil)  Top Layer
+   Violation between Track (3757mil,3323mil)(3967mil,3323mil)  Top Layer and 
+                     Pad C241-1(3882mil,3299mil)  Top Layer
+   Violation between Track (3758mil,3375mil)(3800mil,3417mil)  Top Layer and 
+                     Pad C211-1(3798mil,3367mil)  Top Layer
+   Violation between Track (3853mil,3359mil)(3853mil,3479mil)  Top Layer and 
+                     Pad C231-1(3876mil,3444.347mil)  Top Layer
+   Violation between Track (3757mil,3323mil)(3967mil,3323mil)  Top Layer and 
+                     Pad C221-1(3930.347mil,3342mil)  Top Layer
+   Violation between Track (3344mil,2547mil)(3450mil,2547mil)  Top Layer and 
+                     Pad Q201-1(3393mil,2584mil)  Top Layer
+   Violation between Track (3315mil,2664mil)(3326mil,2675mil)  Top Layer and 
+                     Pad BT2-2(3292mil,2712mil)  Top Layer
+   Violation between Track (3326mil,2675mil)(3354mil,2675mil)  Top Layer and 
+                     Pad BT2-2(3292mil,2712mil)  Top Layer
+Rule Violations :43
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=8mil) (Max=10mil) (Preferred=8mil) (All)
+Rule Violations :0
+
+Processing Rule : Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=1mil) (Max=100mil) (All)
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=10mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=10mil) (All),(All)
+   Violation between Via (3741mil,3562mil) Top Layer to Bottom Layer and 
+                     Pad ANTEN1-2(3741.905mil,3646mil)  Multi-Layer
+   Violation between Via (3811.584mil,3598.485mil) Top Layer to Bottom Layer and 
+                     Pad ANTEN1-2(3741.905mil,3646mil)  Multi-Layer
+   Violation between Via (4371.088mil,3338.616mil) Top Layer to Bottom Layer and 
+                     Pad SHT11-4(4416mil,3387mil)  Multi-Layer
+   Violation between Pad C321-1(3191mil,3447mil)  Top Layer and 
+                     Pad C321-2(3231mil,3447mil)  Top Layer
+   Violation between Via (3262.636mil,3414.839mil) Top Layer to Bottom Layer and 
+                     Pad C321-2(3231mil,3447mil)  Top Layer
+   Violation between Via (3199.364mil,3480.286mil) Top Layer to Bottom Layer and 
+                     Pad C321-2(3231mil,3447mil)  Top Layer
+   Violation between Via (3268.974mil,3460.4mil) Top Layer to Bottom Layer and 
+                     Pad C321-2(3231mil,3447mil)  Top Layer
+   Violation between Pad C331-1(3147mil,3447mil)  Top Layer and 
+                     Pad C321-1(3191mil,3447mil)  Top Layer
+   Violation between Via (3199.364mil,3480.286mil) Top Layer to Bottom Layer and 
+                     Pad C321-1(3191mil,3447mil)  Top Layer
+   Violation between Pad D702-1(3464mil,2521mil)  Top Layer and 
+                     Pad D702-2(3464mil,2561mil)  Top Layer
+   Violation between Pad D701-1(3513.667mil,2561mil)  Top Layer and 
+                     Pad D701-2(3513.667mil,2521mil)  Top Layer
+   Violation between Via (3513.667mil,2484mil) Top Layer to Bottom Layer and 
+                     Pad D701-2(3513.667mil,2521mil)  Top Layer
+   Violation between Pad R_LED-1(3882mil,3110mil)  Top Layer and 
+                     Pad R_LED-2(3842mil,3110mil)  Top Layer
+   Violation between Pad R704-1(3354mil,2675mil)  Top Layer and 
+                     Pad R704-2(3394mil,2675mil)  Top Layer
+   Violation between Via (3315mil,2664mil) Top Layer to Bottom Layer and 
+                     Pad R704-1(3354mil,2675mil)  Top Layer
+   Violation between Pad R703-1(3763mil,2840mil)  Top Layer and 
+                     Pad R703-2(3763mil,2800mil)  Top Layer
+   Violation between Pad R702-1(3394mil,2728mil)  Top Layer and 
+                     Pad R702-2(3354mil,2728mil)  Top Layer
+   Violation between Pad R701-1(3394mil,2775mil)  Top Layer and 
+                     Pad R701-2(3354mil,2775mil)  Top Layer
+   Violation between Pad R301-1(3485mil,3375mil)  Top Layer and 
+                     Pad R301-2(3485mil,3335mil)  Top Layer
+   Violation between Via (3482mil,3299mil) Top Layer to Bottom Layer and 
+                     Pad R301-2(3485mil,3335mil)  Top Layer
+   Violation between Via (3458.085mil,3410.58mil) Top Layer to Bottom Layer and 
+                     Pad R301-1(3485mil,3375mil)  Top Layer
+   Violation between Via (3504.085mil,3410.58mil) Top Layer to Bottom Layer and 
+                     Pad R301-1(3485mil,3375mil)  Top Layer
+   Violation between Pad C201-1(3882mil,3244mil)  Top Layer and 
+                     Pad R201-2(3882mil,3207mil)  Top Layer
+   Violation between Pad C201-2(3842mil,3244mil)  Top Layer and 
+                     Pad R201-2(3882mil,3207mil)  Top Layer
+   Violation between Pad R201-1(3842mil,3207mil)  Top Layer and 
+                     Pad R201-2(3882mil,3207mil)  Top Layer
+   Violation between Via (3842mil,3207mil) Top Layer to Bottom Layer and 
+                     Pad R201-2(3882mil,3207mil)  Top Layer
+   Violation between Pad C201-1(3882mil,3244mil)  Top Layer and 
+                     Pad R201-1(3842mil,3207mil)  Top Layer
+   Violation between Pad C201-2(3842mil,3244mil)  Top Layer and 
+                     Pad R201-1(3842mil,3207mil)  Top Layer
+   Violation between Pad L1-1(4061mil,2924mil)  Top Layer and 
+                     Pad L1-2(4101mil,2924mil)  Top Layer
+   Violation between Via (4106.837mil,2954.421mil) Top Layer to Bottom Layer and 
+                     Pad L1-2(4101mil,2924mil)  Top Layer
+   Violation between Via (4061mil,2960mil) Top Layer to Bottom Layer and 
+                     Pad L1-1(4061mil,2924mil)  Top Layer
+   Violation between Pad C903-1(4099mil,2536mil)  Top Layer and 
+                     Pad C903-2(4059mil,2536mil)  Top Layer
+   Violation between Via (4074.186mil,2501.666mil) Top Layer to Bottom Layer and 
+                     Pad C903-2(4059mil,2536mil)  Top Layer
+   Violation between Via (4120.161mil,2500.152mil) Top Layer to Bottom Layer and 
+                     Pad C903-1(4099mil,2536mil)  Top Layer
+   Violation between Via (4137.224mil,2542.87mil) Top Layer to Bottom Layer and 
+                     Pad C903-1(4099mil,2536mil)  Top Layer
+   Violation between Via (4074.186mil,2501.666mil) Top Layer to Bottom Layer and 
+                     Pad C903-1(4099mil,2536mil)  Top Layer
+   Violation between Pad C902-1(4189mil,2536mil)  Top Layer and 
+                     Pad C902-2(4229mil,2536mil)  Top Layer
+   Violation between Pad C901-1(3613mil,2521mil)  Top Layer and 
+                     Pad C901-2(3613mil,2561mil)  Top Layer
+   Violation between Pad C703-1(3563.333mil,2561mil)  Top Layer and 
+                     Pad C703-2(3563.333mil,2521mil)  Top Layer
+   Violation between Pad C702-1(3354mil,2825mil)  Top Layer and 
+                     Pad C702-2(3394mil,2825mil)  Top Layer
+   Violation between Pad C401-1(3560mil,2978mil)  Top Layer and 
+                     Pad C401-2(3560mil,3018mil)  Top Layer
+   Violation between Via (3592mil,3020mil) Top Layer to Bottom Layer and 
+                     Pad C401-2(3560mil,3018mil)  Top Layer
+   Violation between Via (3523mil,3047mil) Top Layer to Bottom Layer and 
+                     Pad C401-2(3560mil,3018mil)  Top Layer
+   Violation between Pad C391-1(3483mil,3079mil)  Top Layer and 
+                     Pad C391-2(3523mil,3079mil)  Top Layer
+   Violation between Via (3523mil,3047mil) Top Layer to Bottom Layer and 
+                     Pad C391-2(3523mil,3079mil)  Top Layer
+   Violation between Pad C331-1(3147mil,3447mil)  Top Layer and 
+                     Pad C331-2(3107mil,3447mil)  Top Layer
+   Violation between Via (3071.376mil,3424.591mil) Top Layer to Bottom Layer and 
+                     Pad C331-2(3107mil,3447mil)  Top Layer
+   Violation between Via (3071.865mil,3470.588mil) Top Layer to Bottom Layer and 
+                     Pad C331-2(3107mil,3447mil)  Top Layer
+   Violation between Via (3136.636mil,3414.606mil) Top Layer to Bottom Layer and 
+                     Pad C331-2(3107mil,3447mil)  Top Layer
+   Violation between Via (3136.636mil,3414.606mil) Top Layer to Bottom Layer and 
+                     Pad C331-1(3147mil,3447mil)  Top Layer
+   Violation between Pad C311-1(3471mil,3268mil)  Top Layer and 
+                     Pad C311-2(3511mil,3268mil)  Top Layer
+   Violation between Via (3482mil,3299mil) Top Layer to Bottom Layer and 
+                     Pad C311-2(3511mil,3268mil)  Top Layer
+   Violation between Pad C271-1(3551mil,3380mil)  Top Layer and 
+                     Pad C272-2(3591mil,3343mil)  Top Layer
+   Violation between Pad C272-1(3551mil,3343mil)  Top Layer and 
+                     Pad C272-2(3591mil,3343mil)  Top Layer
+   Violation between Pad C271-2(3591mil,3380mil)  Top Layer and 
+                     Pad C272-2(3591mil,3343mil)  Top Layer
+   Violation between Pad C271-1(3551mil,3380mil)  Top Layer and 
+                     Pad C272-1(3551mil,3343mil)  Top Layer
+   Violation between Pad C271-2(3591mil,3380mil)  Top Layer and 
+                     Pad C272-1(3551mil,3343mil)  Top Layer
+   Violation between Pad C271-1(3551mil,3380mil)  Top Layer and 
+                     Pad C271-2(3591mil,3380mil)  Top Layer
+   Violation between Region (0 hole(s)) Top Solder and 
+                     Pad C271-2(3591mil,3380mil)  Top Layer
+   Violation between Region (0 hole(s)) Top Solder and 
+                     Pad C271-2(3591mil,3380mil)  Top Layer
+   Violation between Via (3550.083mil,3411.016mil) Top Layer to Bottom Layer and 
+                     Pad C271-1(3551mil,3380mil)  Top Layer
+   Violation between Pad C241-1(3882mil,3299mil)  Top Layer and 
+                     Pad C241-2(3842mil,3299mil)  Top Layer
+   Violation between Via (3920mil,3300mil) Top Layer to Bottom Layer and 
+                     Pad C241-1(3882mil,3299mil)  Top Layer
+   Violation between Pad C211-1(3798mil,3367mil)  Top Layer and 
+                     Pad C211-2(3758mil,3367mil)  Top Layer
+   Violation between Region (0 hole(s)) Top Solder and 
+                     Pad C211-2(3758mil,3367mil)  Top Layer
+   Violation between Via (3828.04mil,3398.263mil) Top Layer to Bottom Layer and 
+                     Pad C211-1(3798mil,3367mil)  Top Layer
+   Violation between Pad C201-1(3882mil,3244mil)  Top Layer and 
+                     Pad C201-2(3842mil,3244mil)  Top Layer
+   Violation between Via (3842mil,3207mil) Top Layer to Bottom Layer and 
+                     Pad C201-2(3842mil,3244mil)  Top Layer
+   Violation between Via (3912.921mil,3243.42mil) Top Layer to Bottom Layer and 
+                     Pad C201-1(3882mil,3244mil)  Top Layer
+   Violation between Pad C101-1(3806mil,3019mil)  Top Layer and 
+                     Pad C101-2(3766mil,3019mil)  Top Layer
+   Violation between Via (3727.776mil,3028.557mil) Top Layer to Bottom Layer and 
+                     Pad C101-2(3766mil,3019mil)  Top Layer
+   Violation between Via (3842mil,3016mil) Top Layer to Bottom Layer and 
+                     Pad C101-1(3806mil,3019mil)  Top Layer
+   Violation between Pad C1-1(3975mil,2924mil)  Top Layer and 
+                     Pad C1-2(4015mil,2924mil)  Top Layer
+   Violation between Via (3876mil,3409mil) Top Layer to Bottom Layer and 
+                     Pad C231-1(3876mil,3444.347mil)  Top Layer
+   Violation between Via (3898mil,3344mil) Top Layer to Bottom Layer and 
+                     Pad C221-1(3930.347mil,3342mil)  Top Layer
+   Violation between Via (3398mil,2485mil) Top Layer to Bottom Layer and 
+                     Pad Q201-2(3355.799mil,2485.787mil)  Top Layer
+   Violation between Via (3394mil,2633mil) Top Layer to Bottom Layer and 
+                     Pad Q201-1(3393mil,2584mil)  Top Layer
+   Violation between Via (3315mil,2664mil) Top Layer to Bottom Layer and 
+                     Pad BT2-2(3292mil,2712mil)  Top Layer
+   Violation between Via (3722mil,2774mil) Top Layer to Bottom Layer and 
+                     Pad IC4-3(3671.284mil,2775mil)  Top Layer
+Rule Violations :79
+
+Processing Rule : Silk To Solder Mask (Clearance=10mil) (IsPad),(All)
+   Violation between Track (3385.999mil,3657.418mil)(3471.039mil,3657.418mil)  Top Overlay and 
+                     Pad ANTEN1-2(3541.905mil,3646mil)  Multi-Layer
+   Violation between Track (3385.999mil,3834.582mil)(3471.039mil,3834.582mil)  Top Overlay and 
+                     Pad ANTEN1-2(3541.905mil,3846mil)  Multi-Layer
+   Violation between Text "R703" (3804mil,2928mil)  Top Overlay and 
+                     Pad IC1-59(3737.057mil,3177.496mil)  Multi-Layer
+   Violation between Text "R703" (3804mil,2928mil)  Top Overlay and 
+                     Pad IC1-57(3737.057mil,3118.441mil)  Multi-Layer
+   Violation between Text "C101" (3717mil,3086mil)  Top Overlay and 
+                     Pad IC1-57(3737.057mil,3118.441mil)  Multi-Layer
+   Violation between Text "D901" (4247mil,2401mil)  Top Overlay and 
+                     Pad FLIGHT-1(4415mil,2479mil)  Multi-Layer
+   Violation between Text "C902" (4181mil,2584mil)  Top Overlay and 
+                     Pad FLIGHT-2(4415mil,2579mil)  Multi-Layer
+   Violation between Text "C902" (4181mil,2584mil)  Top Overlay and 
+                     Pad FLIGHT-3(4415mil,2679mil)  Multi-Layer
+   Violation between Text "FLIGHT" (4281mil,3013mil)  Top Overlay and 
+                     Pad SHT11-1(4416mil,3087mil)  Multi-Layer
+   Violation between Text "LED_STATUS" (3940mil,3173mil)  Top Overlay and 
+                     Pad SHT11-2(4416mil,3187mil)  Multi-Layer
+   Violation between Text "VIN" (2900mil,2512mil)  Top Overlay and 
+                     Pad FLASH-1(3036mil,2589mil)  Multi-Layer
+   Violation between Track (3241mil,3473mil)(3281mil,3513.588mil)  Top Overlay and 
+                     Pad C321-2(3231mil,3447mil)  Top Layer
+   Violation between Track (3196mil,3473mil)(3241mil,3473mil)  Top Overlay and 
+                     Pad C321-2(3231mil,3447mil)  Top Layer
+   Violation between Track (3196mil,3473mil)(3241mil,3473mil)  Top Overlay and 
+                     Pad C321-1(3191mil,3447mil)  Top Layer
+   Violation between Text "CHARGER" (3464mil,2510mil)  Top Overlay and 
+                     Pad D702-2(3464mil,2561mil)  Top Layer
+   Violation between Text "CHARGER" (3464mil,2510mil)  Top Overlay and 
+                     Pad D702-1(3464mil,2521mil)  Top Layer
+   Violation between Text "CHARGER" (3464mil,2510mil)  Top Overlay and 
+                     Pad D701-2(3513.667mil,2521mil)  Top Layer
+   Violation between Text "CHARGER" (3464mil,2510mil)  Top Overlay and 
+                     Pad D701-1(3513.667mil,2561mil)  Top Layer
+   Violation between Text "C101" (3717mil,3086mil)  Top Overlay and 
+                     Pad R_LED-2(3842mil,3110mil)  Top Layer
+   Violation between Text "C101" (3717mil,3086mil)  Top Overlay and 
+                     Pad R_LED-1(3882mil,3110mil)  Top Layer
+   Violation between Text "R702" (3294mil,2617.5mil)  Top Overlay and 
+                     Pad R704-2(3394mil,2675mil)  Top Layer
+   Violation between Text "R702" (3294mil,2617.5mil)  Top Overlay and 
+                     Pad R704-1(3354mil,2675mil)  Top Layer
+   Violation between Text "IC-BOOST" (3743mil,2809mil)  Top Overlay and 
+                     Pad R703-2(3763mil,2800mil)  Top Layer
+   Violation between Text "IC-BOOST" (3743mil,2809mil)  Top Overlay and 
+                     Pad R703-1(3763mil,2840mil)  Top Layer
+   Violation between Text "D702" (3391mil,2735mil)  Top Overlay and 
+                     Pad R702-1(3394mil,2728mil)  Top Layer
+   Violation between Text "D702" (3391mil,2735mil)  Top Overlay and 
+                     Pad R701-1(3394mil,2775mil)  Top Layer
+   Violation between Text "C311" (3421.228mil,3333.543mil)  Top Overlay and 
+                     Pad R301-2(3485mil,3335mil)  Top Layer
+   Violation between Text "C311" (3421.228mil,3333.543mil)  Top Overlay and 
+                     Pad R301-1(3485mil,3375mil)  Top Layer
+   Violation between Text "R_LED" (3794mil,3186mil)  Top Overlay and 
+                     Pad R201-1(3842mil,3207mil)  Top Layer
+   Violation between Text "IC-STA" (3965mil,2933.008mil)  Top Overlay and 
+                     Pad L1-1(4061mil,2924mil)  Top Layer
+   Violation between Text "R704" (3571mil,2638mil)  Top Overlay and 
+                     Pad C901-2(3613mil,2561mil)  Top Layer
+   Violation between Text "CHARGER" (3464mil,2510mil)  Top Overlay and 
+                     Pad C901-2(3613mil,2561mil)  Top Layer
+   Violation between Text "R704" (3571mil,2638mil)  Top Overlay and 
+                     Pad C901-1(3613mil,2521mil)  Top Layer
+   Violation between Text "CHARGER" (3464mil,2510mil)  Top Overlay and 
+                     Pad C901-1(3613mil,2521mil)  Top Layer
+   Violation between Text "R704" (3571mil,2638mil)  Top Overlay and 
+                     Pad C703-2(3563.333mil,2521mil)  Top Layer
+   Violation between Text "CHARGER" (3464mil,2510mil)  Top Overlay and 
+                     Pad C703-2(3563.333mil,2521mil)  Top Layer
+   Violation between Text "R704" (3571mil,2638mil)  Top Overlay and 
+                     Pad C703-1(3563.333mil,2561mil)  Top Layer
+   Violation between Text "CHARGER" (3464mil,2510mil)  Top Overlay and 
+                     Pad C703-1(3563.333mil,2561mil)  Top Layer
+   Violation between Text "R701" (3299mil,2820mil)  Top Overlay and 
+                     Pad C702-2(3394mil,2825mil)  Top Layer
+   Violation between Text "R701" (3299mil,2820mil)  Top Overlay and 
+                     Pad C702-1(3354mil,2825mil)  Top Layer
+   Violation between Region (0 hole(s)) Top Overlay and 
+                     Pad C401-2(3560mil,3018mil)  Top Layer
+   Violation between Text "IC1" (3568mil,2911mil)  Top Overlay and 
+                     Pad C401-1(3560mil,2978mil)  Top Layer
+   Violation between Track (3542.962mil,3045.606mil)(3542.962mil,3314.504mil)  Top Overlay and 
+                     Pad C391-2(3523mil,3079mil)  Top Layer
+   Violation between Track (3056mil,3473mil)(3141mil,3473mil)  Top Overlay and 
+                     Pad C331-2(3107mil,3447mil)  Top Layer
+   Violation between Track (3056mil,3473mil)(3141mil,3473mil)  Top Overlay and 
+                     Pad C331-1(3147mil,3447mil)  Top Layer
+   Violation between Text "C311" (3421.228mil,3333.543mil)  Top Overlay and 
+                     Pad C272-2(3591mil,3343mil)  Top Layer
+   Violation between Text "C311" (3421.228mil,3333.543mil)  Top Overlay and 
+                     Pad C272-1(3551mil,3343mil)  Top Layer
+   Violation between Text "C311" (3421.228mil,3333.543mil)  Top Overlay and 
+                     Pad C271-2(3591mil,3380mil)  Top Layer
+   Violation between Text "C311" (3421.228mil,3333.543mil)  Top Overlay and 
+                     Pad C271-1(3551mil,3380mil)  Top Layer
+   Violation between Text "R201" (3792mil,3272mil)  Top Overlay and 
+                     Pad C241-2(3842mil,3299mil)  Top Layer
+   Violation between Text "C201" (3793mil,3311mil)  Top Overlay and 
+                     Pad C241-2(3842mil,3299mil)  Top Layer
+   Violation between Text "C272" (3661mil,3305mil)  Top Overlay and 
+                     Pad C241-2(3842mil,3299mil)  Top Layer
+   Violation between Text "R201" (3792mil,3272mil)  Top Overlay and 
+                     Pad C241-1(3882mil,3299mil)  Top Layer
+   Violation between Text "C201" (3793mil,3311mil)  Top Overlay and 
+                     Pad C241-1(3882mil,3299mil)  Top Layer
+   Violation between Text "C272" (3661mil,3305mil)  Top Overlay and 
+                     Pad C241-1(3882mil,3299mil)  Top Layer
+   Violation between Text "C272" (3661mil,3305mil)  Top Overlay and 
+                     Pad C211-2(3758mil,3367mil)  Top Layer
+   Violation between Text "C201" (3793mil,3311mil)  Top Overlay and 
+                     Pad C211-1(3798mil,3367mil)  Top Layer
+   Violation between Text "C272" (3661mil,3305mil)  Top Overlay and 
+                     Pad C211-1(3798mil,3367mil)  Top Layer
+   Violation between Text "C241" (3793mil,3365mil)  Top Overlay and 
+                     Pad C211-1(3798mil,3367mil)  Top Layer
+   Violation between Text "R_LED" (3794mil,3186mil)  Top Overlay and 
+                     Pad C201-2(3842mil,3244mil)  Top Layer
+   Violation between Text "R703" (3804mil,2928mil)  Top Overlay and 
+                     Pad C101-2(3766mil,3019mil)  Top Layer
+   Violation between Text "R703" (3804mil,2928mil)  Top Overlay and 
+                     Pad C101-1(3806mil,3019mil)  Top Layer
+   Violation between Text "IC-STA" (3965mil,2933.008mil)  Top Overlay and 
+                     Pad C1-2(4015mil,2924mil)  Top Layer
+   Violation between Text "IC-STA" (3965mil,2933.008mil)  Top Overlay and 
+                     Pad C1-1(3975mil,2924mil)  Top Layer
+   Violation between Track (3897.953mil,3365.953mil)(3897.953mil,3523.433mil)  Top Overlay and 
+                     Pad C231-2(3876mil,3487.653mil)  Top Layer
+   Violation between Text "C211" (3750mil,3415mil)  Top Overlay and 
+                     Pad C231-2(3876mil,3487.653mil)  Top Layer
+   Violation between Track (3897.953mil,3365.953mil)(3897.953mil,3523.433mil)  Top Overlay and 
+                     Pad C231-1(3876mil,3444.347mil)  Top Layer
+   Violation between Text "C241" (3793mil,3365mil)  Top Overlay and 
+                     Pad C231-1(3876mil,3444.347mil)  Top Layer
+   Violation between Text "C211" (3750mil,3415mil)  Top Overlay and 
+                     Pad C231-1(3876mil,3444.347mil)  Top Layer
+   Violation between Track (3989.055mil,3365.953mil)(4026.929mil,3365.953mil)  Top Overlay and 
+                     Pad C221-2(3973.653mil,3342mil)  Top Layer
+   Violation between Text "R201" (3792mil,3272mil)  Top Overlay and 
+                     Pad C221-2(3973.653mil,3342mil)  Top Layer
+   Violation between Text "C201" (3793mil,3311mil)  Top Overlay and 
+                     Pad C221-2(3973.653mil,3342mil)  Top Layer
+   Violation between Text "C241" (3793mil,3365mil)  Top Overlay and 
+                     Pad C221-2(3973.653mil,3342mil)  Top Layer
+   Violation between Track (3897.953mil,3365.953mil)(3941.811mil,3365.953mil)  Top Overlay and 
+                     Pad C221-1(3930.347mil,3342mil)  Top Layer
+   Violation between Text "R201" (3792mil,3272mil)  Top Overlay and 
+                     Pad C221-1(3930.347mil,3342mil)  Top Layer
+   Violation between Text "C201" (3793mil,3311mil)  Top Overlay and 
+                     Pad C221-1(3930.347mil,3342mil)  Top Layer
+   Violation between Text "C241" (3793mil,3365mil)  Top Overlay and 
+                     Pad C221-1(3930.347mil,3342mil)  Top Layer
+   Violation between Text "C701" (3214mil,2458mil)  Top Overlay and 
+                     Pad Q201-2(3355.799mil,2485.787mil)  Top Layer
+   Violation between Text "R702" (3294mil,2617.5mil)  Top Overlay and 
+                     Pad Q201-3(3317.201mil,2584.213mil)  Top Layer
+   Violation between Text "BT2" (3147mil,2597mil)  Top Overlay and 
+                     Pad Q201-3(3317.201mil,2584.213mil)  Top Layer
+   Violation between Track (3292mil,2757mil)(3292mil,2762mil)  Top Overlay and 
+                     Pad BT1-2(3292mil,2792mil)  Top Layer
+   Violation between Track (3292mil,2822mil)(3292mil,2827mil)  Top Overlay and 
+                     Pad BT1-2(3292mil,2792mil)  Top Layer
+   Violation between Text "R701" (3299mil,2820mil)  Top Overlay and 
+                     Pad BT1-2(3292mil,2792mil)  Top Layer
+   Violation between Track (3202mil,2757mil)(3292mil,2757mil)  Top Overlay and 
+                     Pad BT1-2(3292mil,2792mil)  Top Layer
+   Violation between Track (3202mil,2827mil)(3292mil,2827mil)  Top Overlay and 
+                     Pad BT1-2(3292mil,2792mil)  Top Layer
+   Violation between Track (3202mil,2757mil)(3202mil,2762mil)  Top Overlay and 
+                     Pad BT1-1(3202mil,2792mil)  Top Layer
+   Violation between Track (3202mil,2822mil)(3202mil,2827mil)  Top Overlay and 
+                     Pad BT1-1(3202mil,2792mil)  Top Layer
+   Violation between Track (3202mil,2757mil)(3292mil,2757mil)  Top Overlay and 
+                     Pad BT1-1(3202mil,2792mil)  Top Layer
+   Violation between Track (3202mil,2827mil)(3292mil,2827mil)  Top Overlay and 
+                     Pad BT1-1(3202mil,2792mil)  Top Layer
+   Violation between Track (3292mil,2677mil)(3292mil,2682mil)  Top Overlay and 
+                     Pad BT2-2(3292mil,2712mil)  Top Layer
+   Violation between Track (3292mil,2742mil)(3292mil,2747mil)  Top Overlay and 
+                     Pad BT2-2(3292mil,2712mil)  Top Layer
+   Violation between Text "R702" (3294mil,2617.5mil)  Top Overlay and 
+                     Pad BT2-2(3292mil,2712mil)  Top Layer
+   Violation between Track (3202mil,2677mil)(3292mil,2677mil)  Top Overlay and 
+                     Pad BT2-2(3292mil,2712mil)  Top Layer
+   Violation between Track (3202mil,2747mil)(3292mil,2747mil)  Top Overlay and 
+                     Pad BT2-2(3292mil,2712mil)  Top Layer
+   Violation between Track (3202mil,2677mil)(3202mil,2682mil)  Top Overlay and 
+                     Pad BT2-1(3202mil,2712mil)  Top Layer
+   Violation between Track (3202mil,2742mil)(3202mil,2747mil)  Top Overlay and 
+                     Pad BT2-1(3202mil,2712mil)  Top Layer
+   Violation between Track (3202mil,2677mil)(3292mil,2677mil)  Top Overlay and 
+                     Pad BT2-1(3202mil,2712mil)  Top Layer
+   Violation between Track (3202mil,2747mil)(3292mil,2747mil)  Top Overlay and 
+                     Pad BT2-1(3202mil,2712mil)  Top Layer
+   Violation between Text "C901" (3587.5mil,2649.5mil)  Top Overlay and 
+                     Pad IC4-1(3671.284mil,2675mil)  Top Layer
+   Violation between Text "C703" (3537.333mil,2651mil)  Top Overlay and 
+                     Pad IC4-1(3671.284mil,2675mil)  Top Layer
+   Violation between Text "D701" (3482.667mil,2672mil)  Top Overlay and 
+                     Pad IC4-1(3671.284mil,2675mil)  Top Layer
+   Violation between Text "C901" (3587.5mil,2649.5mil)  Top Overlay and 
+                     Pad IC4-2(3671.284mil,2725mil)  Top Layer
+   Violation between Text "C703" (3537.333mil,2651mil)  Top Overlay and 
+                     Pad IC4-2(3671.284mil,2725mil)  Top Layer
+   Violation between Text "D701" (3482.667mil,2672mil)  Top Overlay and 
+                     Pad IC4-2(3671.284mil,2725mil)  Top Layer
+Rule Violations :104
+
+Processing Rule : Silk to Silk (Clearance=10mil) (All),(All)
+   Violation between Text "C901" (3587.5mil,2649.5mil)  Top Overlay and 
+                     Arc (3671.284mil,2641.535mil)  Top Overlay
+   Violation between Text "C703" (3537.333mil,2651mil)  Top Overlay and 
+                     Arc (3671.284mil,2641.535mil)  Top Overlay
+   Violation between Text "CHARGER" (3464mil,2510mil)  Top Overlay and 
+                     Arc (3742.543mil,2592.213mil)  Top Overlay
+Rule Violations :3
+
+Processing Rule : Silk primitive without silk layer
+   Violation between Silk To Board Region Clearance (Out of silkscreen region) : Arc (3385.921mil,2540mil)  Top Overlay
+   Violation between Silk To Board Region Clearance (Out of silkscreen region) : Arc (3671.284mil,2641.535mil)  Top Overlay
+   Violation between Silk To Board Region Clearance (Out of silkscreen region) : Arc (3742.543mil,2592.213mil)  Top Overlay
+   Violation between Silk To Board Region Clearance (Out of silkscreen region) : Arc (4246.827mil,2357.165mil)  Top Overlay
+   Violation between Silk To Board Region Clearance (Out of silkscreen region) : Arc (3967.11mil,2615.835mil)  Top Overlay
+Rule Violations :5
+
+Processing Rule : Net Antennae (Tolerance=0mil) (All)
+Rule Violations :0
+
+Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=8mil) (Max=20mil) (Preferred=15mil) (InNet('VDD_CC2530'))
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=20mil) (Max=55mil) (Preferred=40mil) (InNet('ANTEN'))
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=50mil) (All),(InNet('ANTEN'))
+   Violation between Track (3643mil,3497mil)(3643mil,3744.905mil)  Top Layer and 
+                     Pad ANTEN1-2(3541.905mil,3646mil)  Multi-Layer
+   Violation between Pad ANTEN1-1(3641.905mil,3746mil)  Multi-Layer and 
+                     Pad ANTEN1-2(3541.905mil,3646mil)  Multi-Layer
+   Violation between Pad ANTEN1-1(3641.905mil,3746mil)  Multi-Layer and 
+                     Pad ANTEN1-2(3541.905mil,3846mil)  Multi-Layer
+   Violation between Pad ANTEN1-1(3641.905mil,3746mil)  Multi-Layer and 
+                     Pad ANTEN1-2(3741.905mil,3846mil)  Multi-Layer
+   Violation between Track (3643mil,3497mil)(3643mil,3744.905mil)  Top Layer and 
+                     Pad ANTEN1-2(3741.905mil,3646mil)  Multi-Layer
+   Violation between Pad ANTEN1-1(3641.905mil,3746mil)  Multi-Layer and 
+                     Pad ANTEN1-2(3741.905mil,3646mil)  Multi-Layer
+   Violation between Pad B1-1(3642.567mil,3430.591mil)  Top Layer and 
+                     Pad C271-2(3591mil,3380mil)  Top Layer
+   Violation between Track (3642.567mil,3430.591mil)(3642.567mil,3460.567mil)  Top Layer and 
+                     Pad C271-2(3591mil,3380mil)  Top Layer
+Rule Violations :8
+
+
+Violations Detected : 500
+Time Elapsed        : 00:00:01

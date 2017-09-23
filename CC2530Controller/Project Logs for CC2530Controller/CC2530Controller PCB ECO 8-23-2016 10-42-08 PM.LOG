@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=NetC221_2 Pin=X1-2
+Change Component DesignItemId : Designator=X1 Old DesignItemId=XT2 New DesignItemId=XT2_SMD_32KHz
+Change Component Comment : Designator=X1 Old Comment=X_32.000/10/15/30/16 New Comment=32Khz
+Added Pin To Net: NetName=NetC221_2 Pin=X1-4

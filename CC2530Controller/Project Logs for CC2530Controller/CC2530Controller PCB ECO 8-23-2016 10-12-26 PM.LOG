@@ -1,0 +1,5 @@
+Added Component: Designator=C262(SM-0805)
+Added Pin To Net: NetName=GND Pin=C262-1
+Added Pin To Net: NetName=NetC261_2 Pin=C262-2
+Added Member To Class: ClassName=CC2530Controller Member=Component C262 103
+Added Room: Name=CC2530Controller

@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=N Pin=B1-3
+Change Component Footprint: Designator=C321 Old Footprint=0402 (REFLOW LF) New Footprint=SM-0805
+Change Component Footprint: Designator=D701 Old Footprint=Diode1206 New Footprint=0402 (REFLOW LF)
+Change Component Footprint: Designator=D702 Old Footprint=Diode1206 New Footprint=0402 (REFLOW LF)

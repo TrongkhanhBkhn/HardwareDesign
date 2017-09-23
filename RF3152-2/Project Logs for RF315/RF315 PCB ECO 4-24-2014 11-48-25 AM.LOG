@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=GDO0 Pin=JP1-1
+Removed Pin From Net: NetName=CS Pin=JP1-2
+Change Component Footprint: Designator=L131 Old Footprint=L01 New Footprint=L/0.4
+Change Component Footprint: Designator=L121 Old Footprint=SM-0805 New Footprint=L/0.4
+Change Component Footprint: Designator=L123 Old Footprint=SM-0805 New Footprint=L/0.4
+Change Component Footprint: Designator=X1 Old Footprint=XT2 New Footprint=CP1/2.5_SM

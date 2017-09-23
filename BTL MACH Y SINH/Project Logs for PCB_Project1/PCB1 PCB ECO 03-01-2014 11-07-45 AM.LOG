@@ -1,0 +1,5 @@
+Added Component: Designator=VIN3(CON2)
+Added Pin To Net: NetName=GND2 Pin=VIN3-1
+Added Pin To Net: NetName=VCC2 Pin=VIN3-2
+Added Member To Class: ClassName=MACH Member=Component VIN3 JP3
+Added Room: Name=MACH

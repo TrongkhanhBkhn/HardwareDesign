@@ -1,0 +1,120 @@
+Added Component: Designator=BLUETOOTH(CON6)
+Added Component: Designator=C1(SM-0805)
+Added Component: Designator=C2(SM-0805)
+Added Component: Designator=C3(SM-0805)
+Added Component: Designator=C5(SM-0805)
+Added Component: Designator=C6(SM-0805)
+Added Component: Designator=C7(SM-0805)
+Added Component: Designator=C8(SM-0805)
+Added Component: Designator=C11(SM-0805)
+Added Component: Designator=C12(SM-0805)
+Added Component: Designator=L1(LED-3)
+Added Component: Designator=L3(LED-3)
+Added Component: Designator=MOTIONSENSOR(CON3)
+Added Component: Designator=Q1(QTO-92)
+Added Component: Designator=R1(R1/4W)
+Added Component: Designator=R2(SM-0805)
+Added Component: Designator=R4(R1/4W)
+Added Component: Designator=R5(R1/4W)
+Added Component: Designator=R6(SM-0805)
+Added Component: Designator=RESET(SW2)
+Added Component: Designator=SERVO(CON3)
+Added Component: Designator=SRF05(CON5)
+Added Component: Designator=U1(28P3)
+Added Component: Designator=VIN(CON2)
+Added Component: Designator=X1(XT3)
+Added Pin To Net: NetName=+5V Pin=BLUETOOTH-5
+Added Pin To Net: NetName=+5V Pin=C3-2
+Added Pin To Net: NetName=+5V Pin=C6-2
+Added Pin To Net: NetName=+5V Pin=C7-2
+Added Pin To Net: NetName=+5V Pin=C8-2
+Added Pin To Net: NetName=+5V Pin=C11-2
+Added Pin To Net: NetName=+5V Pin=C12-2
+Added Pin To Net: NetName=+5V Pin=MOTIONSENSOR-1
+Added Pin To Net: NetName=+5V Pin=R1-2
+Added Pin To Net: NetName=+5V Pin=R4-2
+Added Pin To Net: NetName=+5V Pin=SERVO-2
+Added Pin To Net: NetName=+5V Pin=SRF05-5
+Added Pin To Net: NetName=+5V Pin=U1-7
+Added Pin To Net: NetName=+5V Pin=U1-20
+Added Pin To Net: NetName=+5V Pin=U1-21
+Added Pin To Net: NetName=+5V Pin=VIN-2
+Added Net: Name=+5V
+Added Pin To Net: NetName=ECHO1 Pin=R5-1
+Added Pin To Net: NetName=ECHO1 Pin=SRF05-3
+Added Net: Name=ECHO1
+Added Pin To Net: NetName=ECHO Pin=Q1-2
+Added Pin To Net: NetName=ECHO Pin=R4-1
+Added Pin To Net: NetName=ECHO Pin=U1-5
+Added Net: Name=ECHO
+Added Pin To Net: NetName=GND Pin=BLUETOOTH-4
+Added Pin To Net: NetName=GND Pin=C1-1
+Added Pin To Net: NetName=GND Pin=C2-1
+Added Pin To Net: NetName=GND Pin=C3-1
+Added Pin To Net: NetName=GND Pin=C5-1
+Added Pin To Net: NetName=GND Pin=C6-1
+Added Pin To Net: NetName=GND Pin=C7-1
+Added Pin To Net: NetName=GND Pin=C8-1
+Added Pin To Net: NetName=GND Pin=C11-1
+Added Pin To Net: NetName=GND Pin=C12-1
+Added Pin To Net: NetName=GND Pin=L1-2
+Added Pin To Net: NetName=GND Pin=L3-2
+Added Pin To Net: NetName=GND Pin=MOTIONSENSOR-2
+Added Pin To Net: NetName=GND Pin=Q1-1
+Added Pin To Net: NetName=GND Pin=RESET-2
+Added Pin To Net: NetName=GND Pin=SERVO-1
+Added Pin To Net: NetName=GND Pin=SRF05-1
+Added Pin To Net: NetName=GND Pin=U1-8
+Added Pin To Net: NetName=GND Pin=U1-22
+Added Pin To Net: NetName=GND Pin=VIN-1
+Added Net: Name=GND
+Added Pin To Net: NetName=IF Pin=MOTIONSENSOR-3
+Added Pin To Net: NetName=IF Pin=U1-4
+Added Net: Name=IF
+Added Pin To Net: NetName=KEY Pin=BLUETOOTH-6
+Added Net: Name=KEY
+Added Pin To Net: NetName=LED1 Pin=R6-1
+Added Pin To Net: NetName=LED1 Pin=U1-23
+Added Net: Name=LED1
+Added Pin To Net: NetName=NetL1_1 Pin=L1-1
+Added Pin To Net: NetName=NetL1_1 Pin=R2-2
+Added Net: Name=NetL1_1
+Added Pin To Net: NetName=NetL3_1 Pin=L3-1
+Added Pin To Net: NetName=NetL3_1 Pin=R6-2
+Added Net: Name=NetL3_1
+Added Pin To Net: NetName=NetQ1_3 Pin=Q1-3
+Added Pin To Net: NetName=NetQ1_3 Pin=R5-2
+Added Net: Name=NetQ1_3
+Added Pin To Net: NetName=OSC1 Pin=C1-2
+Added Pin To Net: NetName=OSC1 Pin=U1-19
+Added Pin To Net: NetName=OSC1 Pin=X1-2
+Added Net: Name=OSC1
+Added Pin To Net: NetName=OSC2 Pin=C2-2
+Added Pin To Net: NetName=OSC2 Pin=U1-9
+Added Pin To Net: NetName=OSC2 Pin=X1-1
+Added Net: Name=OSC2
+Added Pin To Net: NetName=OUT Pin=SRF05-2
+Added Net: Name=OUT
+Added Pin To Net: NetName=PWM Pin=SERVO-3
+Added Pin To Net: NetName=PWM Pin=U1-15
+Added Net: Name=PWM
+Added Pin To Net: NetName=RESET Pin=C5-2
+Added Pin To Net: NetName=RESET Pin=R1-1
+Added Pin To Net: NetName=RESET Pin=RESET-1
+Added Pin To Net: NetName=RESET Pin=U1-1
+Added Net: Name=RESET
+Added Pin To Net: NetName=RX Pin=BLUETOOTH-3
+Added Pin To Net: NetName=RX Pin=U1-2
+Added Net: Name=RX
+Added Pin To Net: NetName=STATE Pin=BLUETOOTH-1
+Added Net: Name=STATE
+Added Pin To Net: NetName=TRIG Pin=SRF05-4
+Added Pin To Net: NetName=TRIG Pin=U1-6
+Added Net: Name=TRIG
+Added Pin To Net: NetName=TX Pin=BLUETOOTH-2
+Added Pin To Net: NetName=TX Pin=U1-3
+Added Net: Name=TX
+Added Pin To Net: NetName=VCC Pin=R2-1
+Added Net: Name=VCC
+Added Class: Name=Sheet1
+Added Room: Name=Sheet1

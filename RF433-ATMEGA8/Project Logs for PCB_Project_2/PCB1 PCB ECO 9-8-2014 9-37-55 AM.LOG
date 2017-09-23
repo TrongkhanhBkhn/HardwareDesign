@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=VCC Pin=ISP-6
+Removed Pin From Net: NetName=VCC Pin=R2-2
+Removed Pin From Net: NetName=VCC Pin=R3-2
+Added Pin To Net: NetName=3.3V Pin=ISP-6
+Added Pin To Net: NetName=3.3V Pin=R2-2
+Added Pin To Net: NetName=3.3V Pin=R3-2

@@ -1,0 +1,65 @@
+Added Component: Designator=HD1(HED2X5_cen)
+Added Component: Designator=HD2(HED2X5_cen)
+Added Component: Designator=JP1(CON4)
+Added Component: Designator=LED1(LED_5mm)
+Added Component: Designator=LED2(LED_5mm)
+Added Component: Designator=LED3(LED_5mm)
+Added Component: Designator=LED4(LED_5mm)
+Added Component: Designator=UART(CON6)
+Added Pin To Net: NetName=3.3V Pin=UART-2
+Added Net: Name=3.3V
+Added Pin To Net: NetName=5V Pin=UART-3
+Added Net: Name=5V
+Added Pin To Net: NetName=CS Pin=HD1-4
+Added Pin To Net: NetName=CS Pin=HD2-4
+Added Net: Name=CS
+Added Pin To Net: NetName=GDO1 Pin=HD1-9
+Added Pin To Net: NetName=GDO1 Pin=HD2-9
+Added Net: Name=GDO1
+Added Pin To Net: NetName=GDO2 Pin=HD1-8
+Added Pin To Net: NetName=GDO2 Pin=HD2-8
+Added Net: Name=GDO2
+Added Pin To Net: NetName=GND Pin=HD1-5
+Added Pin To Net: NetName=GND Pin=HD1-10
+Added Pin To Net: NetName=GND Pin=HD2-5
+Added Pin To Net: NetName=GND Pin=HD2-10
+Added Pin To Net: NetName=GND Pin=LED1-2
+Added Pin To Net: NetName=GND Pin=LED2-2
+Added Pin To Net: NetName=GND Pin=LED3-2
+Added Pin To Net: NetName=GND Pin=LED4-2
+Added Pin To Net: NetName=GND Pin=UART-1
+Added Net: Name=GND
+Added Pin To Net: NetName=LED0 Pin=JP1-1
+Added Pin To Net: NetName=LED0 Pin=LED3-1
+Added Net: Name=LED0
+Added Pin To Net: NetName=LED1 Pin=JP1-4
+Added Pin To Net: NetName=LED1 Pin=LED1-1
+Added Net: Name=LED1
+Added Pin To Net: NetName=LED2 Pin=JP1-3
+Added Pin To Net: NetName=LED2 Pin=LED2-1
+Added Net: Name=LED2
+Added Pin To Net: NetName=LED3 Pin=JP1-2
+Added Pin To Net: NetName=LED3 Pin=LED4-1
+Added Net: Name=LED3
+Added Pin To Net: NetName=NC Pin=HD1-6
+Added Pin To Net: NetName=NC Pin=HD2-6
+Added Pin To Net: NetName=NC Pin=UART-6
+Added Net: Name=NC
+Added Pin To Net: NetName=RX Pin=UART-5
+Added Net: Name=RX
+Added Pin To Net: NetName=SCK Pin=HD1-7
+Added Pin To Net: NetName=SCK Pin=HD2-7
+Added Net: Name=SCK
+Added Pin To Net: NetName=SI Pin=HD1-2
+Added Pin To Net: NetName=SI Pin=HD2-2
+Added Net: Name=SI
+Added Pin To Net: NetName=SO Pin=HD1-3
+Added Pin To Net: NetName=SO Pin=HD2-3
+Added Net: Name=SO
+Added Pin To Net: NetName=TX Pin=UART-4
+Added Net: Name=TX
+Added Pin To Net: NetName=VCC Pin=HD1-1
+Added Pin To Net: NetName=VCC Pin=HD2-1
+Added Net: Name=VCC
+Added Class: Name=Sheet1
+Added Room: Name=Sheet1

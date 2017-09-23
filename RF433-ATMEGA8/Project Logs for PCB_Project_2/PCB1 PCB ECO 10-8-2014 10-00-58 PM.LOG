@@ -1,0 +1,30 @@
+Removed Pin From Net: NetName=VCC Pin=NGUON-1
+Removed Pin From Net: NetName=VCC Pin=NGUON-2
+Removed Pin From Net: NetName=VCC Pin=NGUON-3
+Removed Pin From Net: NetName=VCC Pin=NGUON-4
+Removed Pin From Net: NetName=VCC Pin=NGUON-5
+Removed Pin From Net: NetName=GND Pin=NGUON-6
+Removed Pin From Net: NetName=GND Pin=NGUON-7
+Removed Pin From Net: NetName=GND Pin=NGUON-8
+Removed Pin From Net: NetName=GND Pin=NGUON-9
+Removed Pin From Net: NetName=GND Pin=NGUON-10
+Removed Member From Class: ClassName=RF433 Member=NGUON
+Added Component: Designator=HD?(HED2)
+Added Component: Designator=HD?(HED2)
+Added Component: Designator=ISP(HED2X5_cen)
+Added Pin To Net: NetName=VCC Pin=HD?-1
+Added Pin To Net: NetName=VCC Pin=HD?-1
+Added Pin To Net: NetName=GND Pin=HD?-2
+Added Pin To Net: NetName=GND Pin=HD?-2
+Added Pin To Net: NetName=MOSI Pin=ISP-1
+Added Pin To Net: NetName=NC Pin=ISP-2
+Added Pin To Net: NetName=RESET Pin=ISP-3
+Added Pin To Net: NetName=SCK Pin=ISP-4
+Added Pin To Net: NetName=MISO Pin=ISP-5
+Added Pin To Net: NetName=3.3V Pin=ISP-6
+Added Pin To Net: NetName=GND Pin=ISP-7
+Added Pin To Net: NetName=GND Pin=ISP-8
+Added Pin To Net: NetName=GND Pin=ISP-9
+Added Pin To Net: NetName=GND Pin=ISP-10
+Added Member To Class: ClassName=RF433 Member=Component HD? V2
+Added Member To Class: ClassName=RF433 Member=Component ISP Header 5x2

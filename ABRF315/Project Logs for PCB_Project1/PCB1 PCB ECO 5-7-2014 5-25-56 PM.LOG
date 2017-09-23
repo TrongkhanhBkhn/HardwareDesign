@@ -1,0 +1,24 @@
+Removed Pin From Net: NetName=+3.3V Pin=AMS1117-4
+Removed Pin From Net: NetName=GND Pin=C181-2
+Removed Pin From Net: NetName=GND Pin=CON1-2
+Removed Pin From Net: NetName=GND Pin=CON2-2
+Removed Pin From Net: NetName=GND Pin=R171-2
+Removed Pin From Net: NetName=GND Pin=U1-16
+Removed Pin From Net: NetName=GND Pin=U1-19
+Removed Pin From Net: NetName=SI Pin=U2-1
+Change Component Footprint: Designator=C6 Old Footprint=CP1/2.5_SM New Footprint=CP1.5/3.4
+Added Component: Designator=UART(CON3)
+Added Pin To Net: NetName=NetC181_2 Pin=C181-2
+Added Pin To Net: NetName=GND1 Pin=CON1-2
+Added Pin To Net: NetName=GND1 Pin=CON2-2
+Added Pin To Net: NetName=NetC181_2 Pin=R171-2
+Added Pin To Net: NetName=NetC181_2 Pin=U1-16
+Added Pin To Net: NetName=GND Pin=UART-3
+Added Pin To Net: NetName=NetU2_38 Pin=U2-38
+Added Pin To Net: NetName=NetU2_38 Pin=UART-1
+Added Net: Name=NetU2_38
+Added Pin To Net: NetName=NetU2_39 Pin=U2-39
+Added Pin To Net: NetName=NetU2_39 Pin=UART-2
+Added Net: Name=NetU2_39
+Added Member To Class: ClassName=RF315Mhz Member=Component UART JP3
+Added Room: Name=RF315Mhz

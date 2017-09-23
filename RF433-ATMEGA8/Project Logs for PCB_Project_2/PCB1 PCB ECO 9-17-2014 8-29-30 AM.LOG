@@ -1,0 +1,48 @@
+Removed Pin From Net: NetName=GND Pin=ISP-1
+Removed Pin From Net: NetName=MOSI Pin=ISP-2
+Removed Pin From Net: NetName=MISO Pin=ISP-3
+Removed Pin From Net: NetName=RESET Pin=ISP-5
+Removed Pin From Net: NetName=VCC Pin=LOA-1
+Removed Pin From Net: NetName=GND Pin=Q1-1
+Removed Pin From Net: NetName=AU Pin=Q1-3
+Removed Pin From Net: NetName=BUT1 Pin=R2-1
+Removed Pin From Net: NetName=3.3V Pin=R2-2
+Removed Pin From Net: NetName=BUT2 Pin=R3-1
+Removed Pin From Net: NetName=3.3V Pin=R3-2
+Removed Pin From Net: NetName=GND Pin=SW1-1
+Removed Pin From Net: NetName=BUT1 Pin=SW1-2
+Removed Pin From Net: NetName=GND Pin=SW2-1
+Removed Pin From Net: NetName=BUT2 Pin=SW2-2
+Removed Member From Class: ClassName=RF433 Member=LOA
+Removed Member From Class: ClassName=RF433 Member=Q1
+Removed Member From Class: ClassName=RF433 Member=R2
+Removed Member From Class: ClassName=RF433 Member=R3
+Removed Member From Class: ClassName=RF433 Member=SW1
+Removed Member From Class: ClassName=RF433 Member=SW2
+Change Component DesignItemId : Designator=ISP Old DesignItemId=Con6 New DesignItemId=HED5x2
+Change Component Footprint: Designator=ISP Old Footprint=CON6 New Footprint=HED2X5_cen
+Change Component Footprint: Designator=C3 Old Footprint=CP1/2 New Footprint=SM-0805
+Change Component Footprint: Designator=C4 Old Footprint=CP1/2 New Footprint=SM-0805
+Change Component Footprint: Designator=C5 Old Footprint=CP1/2 New Footprint=SM-0805
+Change Component Footprint: Designator=C6 Old Footprint=CP1/2 New Footprint=SM-0805
+Change Component Footprint: Designator=C7 Old Footprint=CP1/2 New Footprint=SM-0805
+Change Component Footprint: Designator=C8 Old Footprint=CP1/2 New Footprint=SM-0805
+Change Component Footprint: Designator=R4 Old Footprint=R1/2W New Footprint=SM-0805
+Change Component Footprint: Designator=R5 Old Footprint=R1/2W New Footprint=SM-0805
+Change Component Footprint: Designator=R6 Old Footprint=R1/2W New Footprint=SM-0805
+Change Component Footprint: Designator=R7 Old Footprint=R1/2W New Footprint=SM-0805
+Change Component Footprint: Designator=C1 Old Footprint=SM-1206 New Footprint=SM-0805
+Change Component Comment : Designator=ISP Old Comment=JP6 New Comment=Header 5x2
+Added Component: Designator=C2(SM-0805)
+Added Pin To Net: NetName=3.3V Pin=C2-1
+Added Pin To Net: NetName=GND Pin=C2-2
+Added Pin To Net: NetName=MOSI Pin=ISP-1
+Added Pin To Net: NetName=RESET Pin=ISP-3
+Added Pin To Net: NetName=MISO Pin=ISP-5
+Added Pin To Net: NetName=GND Pin=ISP-7
+Added Pin To Net: NetName=GND Pin=ISP-8
+Added Pin To Net: NetName=GND Pin=ISP-9
+Added Pin To Net: NetName=GND Pin=ISP-10
+Added Pin To Net: NetName=NC Pin=ISP-2
+Added Net: Name=NC
+Added Member To Class: ClassName=RF433 Member=Component C2 104

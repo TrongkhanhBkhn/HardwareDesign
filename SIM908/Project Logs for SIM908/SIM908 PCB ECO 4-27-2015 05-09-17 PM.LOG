@@ -1,0 +1,233 @@
+Added Component: Designator=ANT-GPS(MCX5.08-H5)
+Added Component: Designator=ANT-GSM(MCX5.08-H5)
+Added Component: Designator=C1(CAP-D8-220uF/16V)
+Added Component: Designator=C2(CAP-D8-220uF/16V)
+Added Component: Designator=C3(SM-0805)
+Added Component: Designator=C4(SM-0805)
+Added Component: Designator=C5(SM-0805)
+Added Component: Designator=CON2(CON2)
+Added Component: Designator=CON-1(CON5)
+Added Component: Designator=Connector1(Hed2X10)
+Added Component: Designator=I2C(CON3)
+Added Component: Designator=L1(SM-1206)
+Added Component: Designator=L2(LED-3)
+Added Component: Designator=PWM-ADC(CON5)
+Added Component: Designator=Q1(2N2222)
+Added Component: Designator=Q2(2N2222)
+Added Component: Designator=Q3(QTO-92)
+Added Component: Designator=R1(SM-0805)
+Added Component: Designator=R2(SM-0805)
+Added Component: Designator=R3(SM-0805)
+Added Component: Designator=R4(SM-0805)
+Added Component: Designator=R5(SM-0805)
+Added Component: Designator=R6(SM-0805)
+Added Component: Designator=R7(SM-0805)
+Added Component: Designator=R8(SM-0805)
+Added Component: Designator=R9(SM-0805)
+Added Component: Designator=R10(R1/4W)
+Added Component: Designator=R11(R1/4W)
+Added Component: Designator=R12(R1/4W)
+Added Component: Designator=S1(SIM908)
+Added Component: Designator=SC1(SIM CARD)
+Added Pin To Net: NetName=ADC Pin=PWM-ADC-4
+Added Pin To Net: NetName=ADC Pin=S1-47
+Added Net: Name=ADC
+Added Pin To Net: NetName=ANT-GPS Pin=ANT-GPS-1
+Added Pin To Net: NetName=ANT-GPS Pin=S1-79
+Added Net: Name=ANT-GPS
+Added Pin To Net: NetName=ANT-GSM Pin=ANT-GSM-1
+Added Pin To Net: NetName=ANT-GSM Pin=S1-59
+Added Net: Name=ANT-GSM
+Added Pin To Net: NetName=DTR Pin=Connector1-15
+Added Pin To Net: NetName=DTR Pin=S1-72
+Added Net: Name=DTR
+Added Pin To Net: NetName=GND Pin=ANT-GPS-2
+Added Pin To Net: NetName=GND Pin=ANT-GPS-3
+Added Pin To Net: NetName=GND Pin=ANT-GPS-4
+Added Pin To Net: NetName=GND Pin=ANT-GPS-5
+Added Pin To Net: NetName=GND Pin=ANT-GSM-2
+Added Pin To Net: NetName=GND Pin=ANT-GSM-3
+Added Pin To Net: NetName=GND Pin=ANT-GSM-4
+Added Pin To Net: NetName=GND Pin=ANT-GSM-5
+Added Pin To Net: NetName=GND Pin=C1-2
+Added Pin To Net: NetName=GND Pin=C2-2
+Added Pin To Net: NetName=GND Pin=C3-1
+Added Pin To Net: NetName=GND Pin=C4-1
+Added Pin To Net: NetName=GND Pin=C5-2
+Added Pin To Net: NetName=GND Pin=CON-1-1
+Added Pin To Net: NetName=GND Pin=Connector1-19
+Added Pin To Net: NetName=GND Pin=Connector1-20
+Added Pin To Net: NetName=GND Pin=I2C-3
+Added Pin To Net: NetName=GND Pin=PWM-ADC-5
+Added Pin To Net: NetName=GND Pin=Q2-1
+Added Pin To Net: NetName=GND Pin=Q3-1
+Added Pin To Net: NetName=GND Pin=R1-1
+Added Pin To Net: NetName=GND Pin=R4-1
+Added Pin To Net: NetName=GND Pin=R12-1
+Added Pin To Net: NetName=GND Pin=S1-1
+Added Pin To Net: NetName=GND Pin=S1-2
+Added Pin To Net: NetName=GND Pin=S1-5
+Added Pin To Net: NetName=GND Pin=S1-10
+Added Pin To Net: NetName=GND Pin=S1-14
+Added Pin To Net: NetName=GND Pin=S1-37
+Added Pin To Net: NetName=GND Pin=S1-40
+Added Pin To Net: NetName=GND Pin=S1-41
+Added Pin To Net: NetName=GND Pin=S1-43
+Added Pin To Net: NetName=GND Pin=S1-57
+Added Pin To Net: NetName=GND Pin=S1-58
+Added Pin To Net: NetName=GND Pin=S1-60
+Added Pin To Net: NetName=GND Pin=S1-61
+Added Pin To Net: NetName=GND Pin=S1-64
+Added Pin To Net: NetName=GND Pin=S1-65
+Added Pin To Net: NetName=GND Pin=S1-77
+Added Pin To Net: NetName=GND Pin=S1-78
+Added Pin To Net: NetName=GND Pin=S1-80
+Added Pin To Net: NetName=GND Pin=SC1-5
+Added Net: Name=GND
+Added Pin To Net: NetName=GPS-RX Pin=Connector1-12
+Added Pin To Net: NetName=GPS-RX Pin=S1-16
+Added Net: Name=GPS-RX
+Added Pin To Net: NetName=GPS-TX Pin=Connector1-13
+Added Pin To Net: NetName=GPS-TX Pin=S1-15
+Added Net: Name=GPS-TX
+Added Pin To Net: NetName=GPS-VATIN Pin=S1-76
+Added Net: Name=GPS-VATIN
+Added Pin To Net: NetName=GPS-VATOUT Pin=S1-75
+Added Net: Name=GPS-VATOUT
+Added Pin To Net: NetName=KEY Pin=Q1-2
+Added Pin To Net: NetName=KEY Pin=S1-3
+Added Net: Name=KEY
+Added Pin To Net: NetName=LED Pin=Connector1-2
+Added Pin To Net: NetName=LED Pin=L1-2
+Added Pin To Net: NetName=LED Pin=Q2-2
+Added Net: Name=LED
+Added Pin To Net: NetName=MIC1N Pin=Connector1-7
+Added Pin To Net: NetName=MIC1N Pin=S1-24
+Added Net: Name=MIC1N
+Added Pin To Net: NetName=MIC1P Pin=Connector1-8
+Added Pin To Net: NetName=MIC1P Pin=S1-23
+Added Net: Name=MIC1P
+Added Pin To Net: NetName=MIC2N Pin=CON-1-2
+Added Pin To Net: NetName=MIC2N Pin=S1-28
+Added Net: Name=MIC2N
+Added Pin To Net: NetName=MIC2P Pin=CON-1-3
+Added Pin To Net: NetName=MIC2P Pin=S1-27
+Added Net: Name=MIC2P
+Added Pin To Net: NetName=NetCON2_2 Pin=CON2-2
+Added Pin To Net: NetName=NetCON2_2 Pin=R11-1
+Added Net: Name=NetCON2_2
+Added Pin To Net: NetName=NetL1_1 Pin=L1-1
+Added Pin To Net: NetName=NetL1_1 Pin=R5-1
+Added Net: Name=NetL1_1
+Added Pin To Net: NetName=NetL2_1 Pin=L2-1
+Added Pin To Net: NetName=NetL2_1 Pin=R10-1
+Added Net: Name=NetL2_1
+Added Pin To Net: NetName=NetL2_2 Pin=L2-2
+Added Pin To Net: NetName=NetL2_2 Pin=Q3-2
+Added Net: Name=NetL2_2
+Added Pin To Net: NetName=NETLIGHT Pin=R3-1
+Added Pin To Net: NetName=NETLIGHT Pin=S1-51
+Added Net: Name=NETLIGHT
+Added Pin To Net: NetName=NetQ1_1 Pin=Q1-1
+Added Pin To Net: NetName=NetQ1_1 Pin=R1-2
+Added Net: Name=NetQ1_1
+Added Pin To Net: NetName=NetQ1_3 Pin=Q1-3
+Added Pin To Net: NetName=NetQ1_3 Pin=R2-2
+Added Net: Name=NetQ1_3
+Added Pin To Net: NetName=NetQ2_3 Pin=Q2-3
+Added Pin To Net: NetName=NetQ2_3 Pin=R3-2
+Added Pin To Net: NetName=NetQ2_3 Pin=R4-2
+Added Net: Name=NetQ2_3
+Added Pin To Net: NetName=NetQ3_3 Pin=Q3-3
+Added Pin To Net: NetName=NetQ3_3 Pin=R11-2
+Added Pin To Net: NetName=NetQ3_3 Pin=R12-2
+Added Net: Name=NetQ3_3
+Added Pin To Net: NetName=NetR6_2 Pin=R6-2
+Added Pin To Net: NetName=NetR6_2 Pin=SC1-2
+Added Net: Name=NetR6_2
+Added Pin To Net: NetName=NetR7_2 Pin=R7-2
+Added Pin To Net: NetName=NetR7_2 Pin=SC1-3
+Added Net: Name=NetR7_2
+Added Pin To Net: NetName=NetR8_2 Pin=R8-2
+Added Pin To Net: NetName=NetR8_2 Pin=R9-2
+Added Pin To Net: NetName=NetR8_2 Pin=SC1-7
+Added Net: Name=NetR8_2
+Added Pin To Net: NetName=ON/OFF Pin=Connector1-1
+Added Pin To Net: NetName=ON/OFF Pin=R2-1
+Added Net: Name=ON/OFF
+Added Pin To Net: NetName=PWM1 Pin=PWM-ADC-3
+Added Pin To Net: NetName=PWM1 Pin=S1-48
+Added Net: Name=PWM1
+Added Pin To Net: NetName=PWM2 Pin=PWM-ADC-2
+Added Pin To Net: NetName=PWM2 Pin=S1-49
+Added Net: Name=PWM2
+Added Pin To Net: NetName=PWM3 Pin=PWM-ADC-1
+Added Pin To Net: NetName=PWM3 Pin=S1-50
+Added Net: Name=PWM3
+Added Pin To Net: NetName=RI Pin=Connector1-14
+Added Pin To Net: NetName=RI Pin=S1-69
+Added Net: Name=RI
+Added Pin To Net: NetName=RXD Pin=Connector1-17
+Added Pin To Net: NetName=RXD Pin=S1-68
+Added Net: Name=RXD
+Added Pin To Net: NetName=SCL Pin=I2C-2
+Added Pin To Net: NetName=SCL Pin=S1-55
+Added Net: Name=SCL
+Added Pin To Net: NetName=SDA Pin=I2C-1
+Added Pin To Net: NetName=SDA Pin=S1-56
+Added Net: Name=SDA
+Added Pin To Net: NetName=SIM-CLK Pin=R7-1
+Added Pin To Net: NetName=SIM-CLK Pin=S1-19
+Added Net: Name=SIM-CLK
+Added Pin To Net: NetName=SIM-DATA Pin=R8-1
+Added Pin To Net: NetName=SIM-DATA Pin=S1-17
+Added Net: Name=SIM-DATA
+Added Pin To Net: NetName=SIM-RST Pin=R6-1
+Added Pin To Net: NetName=SIM-RST Pin=S1-18
+Added Net: Name=SIM-RST
+Added Pin To Net: NetName=SIM-VDD Pin=C5-1
+Added Pin To Net: NetName=SIM-VDD Pin=R9-1
+Added Pin To Net: NetName=SIM-VDD Pin=S1-20
+Added Pin To Net: NetName=SIM-VDD Pin=SC1-1
+Added Net: Name=SIM-VDD
+Added Pin To Net: NetName=SPK1N Pin=Connector1-5
+Added Pin To Net: NetName=SPK1N Pin=S1-21
+Added Net: Name=SPK1N
+Added Pin To Net: NetName=SPK1P Pin=Connector1-6
+Added Pin To Net: NetName=SPK1P Pin=S1-22
+Added Net: Name=SPK1P
+Added Pin To Net: NetName=SPK2N Pin=CON-1-5
+Added Pin To Net: NetName=SPK2N Pin=S1-25
+Added Net: Name=SPK2N
+Added Pin To Net: NetName=SPK2P Pin=CON-1-4
+Added Pin To Net: NetName=SPK2P Pin=S1-26
+Added Net: Name=SPK2P
+Added Pin To Net: NetName=STATUS Pin=CON2-1
+Added Pin To Net: NetName=STATUS Pin=Connector1-18
+Added Pin To Net: NetName=STATUS Pin=S1-52
+Added Net: Name=STATUS
+Added Pin To Net: NetName=TEMP Pin=Connector1-11
+Added Pin To Net: NetName=TEMP Pin=S1-73
+Added Net: Name=TEMP
+Added Pin To Net: NetName=TXD Pin=Connector1-16
+Added Pin To Net: NetName=TXD Pin=S1-71
+Added Net: Name=TXD
+Added Pin To Net: NetName=VCC Pin=C1-1
+Added Pin To Net: NetName=VCC Pin=C2-1
+Added Pin To Net: NetName=VCC Pin=C3-2
+Added Pin To Net: NetName=VCC Pin=C4-2
+Added Pin To Net: NetName=VCC Pin=Connector1-9
+Added Pin To Net: NetName=VCC Pin=Connector1-10
+Added Pin To Net: NetName=VCC Pin=R5-2
+Added Pin To Net: NetName=VCC Pin=R10-2
+Added Pin To Net: NetName=VCC Pin=S1-62
+Added Pin To Net: NetName=VCC Pin=S1-63
+Added Net: Name=VCC
+Added Pin To Net: NetName=VCHG Pin=Connector1-4
+Added Pin To Net: NetName=VCHG Pin=S1-74
+Added Net: Name=VCHG
+Added Pin To Net: NetName=VRTC Pin=Connector1-3
+Added Pin To Net: NetName=VRTC Pin=S1-42
+Added Net: Name=VRTC
+Added Class: Name=Sheet1
+Added Room: Name=Sheet1

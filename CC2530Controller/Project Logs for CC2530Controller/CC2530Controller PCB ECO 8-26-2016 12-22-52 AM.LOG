@@ -1,0 +1,14 @@
+Removed Pin From Net: NetName=V_BAT Pin=C702-1
+Removed Pin From Net: NetName=GND Pin=C702-2
+Removed Pin From Net: NetName=VDD_SEMI Pin=C703-1
+Removed Pin From Net: NetName=GND Pin=C703-2
+Change Component DesignItemId : Designator=C702 Old DesignItemId=CP3 New DesignItemId=CM
+Change Component DesignItemId : Designator=C703 Old DesignItemId=CP3 New DesignItemId=CM
+Change Component Footprint: Designator=C702 Old Footprint=CAP-B-22UF/16V New Footprint=SM-0805
+Change Component Footprint: Designator=C703 Old Footprint=CAP-B-22UF/16V New Footprint=SM-0805
+Change Component Comment : Designator=C702 Old Comment=10uF/16V New Comment=103
+Change Component Comment : Designator=C703 Old Comment=10uF/16V New Comment=103
+Added Pin To Net: NetName=GND Pin=C702-1
+Added Pin To Net: NetName=V_BAT Pin=C702-2
+Added Pin To Net: NetName=GND Pin=C703-1
+Added Pin To Net: NetName=VDD_SEMI Pin=C703-2

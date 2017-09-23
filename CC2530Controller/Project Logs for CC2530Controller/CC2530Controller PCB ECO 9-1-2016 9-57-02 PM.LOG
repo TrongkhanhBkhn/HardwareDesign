@@ -1,0 +1,12 @@
+Removed Pin From Net: NetName=GND Pin=B1-2 5 6
+Removed Pin From Net: NetName=GND Pin=B1-2 5 6
+Removed Pin From Net: NetName=GND Pin=B1-2 5 6
+Removed Pin From Net: NetName=GND Pin=IC1-47
+Removed Pin From Net: NetName=GND Pin=IC1-49
+Removed Pin From Net: NetName=GND Pin=IC1-51
+Removed Pin From Net: NetName=GND Pin=IC1-57
+Removed Pin From Net: NetName=GND Pin=IC1-59
+Removed Pin From Net: NetName=GND Pin=IC1-61
+Removed Pin From Net: NetName=GND Pin=IC1-63
+Removed Pin From Net: NetName=GND Pin=IC1-65
+Change Component Footprint: Designator=C321 Old Footprint=0402 (REFLOW LF) New Footprint=SM-0805

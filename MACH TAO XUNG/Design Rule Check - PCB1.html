@@ -1,0 +1,664 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : sans-serif;
+			color : white;
+			background-color : #21489e;
+			padding: 0.3em;
+		}
+		body {
+			font-family : verdana;
+		}
+		td, th {
+			padding: 0.5em;
+			text-align : center;
+			width : 18%;
+		}
+		th {
+			background-color : #A6CAF0;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+		}
+		
+		.DRC_summary_header {							
+			padding-bottom : 0.1em;
+			border : 0px solid black;							
+			width: 100%;
+                        align: right;
+                        
+		}
+
+		.DRC_summary_header_col1, 
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3
+		{
+			color : black;
+			font-size:150%;
+                        padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2: 0em;
+			border : 0px solid black;
+			width : auto;
+			vertical-align: top;
+			font-weight: bold;				
+		}
+		
+		.DRC_summary_header_col1 	
+		{		                       
+			text-align: right;
+                        width: auto;	
+		}
+
+		.DRC_summary_header_col2 	
+		{		
+			text-align: center;	
+		}
+
+		.DRC_summary_header_col3 	
+		{		
+			text-align: left;	
+		}
+
+
+		
+		.header_holder
+		{
+		Width = 100%;
+		border = 0px solid green;
+		padding = 0;
+		}
+		
+		
+		
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+                {
+			left:0;
+			top:0;
+			padding-top : 0.1em;			
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top
+
+		}
+		.front_matter {	
+			
+			margin-top: 5px;
+ 			margin-left: 0px;					 			
+ 			horizontal-align: left;
+		}
+				
+		
+		.front_matter_column1 {
+			width : 10em;	
+			text-align  : right;
+			padding-right:0.1em;
+			
+		}
+		
+		.front_matter_column2 {
+                        width: 0.1em;
+			align: center;
+			text-align : center;
+			margin-right  : 0.1em;	
+			margin-left   : 0.1em;
+		}
+		.front_matter_column3 {
+			width         : auto;  
+			text-align    : left;	
+			margin-right  : 0.5em;				
+		}
+		
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : right;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #EEEEE0 
+		}
+		tr.onmouseout_even { 
+			background-color : #F3F3E3   
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : lightYellow
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #008000 
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD13\Templates\AD-rgb_logo_223x64.gif
+		"><a href="dxpprocess://Client:SetupPreferences?Server=PCB|PageName=Reports" class="customize"><acronym title="dxpprocess://Client:SetupPreferences?Server=PCB|PageName=Reports">customize</acronym></a><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td Style="width:70%">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date</td>
+<td class="front_matter_column2">:</td>
+<td class="front_matter_column3">1/31/2014</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time</td>
+<td class="front_matter_column2">:</td>
+<td class="front_matter_column3">9:18:53 AM</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time</td>
+<td class="front_matter_column2">:</td>
+<td class="front_matter_column3">00:00:00</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename</td>
+<td class="front_matter_column2">:</td>
+<td class="front_matter_column3"><a href="file:///E:\PCB\MACH TAO XUNG\PCB1.PcbDoc" class="file"><acronym title="E:\PCB\MACH TAO XUNG\PCB1.PcbDoc">E:\PCB\MACH TAO XUNG\PCB1.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td Style="Width:30%">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings</td>
+<td class="DRC_summary_header_col2">:</td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations</td>
+<td class="DRC_summary_header_col2">:</td>
+<td class="DRC_summary_header_col3" style="color : red">81</td></tr>
+</table>
+</td>
+</table>
+<hr><a name="IDASASTM"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDAEBSTM">Width Constraint (Min=0.762mm) (Max=0.762mm) (Preferred=0.762mm) (InNet('VCC'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDAKBSTM">Clearance Constraint (Gap=0.508mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDAQBSTM">Power Plane Connect Rule(Relief Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDAWBSTM">Clearance Constraint (Gap=0.762mm) (InNet('VCC')),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDA2BSTM">Width Constraint (Min=0.508mm) (Max=0.508mm) (Preferred=0.508mm) (All)</a></td>
+<td class="column2">8</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDASDSTM">Net Antennae (Tolerance=0mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDAYDSTM">Silk to Silk (Clearance=0.254mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDA4DSTM">Silk To Solder Mask (Clearance=0.254mm) (IsPad),(All)</a></td>
+<td class="column2">73</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDA4QTTM">Minimum Solder Mask Sliver (Gap=0.254mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDAERTTM">Hole To Hole Clearance (Gap=0.254mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDAKRTTM">Hole Size Constraint (Min=0.025mm) (Max=2.54mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDAQRTTM">Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDAWRTTM">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDA2RTTM">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">81</td>
+</tr>
+</table><br><hr><a name="IDA2BSTM"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Width Constraint (Min=0.508mm) (Max=0.508mm) (Preferred=0.508mm) (All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2845.478mil|Location2.X=2871.56mil|Location1.Y=4975.911mil|Location2.Y=5053.018mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2845.478mil|Location2.X=2871.56mil|Location1.Y=4975.911mil|Location2.Y=5053.018mil|Absolute=True">Width Constraint: Track (72.614mm,130.526mm)(72.642mm,125.837mm)  Top Layer</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2850.36mil|Location2.X=2876.442mil|Location1.Y=4169.512mil|Location2.Y=4246.619mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2850.36mil|Location2.X=2876.442mil|Location1.Y=4169.512mil|Location2.Y=4246.619mil|Absolute=True">Width Constraint: Track (72.738mm,110.043mm)(72.766mm,105.355mm)  Top Layer</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2861.475mil|Location2.X=2899.43mil|Location1.Y=5040.958mil|Location2.Y=5115.668mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2861.475mil|Location2.X=2899.43mil|Location1.Y=5040.958mil|Location2.Y=5115.668mil|Absolute=True">Width Constraint: Track (72.614mm,130.526mm)(73.131mm,129.005mm)  Top Layer</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2841.376mil|Location2.X=2881.046mil|Location1.Y=5102.068mil|Location2.Y=5176.142mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2841.376mil|Location2.X=2881.046mil|Location1.Y=5102.068mil|Location2.Y=5176.142mil|Absolute=True">Width Constraint: Track (72.115mm,128.999mm)(72.614mm,130.526mm)  Top Layer</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2867.012mil|Location2.X=2906.682mil|Location1.Y=4171.188mil|Location2.Y=4245.262mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2867.012mil|Location2.X=2906.682mil|Location1.Y=4171.188mil|Location2.Y=4245.262mil|Absolute=True">Width Constraint: Track (72.766mm,105.355mm)(73.265mm,106.882mm)  Top Layer</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2847.112mil|Location2.X=2885.067mil|Location1.Y=4109.835mil|Location2.Y=4184.546mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2847.112mil|Location2.X=2885.067mil|Location1.Y=4109.835mil|Location2.Y=4184.546mil|Absolute=True">Width Constraint: Track (72.249mm,106.875mm)(72.766mm,105.355mm)  Top Layer</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2852.311mil|Location2.X=2929.419mil|Location1.Y=5124.926mil|Location2.Y=5151.008mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2852.311mil|Location2.X=2929.419mil|Location1.Y=5124.926mil|Location2.Y=5151.008mil|Absolute=True">Width Constraint: Track (72.36mm,130.524mm)(72.868mm,130.528mm)  Top Layer</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2858.311mil|Location2.X=2935.419mil|Location1.Y=4133.926mil|Location2.Y=4160.008mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2858.311mil|Location2.X=2935.419mil|Location1.Y=4133.926mil|Location2.Y=4160.008mil|Absolute=True">Width Constraint: Track (72.512mm,105.353mm)(73.02mm,105.356mm)  Top Layer</acronym></a><br></td>
+</tr>
+</table></a><a href="#top">Back to top</a><br><br><a name="IDA4DSTM"><table>
+<tr>
+<th style="text-align : left" colspan="2" class="rule">Silk To Solder Mask (Clearance=0.254mm) (IsPad),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3298.63mil|Location2.X=3385.37mil|Location1.Y=4486.196mil|Location2.Y=4557.692mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3298.63mil|Location2.X=3385.37mil|Location1.Y=4486.196mil|Location2.Y=4557.692mil|Absolute=True">Pad QB1-3(84.887mm,114.857mm)  Multi-Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3250.267mil|Location2.X=3414.992mil|Location1.Y=4319.267mil|Location2.Y=4522.733mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3250.267mil|Location2.X=3414.992mil|Location1.Y=4319.267mil|Location2.Y=4522.733mil|Absolute=True">Arc (85.141mm,112.293mm)  Top Overlay</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3298.63mil|Location2.X=3385.37mil|Location1.Y=4295.252mil|Location2.Y=4366.748mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3298.63mil|Location2.X=3385.37mil|Location1.Y=4295.252mil|Location2.Y=4366.748mil|Absolute=True">Pad QB1-1(84.887mm,110.007mm)  Multi-Layer</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3250.267mil|Location2.X=3414.992mil|Location1.Y=4319.267mil|Location2.Y=4522.733mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3250.267mil|Location2.X=3414.992mil|Location1.Y=4319.267mil|Location2.Y=4522.733mil|Absolute=True">Arc (85.141mm,112.293mm)  Top Overlay</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3934.5mil|Location2.X=3939.5mil|Location1.Y=4645.5mil|Location2.Y=4803.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3934.5mil|Location2.X=3939.5mil|Location1.Y=4645.5mil|Location2.Y=4803.5mil|Absolute=True">Track (100mm,118.059mm)(100mm,121.945mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3938.5mil|Location2.X=4001.5mil|Location1.Y=4741mil|Location2.Y=4799mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3938.5mil|Location2.X=4001.5mil|Location1.Y=4741mil|Location2.Y=4799mil|Absolute=True">Pad R2-2(100.838mm,121.158mm)  Top Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3993mil|Location2.X=3997mil|Location1.Y=4706mil|Location2.Y=4744mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3993mil|Location2.X=3997mil|Location1.Y=4706mil|Location2.Y=4744mil|Absolute=True">Track (101.473mm,119.583mm)(101.473mm,120.447mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3938.5mil|Location2.X=4001.5mil|Location1.Y=4741mil|Location2.Y=4799mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3938.5mil|Location2.X=4001.5mil|Location1.Y=4741mil|Location2.Y=4799mil|Absolute=True">Pad R2-2(100.838mm,121.158mm)  Top Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3943mil|Location2.X=3947mil|Location1.Y=4706mil|Location2.Y=4744mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3943mil|Location2.X=3947mil|Location1.Y=4706mil|Location2.Y=4744mil|Absolute=True">Track (100.203mm,119.583mm)(100.203mm,120.447mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3938.5mil|Location2.X=4001.5mil|Location1.Y=4741mil|Location2.Y=4799mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3938.5mil|Location2.X=4001.5mil|Location1.Y=4741mil|Location2.Y=4799mil|Absolute=True">Pad R2-2(100.838mm,121.158mm)  Top Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4001.5mil|Location2.X=4006.5mil|Location1.Y=4645.5mil|Location2.Y=4803.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4001.5mil|Location2.X=4006.5mil|Location1.Y=4645.5mil|Location2.Y=4803.5mil|Absolute=True">Track (101.702mm,118.059mm)(101.702mm,121.945mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3938.5mil|Location2.X=4001.5mil|Location1.Y=4741mil|Location2.Y=4799mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3938.5mil|Location2.X=4001.5mil|Location1.Y=4741mil|Location2.Y=4799mil|Absolute=True">Pad R2-2(100.838mm,121.158mm)  Top Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3934.5mil|Location2.X=4006.5mil|Location1.Y=4798.5mil|Location2.Y=4803.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3934.5mil|Location2.X=4006.5mil|Location1.Y=4798.5mil|Location2.Y=4803.5mil|Absolute=True">Track (100mm,121.945mm)(101.702mm,121.945mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3938.5mil|Location2.X=4001.5mil|Location1.Y=4741mil|Location2.Y=4799mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3938.5mil|Location2.X=4001.5mil|Location1.Y=4741mil|Location2.Y=4799mil|Absolute=True">Pad R2-2(100.838mm,121.158mm)  Top Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3934.5mil|Location2.X=3939.5mil|Location1.Y=4645.5mil|Location2.Y=4803.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3934.5mil|Location2.X=3939.5mil|Location1.Y=4645.5mil|Location2.Y=4803.5mil|Absolute=True">Track (100mm,118.059mm)(100mm,121.945mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3938.5mil|Location2.X=4001.5mil|Location1.Y=4651mil|Location2.Y=4709mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3938.5mil|Location2.X=4001.5mil|Location1.Y=4651mil|Location2.Y=4709mil|Absolute=True">Pad R2-1(100.838mm,118.872mm)  Top Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3993mil|Location2.X=3997mil|Location1.Y=4706mil|Location2.Y=4744mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3993mil|Location2.X=3997mil|Location1.Y=4706mil|Location2.Y=4744mil|Absolute=True">Track (101.473mm,119.583mm)(101.473mm,120.447mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3938.5mil|Location2.X=4001.5mil|Location1.Y=4651mil|Location2.Y=4709mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3938.5mil|Location2.X=4001.5mil|Location1.Y=4651mil|Location2.Y=4709mil|Absolute=True">Pad R2-1(100.838mm,118.872mm)  Top Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3943mil|Location2.X=3947mil|Location1.Y=4706mil|Location2.Y=4744mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3943mil|Location2.X=3947mil|Location1.Y=4706mil|Location2.Y=4744mil|Absolute=True">Track (100.203mm,119.583mm)(100.203mm,120.447mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3938.5mil|Location2.X=4001.5mil|Location1.Y=4651mil|Location2.Y=4709mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3938.5mil|Location2.X=4001.5mil|Location1.Y=4651mil|Location2.Y=4709mil|Absolute=True">Pad R2-1(100.838mm,118.872mm)  Top Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4001.5mil|Location2.X=4006.5mil|Location1.Y=4645.5mil|Location2.Y=4803.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4001.5mil|Location2.X=4006.5mil|Location1.Y=4645.5mil|Location2.Y=4803.5mil|Absolute=True">Track (101.702mm,118.059mm)(101.702mm,121.945mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3938.5mil|Location2.X=4001.5mil|Location1.Y=4651mil|Location2.Y=4709mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3938.5mil|Location2.X=4001.5mil|Location1.Y=4651mil|Location2.Y=4709mil|Absolute=True">Pad R2-1(100.838mm,118.872mm)  Top Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3934.5mil|Location2.X=4006.5mil|Location1.Y=4645.5mil|Location2.Y=4650.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3934.5mil|Location2.X=4006.5mil|Location1.Y=4645.5mil|Location2.Y=4650.5mil|Absolute=True">Track (100mm,118.059mm)(101.702mm,118.059mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3938.5mil|Location2.X=4001.5mil|Location1.Y=4651mil|Location2.Y=4709mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3938.5mil|Location2.X=4001.5mil|Location1.Y=4651mil|Location2.Y=4709mil|Absolute=True">Pad R2-1(100.838mm,118.872mm)  Top Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3475mil|Location2.X=3513mil|Location1.Y=4212mil|Location2.Y=4216mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3475mil|Location2.X=3513mil|Location1.Y=4212mil|Location2.Y=4216mil|Absolute=True">Track (88.316mm,107.036mm)(89.179mm,107.036mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3510mil|Location2.X=3568mil|Location1.Y=4207.5mil|Location2.Y=4270.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3510mil|Location2.X=3568mil|Location1.Y=4207.5mil|Location2.Y=4270.5mil|Absolute=True">Pad R4-2(89.891mm,107.671mm)  Top Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3475mil|Location2.X=3513mil|Location1.Y=4262mil|Location2.Y=4266mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3475mil|Location2.X=3513mil|Location1.Y=4262mil|Location2.Y=4266mil|Absolute=True">Track (88.316mm,108.306mm)(89.179mm,108.306mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3510mil|Location2.X=3568mil|Location1.Y=4207.5mil|Location2.Y=4270.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3510mil|Location2.X=3568mil|Location1.Y=4207.5mil|Location2.Y=4270.5mil|Absolute=True">Pad R4-2(89.891mm,107.671mm)  Top Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3567.5mil|Location2.X=3572.5mil|Location1.Y=4202.5mil|Location2.Y=4274.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3567.5mil|Location2.X=3572.5mil|Location1.Y=4202.5mil|Location2.Y=4274.5mil|Absolute=True">Track (90.678mm,106.807mm)(90.678mm,108.509mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3510mil|Location2.X=3568mil|Location1.Y=4207.5mil|Location2.Y=4270.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3510mil|Location2.X=3568mil|Location1.Y=4207.5mil|Location2.Y=4270.5mil|Absolute=True">Pad R4-2(89.891mm,107.671mm)  Top Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3414.5mil|Location2.X=3572.5mil|Location1.Y=4202.5mil|Location2.Y=4207.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3414.5mil|Location2.X=3572.5mil|Location1.Y=4202.5mil|Location2.Y=4207.5mil|Absolute=True">Track (86.792mm,106.807mm)(90.678mm,106.807mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3510mil|Location2.X=3568mil|Location1.Y=4207.5mil|Location2.Y=4270.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3510mil|Location2.X=3568mil|Location1.Y=4207.5mil|Location2.Y=4270.5mil|Absolute=True">Pad R4-2(89.891mm,107.671mm)  Top Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3414.5mil|Location2.X=3572.5mil|Location1.Y=4269.5mil|Location2.Y=4274.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3414.5mil|Location2.X=3572.5mil|Location1.Y=4269.5mil|Location2.Y=4274.5mil|Absolute=True">Track (86.792mm,108.509mm)(90.678mm,108.509mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3510mil|Location2.X=3568mil|Location1.Y=4207.5mil|Location2.Y=4270.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3510mil|Location2.X=3568mil|Location1.Y=4207.5mil|Location2.Y=4270.5mil|Absolute=True">Pad R4-2(89.891mm,107.671mm)  Top Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3475mil|Location2.X=3513mil|Location1.Y=4212mil|Location2.Y=4216mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3475mil|Location2.X=3513mil|Location1.Y=4212mil|Location2.Y=4216mil|Absolute=True">Track (88.316mm,107.036mm)(89.179mm,107.036mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3420mil|Location2.X=3478mil|Location1.Y=4207.5mil|Location2.Y=4270.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3420mil|Location2.X=3478mil|Location1.Y=4207.5mil|Location2.Y=4270.5mil|Absolute=True">Pad R4-1(87.605mm,107.671mm)  Top Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3475mil|Location2.X=3513mil|Location1.Y=4262mil|Location2.Y=4266mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3475mil|Location2.X=3513mil|Location1.Y=4262mil|Location2.Y=4266mil|Absolute=True">Track (88.316mm,108.306mm)(89.179mm,108.306mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3420mil|Location2.X=3478mil|Location1.Y=4207.5mil|Location2.Y=4270.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3420mil|Location2.X=3478mil|Location1.Y=4207.5mil|Location2.Y=4270.5mil|Absolute=True">Pad R4-1(87.605mm,107.671mm)  Top Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3414.5mil|Location2.X=3419.5mil|Location1.Y=4202.5mil|Location2.Y=4274.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3414.5mil|Location2.X=3419.5mil|Location1.Y=4202.5mil|Location2.Y=4274.5mil|Absolute=True">Track (86.792mm,106.807mm)(86.792mm,108.509mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3420mil|Location2.X=3478mil|Location1.Y=4207.5mil|Location2.Y=4270.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3420mil|Location2.X=3478mil|Location1.Y=4207.5mil|Location2.Y=4270.5mil|Absolute=True">Pad R4-1(87.605mm,107.671mm)  Top Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3414.5mil|Location2.X=3572.5mil|Location1.Y=4202.5mil|Location2.Y=4207.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3414.5mil|Location2.X=3572.5mil|Location1.Y=4202.5mil|Location2.Y=4207.5mil|Absolute=True">Track (86.792mm,106.807mm)(90.678mm,106.807mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3420mil|Location2.X=3478mil|Location1.Y=4207.5mil|Location2.Y=4270.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3420mil|Location2.X=3478mil|Location1.Y=4207.5mil|Location2.Y=4270.5mil|Absolute=True">Pad R4-1(87.605mm,107.671mm)  Top Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3414.5mil|Location2.X=3572.5mil|Location1.Y=4269.5mil|Location2.Y=4274.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3414.5mil|Location2.X=3572.5mil|Location1.Y=4269.5mil|Location2.Y=4274.5mil|Absolute=True">Track (86.792mm,108.509mm)(90.678mm,108.509mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3420mil|Location2.X=3478mil|Location1.Y=4207.5mil|Location2.Y=4270.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3420mil|Location2.X=3478mil|Location1.Y=4207.5mil|Location2.Y=4270.5mil|Absolute=True">Pad R4-1(87.605mm,107.671mm)  Top Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3947mil|Location2.X=3951mil|Location1.Y=4422mil|Location2.Y=4460mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3947mil|Location2.X=3951mil|Location1.Y=4422mil|Location2.Y=4460mil|Absolute=True">Track (100.305mm,112.37mm)(100.305mm,113.233mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3942.5mil|Location2.X=4005.5mil|Location1.Y=4457mil|Location2.Y=4515mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3942.5mil|Location2.X=4005.5mil|Location1.Y=4457mil|Location2.Y=4515mil|Absolute=True">Pad R1-2(100.94mm,113.944mm)  Top Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3938.5mil|Location2.X=3943.5mil|Location1.Y=4361.5mil|Location2.Y=4519.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3938.5mil|Location2.X=3943.5mil|Location1.Y=4361.5mil|Location2.Y=4519.5mil|Absolute=True">Track (100.101mm,110.846mm)(100.101mm,114.732mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3942.5mil|Location2.X=4005.5mil|Location1.Y=4457mil|Location2.Y=4515mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3942.5mil|Location2.X=4005.5mil|Location1.Y=4457mil|Location2.Y=4515mil|Absolute=True">Pad R1-2(100.94mm,113.944mm)  Top Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4005.5mil|Location2.X=4010.5mil|Location1.Y=4361.5mil|Location2.Y=4519.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4005.5mil|Location2.X=4010.5mil|Location1.Y=4361.5mil|Location2.Y=4519.5mil|Absolute=True">Track (101.803mm,110.846mm)(101.803mm,114.732mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3942.5mil|Location2.X=4005.5mil|Location1.Y=4457mil|Location2.Y=4515mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3942.5mil|Location2.X=4005.5mil|Location1.Y=4457mil|Location2.Y=4515mil|Absolute=True">Pad R1-2(100.94mm,113.944mm)  Top Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3997mil|Location2.X=4001mil|Location1.Y=4422mil|Location2.Y=4460mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3997mil|Location2.X=4001mil|Location1.Y=4422mil|Location2.Y=4460mil|Absolute=True">Track (101.575mm,112.37mm)(101.575mm,113.233mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3942.5mil|Location2.X=4005.5mil|Location1.Y=4457mil|Location2.Y=4515mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3942.5mil|Location2.X=4005.5mil|Location1.Y=4457mil|Location2.Y=4515mil|Absolute=True">Pad R1-2(100.94mm,113.944mm)  Top Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3938.5mil|Location2.X=4010.5mil|Location1.Y=4514.5mil|Location2.Y=4519.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3938.5mil|Location2.X=4010.5mil|Location1.Y=4514.5mil|Location2.Y=4519.5mil|Absolute=True">Track (100.101mm,114.732mm)(101.803mm,114.732mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3942.5mil|Location2.X=4005.5mil|Location1.Y=4457mil|Location2.Y=4515mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3942.5mil|Location2.X=4005.5mil|Location1.Y=4457mil|Location2.Y=4515mil|Absolute=True">Pad R1-2(100.94mm,113.944mm)  Top Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3947mil|Location2.X=3951mil|Location1.Y=4422mil|Location2.Y=4460mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3947mil|Location2.X=3951mil|Location1.Y=4422mil|Location2.Y=4460mil|Absolute=True">Track (100.305mm,112.37mm)(100.305mm,113.233mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3942.5mil|Location2.X=4005.5mil|Location1.Y=4367mil|Location2.Y=4425mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3942.5mil|Location2.X=4005.5mil|Location1.Y=4367mil|Location2.Y=4425mil|Absolute=True">Pad R1-1(100.94mm,111.658mm)  Top Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3938.5mil|Location2.X=3943.5mil|Location1.Y=4361.5mil|Location2.Y=4519.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3938.5mil|Location2.X=3943.5mil|Location1.Y=4361.5mil|Location2.Y=4519.5mil|Absolute=True">Track (100.101mm,110.846mm)(100.101mm,114.732mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3942.5mil|Location2.X=4005.5mil|Location1.Y=4367mil|Location2.Y=4425mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3942.5mil|Location2.X=4005.5mil|Location1.Y=4367mil|Location2.Y=4425mil|Absolute=True">Pad R1-1(100.94mm,111.658mm)  Top Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4005.5mil|Location2.X=4010.5mil|Location1.Y=4361.5mil|Location2.Y=4519.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4005.5mil|Location2.X=4010.5mil|Location1.Y=4361.5mil|Location2.Y=4519.5mil|Absolute=True">Track (101.803mm,110.846mm)(101.803mm,114.732mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3942.5mil|Location2.X=4005.5mil|Location1.Y=4367mil|Location2.Y=4425mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3942.5mil|Location2.X=4005.5mil|Location1.Y=4367mil|Location2.Y=4425mil|Absolute=True">Pad R1-1(100.94mm,111.658mm)  Top Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3938.5mil|Location2.X=4010.5mil|Location1.Y=4361.5mil|Location2.Y=4366.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3938.5mil|Location2.X=4010.5mil|Location1.Y=4361.5mil|Location2.Y=4366.5mil|Absolute=True">Track (100.101mm,110.846mm)(101.803mm,110.846mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3942.5mil|Location2.X=4005.5mil|Location1.Y=4367mil|Location2.Y=4425mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3942.5mil|Location2.X=4005.5mil|Location1.Y=4367mil|Location2.Y=4425mil|Absolute=True">Pad R1-1(100.94mm,111.658mm)  Top Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3997mil|Location2.X=4001mil|Location1.Y=4422mil|Location2.Y=4460mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3997mil|Location2.X=4001mil|Location1.Y=4422mil|Location2.Y=4460mil|Absolute=True">Track (101.575mm,112.37mm)(101.575mm,113.233mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3942.5mil|Location2.X=4005.5mil|Location1.Y=4367mil|Location2.Y=4425mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3942.5mil|Location2.X=4005.5mil|Location1.Y=4367mil|Location2.Y=4425mil|Absolute=True">Pad R1-1(100.94mm,111.658mm)  Top Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3307mil|Location2.X=3345mil|Location1.Y=4608mil|Location2.Y=4612mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3307mil|Location2.X=3345mil|Location1.Y=4608mil|Location2.Y=4612mil|Absolute=True">Track (84.049mm,117.094mm)(84.912mm,117.094mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3252mil|Location2.X=3310mil|Location1.Y=4603.5mil|Location2.Y=4666.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3252mil|Location2.X=3310mil|Location1.Y=4603.5mil|Location2.Y=4666.5mil|Absolute=True">Pad R3-2(83.337mm,117.729mm)  Top Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3307mil|Location2.X=3345mil|Location1.Y=4658mil|Location2.Y=4662mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3307mil|Location2.X=3345mil|Location1.Y=4658mil|Location2.Y=4662mil|Absolute=True">Track (84.049mm,118.364mm)(84.912mm,118.364mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3252mil|Location2.X=3310mil|Location1.Y=4603.5mil|Location2.Y=4666.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3252mil|Location2.X=3310mil|Location1.Y=4603.5mil|Location2.Y=4666.5mil|Absolute=True">Pad R3-2(83.337mm,117.729mm)  Top Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3247.5mil|Location2.X=3252.5mil|Location1.Y=4599.5mil|Location2.Y=4671.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3247.5mil|Location2.X=3252.5mil|Location1.Y=4599.5mil|Location2.Y=4671.5mil|Absolute=True">Track (82.55mm,116.891mm)(82.55mm,118.593mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3252mil|Location2.X=3310mil|Location1.Y=4603.5mil|Location2.Y=4666.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3252mil|Location2.X=3310mil|Location1.Y=4603.5mil|Location2.Y=4666.5mil|Absolute=True">Pad R3-2(83.337mm,117.729mm)  Top Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3247.5mil|Location2.X=3405.5mil|Location1.Y=4599.5mil|Location2.Y=4604.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3247.5mil|Location2.X=3405.5mil|Location1.Y=4599.5mil|Location2.Y=4604.5mil|Absolute=True">Track (82.55mm,116.891mm)(86.436mm,116.891mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3252mil|Location2.X=3310mil|Location1.Y=4603.5mil|Location2.Y=4666.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3252mil|Location2.X=3310mil|Location1.Y=4603.5mil|Location2.Y=4666.5mil|Absolute=True">Pad R3-2(83.337mm,117.729mm)  Top Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3247.5mil|Location2.X=3405.5mil|Location1.Y=4666.5mil|Location2.Y=4671.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3247.5mil|Location2.X=3405.5mil|Location1.Y=4666.5mil|Location2.Y=4671.5mil|Absolute=True">Track (82.55mm,118.593mm)(86.436mm,118.593mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3252mil|Location2.X=3310mil|Location1.Y=4603.5mil|Location2.Y=4666.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3252mil|Location2.X=3310mil|Location1.Y=4603.5mil|Location2.Y=4666.5mil|Absolute=True">Pad R3-2(83.337mm,117.729mm)  Top Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3307mil|Location2.X=3345mil|Location1.Y=4608mil|Location2.Y=4612mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3307mil|Location2.X=3345mil|Location1.Y=4608mil|Location2.Y=4612mil|Absolute=True">Track (84.049mm,117.094mm)(84.912mm,117.094mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3342mil|Location2.X=3400mil|Location1.Y=4603.5mil|Location2.Y=4666.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3342mil|Location2.X=3400mil|Location1.Y=4603.5mil|Location2.Y=4666.5mil|Absolute=True">Pad R3-1(85.623mm,117.729mm)  Top Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3307mil|Location2.X=3345mil|Location1.Y=4658mil|Location2.Y=4662mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3307mil|Location2.X=3345mil|Location1.Y=4658mil|Location2.Y=4662mil|Absolute=True">Track (84.049mm,118.364mm)(84.912mm,118.364mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3342mil|Location2.X=3400mil|Location1.Y=4603.5mil|Location2.Y=4666.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3342mil|Location2.X=3400mil|Location1.Y=4603.5mil|Location2.Y=4666.5mil|Absolute=True">Pad R3-1(85.623mm,117.729mm)  Top Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3400.5mil|Location2.X=3405.5mil|Location1.Y=4599.5mil|Location2.Y=4671.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3400.5mil|Location2.X=3405.5mil|Location1.Y=4599.5mil|Location2.Y=4671.5mil|Absolute=True">Track (86.436mm,116.891mm)(86.436mm,118.593mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3342mil|Location2.X=3400mil|Location1.Y=4603.5mil|Location2.Y=4666.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3342mil|Location2.X=3400mil|Location1.Y=4603.5mil|Location2.Y=4666.5mil|Absolute=True">Pad R3-1(85.623mm,117.729mm)  Top Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3247.5mil|Location2.X=3405.5mil|Location1.Y=4599.5mil|Location2.Y=4604.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3247.5mil|Location2.X=3405.5mil|Location1.Y=4599.5mil|Location2.Y=4604.5mil|Absolute=True">Track (82.55mm,116.891mm)(86.436mm,116.891mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3342mil|Location2.X=3400mil|Location1.Y=4603.5mil|Location2.Y=4666.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3342mil|Location2.X=3400mil|Location1.Y=4603.5mil|Location2.Y=4666.5mil|Absolute=True">Pad R3-1(85.623mm,117.729mm)  Top Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3247.5mil|Location2.X=3405.5mil|Location1.Y=4666.5mil|Location2.Y=4671.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3247.5mil|Location2.X=3405.5mil|Location1.Y=4666.5mil|Location2.Y=4671.5mil|Absolute=True">Track (82.55mm,118.593mm)(86.436mm,118.593mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3342mil|Location2.X=3400mil|Location1.Y=4603.5mil|Location2.Y=4666.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3342mil|Location2.X=3400mil|Location1.Y=4603.5mil|Location2.Y=4666.5mil|Absolute=True">Pad R3-1(85.623mm,117.729mm)  Top Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4275.5mil|Location2.X=4282.5mil|Location1.Y=4273.5mil|Location2.Y=4879.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4275.5mil|Location2.X=4282.5mil|Location1.Y=4273.5mil|Location2.Y=4879.5mil|Absolute=True">Track (108.687mm,108.636mm)(108.687mm,123.85mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4158mil|Location2.X=4286mil|Location1.Y=4312mil|Location2.Y=4440mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4158mil|Location2.X=4286mil|Location1.Y=4312mil|Location2.Y=4440mil|Absolute=True">Pad VOL1-1(107.239mm,111.15mm)  Multi-Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4275.5mil|Location2.X=4282.5mil|Location1.Y=4273.5mil|Location2.Y=4879.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4275.5mil|Location2.X=4282.5mil|Location1.Y=4273.5mil|Location2.Y=4879.5mil|Absolute=True">Track (108.687mm,108.636mm)(108.687mm,123.85mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4158mil|Location2.X=4286mil|Location1.Y=4511mil|Location2.Y=4639mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4158mil|Location2.X=4286mil|Location1.Y=4511mil|Location2.Y=4639mil|Absolute=True">Pad VOL1-2(107.239mm,116.205mm)  Multi-Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4275.5mil|Location2.X=4282.5mil|Location1.Y=4273.5mil|Location2.Y=4879.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4275.5mil|Location2.X=4282.5mil|Location1.Y=4273.5mil|Location2.Y=4879.5mil|Absolute=True">Track (108.687mm,108.636mm)(108.687mm,123.85mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4158mil|Location2.X=4286mil|Location1.Y=4712mil|Location2.Y=4840mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4158mil|Location2.X=4286mil|Location1.Y=4712mil|Location2.Y=4840mil|Absolute=True">Pad VOL1-3(107.239mm,121.31mm)  Multi-Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3888.5mil|Location2.X=3895.5mil|Location1.Y=4325.5mil|Location2.Y=4782.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3888.5mil|Location2.X=3895.5mil|Location1.Y=4325.5mil|Location2.Y=4782.5mil|Absolute=True">Track (98.857mm,109.957mm)(98.857mm,121.387mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3793mil|Location2.X=3891mil|Location1.Y=4368.5mil|Location2.Y=4439.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3793mil|Location2.X=3891mil|Location1.Y=4368.5mil|Location2.Y=4439.5mil|Absolute=True">Pad U1-5(97.587mm,111.862mm)  Multi-Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3888.5mil|Location2.X=3895.5mil|Location1.Y=4325.5mil|Location2.Y=4782.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3888.5mil|Location2.X=3895.5mil|Location1.Y=4325.5mil|Location2.Y=4782.5mil|Absolute=True">Track (98.857mm,109.957mm)(98.857mm,121.387mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3793mil|Location2.X=3891mil|Location1.Y=4468.5mil|Location2.Y=4539.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3793mil|Location2.X=3891mil|Location1.Y=4468.5mil|Location2.Y=4539.5mil|Absolute=True">Pad U1-6(97.587mm,114.402mm)  Multi-Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3888.5mil|Location2.X=3895.5mil|Location1.Y=4325.5mil|Location2.Y=4782.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3888.5mil|Location2.X=3895.5mil|Location1.Y=4325.5mil|Location2.Y=4782.5mil|Absolute=True">Track (98.857mm,109.957mm)(98.857mm,121.387mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3793mil|Location2.X=3891mil|Location1.Y=4568.5mil|Location2.Y=4639.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3793mil|Location2.X=3891mil|Location1.Y=4568.5mil|Location2.Y=4639.5mil|Absolute=True">Pad U1-7(97.587mm,116.942mm)  Multi-Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3888.5mil|Location2.X=3895.5mil|Location1.Y=4325.5mil|Location2.Y=4782.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3888.5mil|Location2.X=3895.5mil|Location1.Y=4325.5mil|Location2.Y=4782.5mil|Absolute=True">Track (98.857mm,109.957mm)(98.857mm,121.387mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3793mil|Location2.X=3891mil|Location1.Y=4668.5mil|Location2.Y=4739.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3793mil|Location2.X=3891mil|Location1.Y=4668.5mil|Location2.Y=4739.5mil|Absolute=True">Pad U1-8(97.587mm,119.482mm)  Multi-Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3488.5mil|Location2.X=3495.5mil|Location1.Y=4325.5mil|Location2.Y=4782.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3488.5mil|Location2.X=3495.5mil|Location1.Y=4325.5mil|Location2.Y=4782.5mil|Absolute=True">Track (88.697mm,109.957mm)(88.697mm,121.387mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3493mil|Location2.X=3591mil|Location1.Y=4368.5mil|Location2.Y=4439.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3493mil|Location2.X=3591mil|Location1.Y=4368.5mil|Location2.Y=4439.5mil|Absolute=True">Pad U1-4(89.967mm,111.862mm)  Multi-Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3488.5mil|Location2.X=3495.5mil|Location1.Y=4325.5mil|Location2.Y=4782.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3488.5mil|Location2.X=3495.5mil|Location1.Y=4325.5mil|Location2.Y=4782.5mil|Absolute=True">Track (88.697mm,109.957mm)(88.697mm,121.387mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3493mil|Location2.X=3591mil|Location1.Y=4468.5mil|Location2.Y=4539.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3493mil|Location2.X=3591mil|Location1.Y=4468.5mil|Location2.Y=4539.5mil|Absolute=True">Pad U1-3(89.967mm,114.402mm)  Multi-Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3488.5mil|Location2.X=3495.5mil|Location1.Y=4325.5mil|Location2.Y=4782.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3488.5mil|Location2.X=3495.5mil|Location1.Y=4325.5mil|Location2.Y=4782.5mil|Absolute=True">Track (88.697mm,109.957mm)(88.697mm,121.387mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3493mil|Location2.X=3591mil|Location1.Y=4568.5mil|Location2.Y=4639.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3493mil|Location2.X=3591mil|Location1.Y=4568.5mil|Location2.Y=4639.5mil|Absolute=True">Pad U1-2(89.967mm,116.942mm)  Multi-Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3488.5mil|Location2.X=3495.5mil|Location1.Y=4325.5mil|Location2.Y=4782.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3488.5mil|Location2.X=3495.5mil|Location1.Y=4325.5mil|Location2.Y=4782.5mil|Absolute=True">Track (88.697mm,109.957mm)(88.697mm,121.387mm)  Top Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3493mil|Location2.X=3591mil|Location1.Y=4668.5mil|Location2.Y=4739.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3493mil|Location2.X=3591mil|Location1.Y=4668.5mil|Location2.Y=4739.5mil|Absolute=True">Pad U1-1(89.967mm,119.482mm)  Multi-Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3865mil|Location2.X=3903mil|Location1.Y=4215mil|Location2.Y=4219mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3865mil|Location2.X=3903mil|Location1.Y=4215mil|Location2.Y=4219mil|Absolute=True">Track (98.222mm,107.112mm)(99.085mm,107.112mm)  Bottom Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3810mil|Location2.X=3868mil|Location1.Y=4210.5mil|Location2.Y=4273.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3810mil|Location2.X=3868mil|Location1.Y=4210.5mil|Location2.Y=4273.5mil|Absolute=True">Pad C2-2(97.511mm,107.747mm)  Bottom Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3865mil|Location2.X=3903mil|Location1.Y=4265mil|Location2.Y=4269mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3865mil|Location2.X=3903mil|Location1.Y=4265mil|Location2.Y=4269mil|Absolute=True">Track (98.222mm,108.382mm)(99.085mm,108.382mm)  Bottom Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3810mil|Location2.X=3868mil|Location1.Y=4210.5mil|Location2.Y=4273.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3810mil|Location2.X=3868mil|Location1.Y=4210.5mil|Location2.Y=4273.5mil|Absolute=True">Pad C2-2(97.511mm,107.747mm)  Bottom Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3805.5mil|Location2.X=3810.5mil|Location1.Y=4205.5mil|Location2.Y=4277.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3805.5mil|Location2.X=3810.5mil|Location1.Y=4205.5mil|Location2.Y=4277.5mil|Absolute=True">Track (96.723mm,106.883mm)(96.723mm,108.585mm)  Bottom Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3810mil|Location2.X=3868mil|Location1.Y=4210.5mil|Location2.Y=4273.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3810mil|Location2.X=3868mil|Location1.Y=4210.5mil|Location2.Y=4273.5mil|Absolute=True">Pad C2-2(97.511mm,107.747mm)  Bottom Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3805.5mil|Location2.X=3963.5mil|Location1.Y=4205.5mil|Location2.Y=4210.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3805.5mil|Location2.X=3963.5mil|Location1.Y=4205.5mil|Location2.Y=4210.5mil|Absolute=True">Track (96.723mm,106.883mm)(100.609mm,106.883mm)  Bottom Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3810mil|Location2.X=3868mil|Location1.Y=4210.5mil|Location2.Y=4273.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3810mil|Location2.X=3868mil|Location1.Y=4210.5mil|Location2.Y=4273.5mil|Absolute=True">Pad C2-2(97.511mm,107.747mm)  Bottom Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3805.5mil|Location2.X=3963.5mil|Location1.Y=4272.5mil|Location2.Y=4277.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3805.5mil|Location2.X=3963.5mil|Location1.Y=4272.5mil|Location2.Y=4277.5mil|Absolute=True">Track (96.723mm,108.585mm)(100.609mm,108.585mm)  Bottom Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3810mil|Location2.X=3868mil|Location1.Y=4210.5mil|Location2.Y=4273.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3810mil|Location2.X=3868mil|Location1.Y=4210.5mil|Location2.Y=4273.5mil|Absolute=True">Pad C2-2(97.511mm,107.747mm)  Bottom Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3865mil|Location2.X=3903mil|Location1.Y=4215mil|Location2.Y=4219mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3865mil|Location2.X=3903mil|Location1.Y=4215mil|Location2.Y=4219mil|Absolute=True">Track (98.222mm,107.112mm)(99.085mm,107.112mm)  Bottom Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3900mil|Location2.X=3958mil|Location1.Y=4210.5mil|Location2.Y=4273.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3900mil|Location2.X=3958mil|Location1.Y=4210.5mil|Location2.Y=4273.5mil|Absolute=True">Pad C2-1(99.797mm,107.747mm)  Bottom Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3865mil|Location2.X=3903mil|Location1.Y=4265mil|Location2.Y=4269mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3865mil|Location2.X=3903mil|Location1.Y=4265mil|Location2.Y=4269mil|Absolute=True">Track (98.222mm,108.382mm)(99.085mm,108.382mm)  Bottom Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3900mil|Location2.X=3958mil|Location1.Y=4210.5mil|Location2.Y=4273.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3900mil|Location2.X=3958mil|Location1.Y=4210.5mil|Location2.Y=4273.5mil|Absolute=True">Pad C2-1(99.797mm,107.747mm)  Bottom Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3958.5mil|Location2.X=3963.5mil|Location1.Y=4205.5mil|Location2.Y=4277.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3958.5mil|Location2.X=3963.5mil|Location1.Y=4205.5mil|Location2.Y=4277.5mil|Absolute=True">Track (100.609mm,106.883mm)(100.609mm,108.585mm)  Bottom Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3900mil|Location2.X=3958mil|Location1.Y=4210.5mil|Location2.Y=4273.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3900mil|Location2.X=3958mil|Location1.Y=4210.5mil|Location2.Y=4273.5mil|Absolute=True">Pad C2-1(99.797mm,107.747mm)  Bottom Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3805.5mil|Location2.X=3963.5mil|Location1.Y=4205.5mil|Location2.Y=4210.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3805.5mil|Location2.X=3963.5mil|Location1.Y=4205.5mil|Location2.Y=4210.5mil|Absolute=True">Track (96.723mm,106.883mm)(100.609mm,106.883mm)  Bottom Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3900mil|Location2.X=3958mil|Location1.Y=4210.5mil|Location2.Y=4273.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3900mil|Location2.X=3958mil|Location1.Y=4210.5mil|Location2.Y=4273.5mil|Absolute=True">Pad C2-1(99.797mm,107.747mm)  Bottom Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3805.5mil|Location2.X=3963.5mil|Location1.Y=4272.5mil|Location2.Y=4277.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3805.5mil|Location2.X=3963.5mil|Location1.Y=4272.5mil|Location2.Y=4277.5mil|Absolute=True">Track (96.723mm,108.585mm)(100.609mm,108.585mm)  Bottom Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3900mil|Location2.X=3958mil|Location1.Y=4210.5mil|Location2.Y=4273.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3900mil|Location2.X=3958mil|Location1.Y=4210.5mil|Location2.Y=4273.5mil|Absolute=True">Pad C2-1(99.797mm,107.747mm)  Bottom Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3764.5mil|Location2.X=3769.5mil|Location1.Y=4204.5mil|Location2.Y=4276.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3764.5mil|Location2.X=3769.5mil|Location1.Y=4204.5mil|Location2.Y=4276.5mil|Absolute=True">Track (95.682mm,106.858mm)(95.682mm,108.56mm)  Bottom Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3707mil|Location2.X=3765mil|Location1.Y=4208.5mil|Location2.Y=4271.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3707mil|Location2.X=3765mil|Location1.Y=4208.5mil|Location2.Y=4271.5mil|Absolute=True">Pad C1-2(94.894mm,107.696mm)  Bottom Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3611.5mil|Location2.X=3769.5mil|Location1.Y=4204.5mil|Location2.Y=4209.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3611.5mil|Location2.X=3769.5mil|Location1.Y=4204.5mil|Location2.Y=4209.5mil|Absolute=True">Track (91.796mm,106.858mm)(95.682mm,106.858mm)  Bottom Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3707mil|Location2.X=3765mil|Location1.Y=4208.5mil|Location2.Y=4271.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3707mil|Location2.X=3765mil|Location1.Y=4208.5mil|Location2.Y=4271.5mil|Absolute=True">Pad C1-2(94.894mm,107.696mm)  Bottom Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3672mil|Location2.X=3710mil|Location1.Y=4213mil|Location2.Y=4217mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3672mil|Location2.X=3710mil|Location1.Y=4213mil|Location2.Y=4217mil|Absolute=True">Track (93.32mm,107.061mm)(94.183mm,107.061mm)  Bottom Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3707mil|Location2.X=3765mil|Location1.Y=4208.5mil|Location2.Y=4271.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3707mil|Location2.X=3765mil|Location1.Y=4208.5mil|Location2.Y=4271.5mil|Absolute=True">Pad C1-2(94.894mm,107.696mm)  Bottom Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3611.5mil|Location2.X=3769.5mil|Location1.Y=4271.5mil|Location2.Y=4276.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3611.5mil|Location2.X=3769.5mil|Location1.Y=4271.5mil|Location2.Y=4276.5mil|Absolute=True">Track (91.796mm,108.56mm)(95.682mm,108.56mm)  Bottom Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3707mil|Location2.X=3765mil|Location1.Y=4208.5mil|Location2.Y=4271.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3707mil|Location2.X=3765mil|Location1.Y=4208.5mil|Location2.Y=4271.5mil|Absolute=True">Pad C1-2(94.894mm,107.696mm)  Bottom Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3672mil|Location2.X=3710mil|Location1.Y=4263mil|Location2.Y=4267mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3672mil|Location2.X=3710mil|Location1.Y=4263mil|Location2.Y=4267mil|Absolute=True">Track (93.32mm,108.331mm)(94.183mm,108.331mm)  Bottom Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3707mil|Location2.X=3765mil|Location1.Y=4208.5mil|Location2.Y=4271.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3707mil|Location2.X=3765mil|Location1.Y=4208.5mil|Location2.Y=4271.5mil|Absolute=True">Pad C1-2(94.894mm,107.696mm)  Bottom Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3611.5mil|Location2.X=3616.5mil|Location1.Y=4204.5mil|Location2.Y=4276.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3611.5mil|Location2.X=3616.5mil|Location1.Y=4204.5mil|Location2.Y=4276.5mil|Absolute=True">Track (91.796mm,106.858mm)(91.796mm,108.56mm)  Bottom Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3617mil|Location2.X=3675mil|Location1.Y=4208.5mil|Location2.Y=4271.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3617mil|Location2.X=3675mil|Location1.Y=4208.5mil|Location2.Y=4271.5mil|Absolute=True">Pad C1-1(92.608mm,107.696mm)  Bottom Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3611.5mil|Location2.X=3769.5mil|Location1.Y=4204.5mil|Location2.Y=4209.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3611.5mil|Location2.X=3769.5mil|Location1.Y=4204.5mil|Location2.Y=4209.5mil|Absolute=True">Track (91.796mm,106.858mm)(95.682mm,106.858mm)  Bottom Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3617mil|Location2.X=3675mil|Location1.Y=4208.5mil|Location2.Y=4271.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3617mil|Location2.X=3675mil|Location1.Y=4208.5mil|Location2.Y=4271.5mil|Absolute=True">Pad C1-1(92.608mm,107.696mm)  Bottom Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3672mil|Location2.X=3710mil|Location1.Y=4213mil|Location2.Y=4217mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3672mil|Location2.X=3710mil|Location1.Y=4213mil|Location2.Y=4217mil|Absolute=True">Track (93.32mm,107.061mm)(94.183mm,107.061mm)  Bottom Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3617mil|Location2.X=3675mil|Location1.Y=4208.5mil|Location2.Y=4271.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3617mil|Location2.X=3675mil|Location1.Y=4208.5mil|Location2.Y=4271.5mil|Absolute=True">Pad C1-1(92.608mm,107.696mm)  Bottom Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3611.5mil|Location2.X=3769.5mil|Location1.Y=4271.5mil|Location2.Y=4276.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3611.5mil|Location2.X=3769.5mil|Location1.Y=4271.5mil|Location2.Y=4276.5mil|Absolute=True">Track (91.796mm,108.56mm)(95.682mm,108.56mm)  Bottom Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3617mil|Location2.X=3675mil|Location1.Y=4208.5mil|Location2.Y=4271.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3617mil|Location2.X=3675mil|Location1.Y=4208.5mil|Location2.Y=4271.5mil|Absolute=True">Pad C1-1(92.608mm,107.696mm)  Bottom Layer</acronym></a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td style="width:50%; text-align:left" class="column1"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3672mil|Location2.X=3710mil|Location1.Y=4263mil|Location2.Y=4267mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3672mil|Location2.X=3710mil|Location1.Y=4263mil|Location2.Y=4267mil|Absolute=True">Track (93.32mm,108.331mm)(94.183mm,108.331mm)  Bottom Overlay</acronym></a></td>
+<td style="width:50%; text-align:left" class="column2"><a href="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3617mil|Location2.X=3675mil|Location1.Y=4208.5mil|Location2.Y=4271.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=E:\PCB\MACH TAO XUNG\PCB1.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3617mil|Location2.X=3675mil|Location1.Y=4208.5mil|Location2.Y=4271.5mil|Absolute=True">Pad C1-1(92.608mm,107.696mm)  Bottom Layer</acronym></a></td>
+</tr>
+</table></a><a href="#top">Back to top</a><br><br></body>
+</html>

@@ -1,0 +1,7 @@
+Added Component: Designator=ANTEN1(ANTEN.08-H5)
+Added Pin To Net: NetName=ANTEN Pin=ANTEN1-1
+Added Pin To Net: NetName=GND Pin=ANTEN1-2
+Added Pin To Net: NetName=GND Pin=ANTEN1-2
+Added Pin To Net: NetName=GND Pin=ANTEN1-2
+Added Pin To Net: NetName=GND Pin=ANTEN1-2
+Added Member To Class: ClassName=CC2530Controller Member=Component ANTEN1 ANTENNA

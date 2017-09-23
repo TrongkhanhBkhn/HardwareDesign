@@ -1,0 +1,10 @@
+Removed Pin From Net: NetName=VCC_SOON Pin=D201-1
+Removed Pin From Net: NetName=GND Pin=IN-1
+Removed Pin From Net: NetName=VCC_3.3V Pin=OUT-2
+Removed Pin From Net: NetName=VCC_SOON Pin=Q201-1
+Removed Pin From Net: NetName=VCC_SOON Pin=R201-2
+Added Pin To Net: NetName=VCC_SOON1 Pin=D201-1
+Added Pin To Net: NetName=VCC_SOON1 Pin=IN-1
+Added Pin To Net: NetName=VCC_SOON1 Pin=Q201-1
+Added Pin To Net: NetName=VCC_SOON1 Pin=R201-2
+Added Net: Name=VCC_SOON1

@@ -1,0 +1,15 @@
+Change Net Name : Old Net Name=NetU2_38 New Net Name=P1
+Change Net Name : Old Net Name=NetU2_39 New Net Name=P2
+Added Pin To Net: NetName=P3 Pin=U2-40
+Added Net: Name=P3
+Added Pin To Net: NetName=P4 Pin=U2-41
+Added Net: Name=P4
+Added Pin To Net: NetName=P5 Pin=U2-2
+Added Net: Name=P5
+Added Pin To Net: NetName=P6 Pin=U2-3
+Added Net: Name=P6
+Added Pin To Net: NetName=P7 Pin=U2-4
+Added Net: Name=P7
+Added Pin To Net: NetName=P8 Pin=U2-5
+Added Net: Name=P8
+Added Member To Class: ClassName=RF315Mhz Member=Component C9 33pF

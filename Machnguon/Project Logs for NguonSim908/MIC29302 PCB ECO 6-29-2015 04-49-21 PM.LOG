@@ -1,0 +1,3 @@
+Change Component Footprint: Designator=VIN Old Footprint=CON2 New Footprint=DC-IN
+Change Component Footprint: Designator=LED1 Old Footprint=LED1206-Yellow New Footprint=LED-5-RED
+Added Member To Class: ClassName=Sheet2 Member=Component C1 100uF/450V

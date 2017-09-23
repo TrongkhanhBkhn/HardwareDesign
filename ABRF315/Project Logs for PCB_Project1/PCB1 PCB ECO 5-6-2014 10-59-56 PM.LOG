@@ -1,0 +1,25 @@
+Change Component Footprint: Designator=L121 Old Footprint=CUON CAM 200mil New Footprint=SM-0805
+Change Component Footprint: Designator=L123 Old Footprint=CUON CAM 200mil New Footprint=SM-0805
+Change Component Footprint: Designator=L131 Old Footprint=CUON CAM 200mil New Footprint=SM-0805
+Change Component Comment : Designator=L122 Old Comment=18nH New Comment=22nH
+Change Component Comment : Designator=L121 Old Comment=33nH New Comment=27nH
+Change Component Comment : Designator=L123 Old Comment=33nH New Comment=27nH
+Change Component Comment : Designator=L131 Old Comment=33nH New Comment=27nH
+Added Component: Designator=C1(SM-0805)
+Added Component: Designator=C2(SM-0805)
+Added Component: Designator=C3(SM-0805)
+Added Component: Designator=C4(SM-0805)
+Added Component: Designator=C5(SM-0805)
+Added Component: Designator=C6(CP1.5/3.4)
+Added Component: Designator=C7(SM-0805)
+Added Component: Designator=CON1(LED0805)
+Added Component: Designator=CON2(LED0805)
+Added Component: Designator=LCD(CON7)
+Added Component: Designator=NAPCODE(CON5)
+Added Component: Designator=NGUON(LED0805)
+Added Component: Designator=R1(SM-0805)
+Added Component: Designator=R2(SM-0805)
+Added Component: Designator=R3(SM-0805)
+Added Component: Designator=R6(SM-0805)
+Added Component: Designator=R7(SM-0805)
+Added Component: Designator=U1(QFN-ML44_N)

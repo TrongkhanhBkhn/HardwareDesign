@@ -1,0 +1,3 @@
+Added Pin To Net: NetName=SI Pin=U2-1
+Added Pin To Net: NetName=TX1 Pin=U2-44
+Added Net: Name=TX1

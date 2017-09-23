@@ -1,0 +1,7 @@
+Removed Pin From Net: NetName=GND Pin=CHARGER-4
+Change Component DesignItemId : Designator=CHARGER Old DesignItemId=Con4 New DesignItemId=Con3
+Change Component Footprint: Designator=CHARGER Old Footprint=CON4 New Footprint=CON3
+Change Component Comment : Designator=CHARGER Old Comment=JP4 New Comment=JP3
+Added Pin To Net: NetName=GND Pin=CHARGER-3
+Added Pin To Net: NetName=BAT1 Pin=D703-1
+Change Net Name : Old Net Name=BAT1 New Net Name=BAT

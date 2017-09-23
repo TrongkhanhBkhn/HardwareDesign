@@ -1,0 +1,7 @@
+Change Net Name : Old Net Name=12V New Net Name=NET1_N
+Change Net Name : Old Net Name=NetC2_2 New Net Name=NET1_P
+Change Net Name : Old Net Name=NetC3_2 New Net Name=NET_P
+Change Net Name : Old Net Name=NetD2_4 New Net Name=NET_N
+Added Differential Pair: Name=NET1
+Added Differential Pair: Name=NET
+Added Room: Name=Sheet1

@@ -1,0 +1,13 @@
+Added Component: Designator=HD2(HED2X5_cen)
+Added Pin To Net: NetName=VCC Pin=HD2-1
+Added Pin To Net: NetName=SI Pin=HD2-2
+Added Pin To Net: NetName=SO Pin=HD2-3
+Added Pin To Net: NetName=CS Pin=HD2-4
+Added Pin To Net: NetName=GND Pin=HD2-5
+Added Pin To Net: NetName=NC Pin=HD2-6
+Added Pin To Net: NetName=SCK Pin=HD2-7
+Added Pin To Net: NetName=GDO2 Pin=HD2-8
+Added Pin To Net: NetName=GDO1 Pin=HD2-9
+Added Pin To Net: NetName=GND Pin=HD2-10
+Added Member To Class: ClassName=Sheet1 Member=Component HD2 Header 5x2
+Added Room: Name=Sheet1

@@ -1,0 +1,16 @@
+Output: Gerber Files
+Type  : Gerber
+From  : Variant [[No Variations]] of Project [Free Documents]
+   Generated File[RF315Mhz (3).GTL]
+   Generated File[RF315Mhz (3).GBL]
+   Generated File[RF315Mhz (3).GD1]
+   Generated File[RF315Mhz (3).GG1]
+   Generated File[RF315Mhz (3).RUL]
+   Generated File[RF315Mhz (3).EXTREP]
+   Generated File[RF315Mhz (3).REP]
+
+
+Files Generated   : 7
+Documents Printed : 0
+
+Finished Output Generation At 8:27:18 AM On 5/30/2014

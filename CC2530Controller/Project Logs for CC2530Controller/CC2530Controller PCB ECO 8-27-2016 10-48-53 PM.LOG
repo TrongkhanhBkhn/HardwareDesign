@@ -1,0 +1,11 @@
+Added Component: Designator=LED_STATUS(SM-0805)
+Added Component: Designator=R_LED(SM-0805)
+Added Pin To Net: NetName=GND Pin=LED_STATUS-2
+Added Pin To Net: NetName=LED Pin=IC1-12
+Added Pin To Net: NetName=LED Pin=R_LED-2
+Added Net: Name=LED
+Added Pin To Net: NetName=NetLED_STATUS_1 Pin=LED_STATUS-1
+Added Pin To Net: NetName=NetLED_STATUS_1 Pin=R_LED-1
+Added Net: Name=NetLED_STATUS_1
+Added Member To Class: ClassName=CC2530Controller Member=Component LED_STATUS LED
+Added Member To Class: ClassName=CC2530Controller Member=Component R_LED 330

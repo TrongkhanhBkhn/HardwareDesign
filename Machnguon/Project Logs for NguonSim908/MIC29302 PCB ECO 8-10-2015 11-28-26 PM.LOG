@@ -1,0 +1,32 @@
+Removed Pin From Net: NetName=OUT Pin=VOUT-4
+Removed Pin From Net: NetName=OUT Pin=VOUT-5
+Change Component Footprint: Designator=D1 Old Footprint=DIODE-M7 New Footprint=Diode1206
+Change Component Footprint: Designator=LED1 Old Footprint=LED0805-Green New Footprint=LED-5-RED
+Added Component: Designator=C5(SM-0805)
+Added Component: Designator=C6(SM-0805)
+Added Component: Designator=IC2(SOT223-4N)
+Added Pin To Net: NetName=GND Pin=C5-1
+Added Pin To Net: NetName=IN Pin=C5-2
+Added Pin To Net: NetName=GND Pin=C6-1
+Added Pin To Net: NetName=3.3V Pin=C6-2
+Added Pin To Net: NetName=GND Pin=IC2-1
+Added Pin To Net: NetName=3.3V Pin=IC2-2
+Added Pin To Net: NetName=IN Pin=IC2-3
+Added Pin To Net: NetName=3.3V Pin=VOUT-4
+Added Pin To Net: NetName=3.3V Pin=VOUT-5
+Added Member To Class: ClassName=Sheet2 Member=Component C1 100uF/450V
+Added Member To Class: ClassName=Sheet2 Member=Component C2 1uF/450V
+Added Member To Class: ClassName=Sheet2 Member=Component C3 220uF/450V
+Added Member To Class: ClassName=Sheet2 Member=Component C4 103
+Added Member To Class: ClassName=Sheet2 Member=Component C5 103
+Added Member To Class: ClassName=Sheet2 Member=Component C6 103
+Added Member To Class: ClassName=Sheet2 Member=Component D1 1N5822
+Added Member To Class: ClassName=Sheet2 Member=Component IC2 LM1117
+Added Member To Class: ClassName=Sheet2 Member=Component LED1 LED
+Added Member To Class: ClassName=Sheet2 Member=Component P1 MIC29302
+Added Member To Class: ClassName=Sheet2 Member=Component R1 100k
+Added Member To Class: ClassName=Sheet2 Member=Component R2 43k
+Added Member To Class: ClassName=Sheet2 Member=Component R3 470
+Added Member To Class: ClassName=Sheet2 Member=Component VIN JP2
+Added Member To Class: ClassName=Sheet2 Member=Component VOUT Header 5x2
+Added Room: Name=Sheet2

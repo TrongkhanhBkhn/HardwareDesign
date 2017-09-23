@@ -1,0 +1,131 @@
+Added Component: Designator=ANTEN(ANTEN.08-H5)
+Added Component: Designator=C1(SM-0805)
+Added Component: Designator=C101(SM-0805)
+Added Component: Designator=C211(SM-0805)
+Added Component: Designator=C221(SM-0805)
+Added Component: Designator=C231(SM-0805)
+Added Component: Designator=C241(SM-0805)
+Added Component: Designator=C251(SM-0805)
+Added Component: Designator=C252(SM-0805)
+Added Component: Designator=C253(SM-0805)
+Added Component: Designator=C254(SM-0805)
+Added Component: Designator=C255(SM-0805)
+Added Component: Designator=C261(SM-0805)
+Added Component: Designator=C271(SM-0805)
+Added Component: Designator=C272(SM-0805)
+Added Component: Designator=C311(SM-0805)
+Added Component: Designator=C321(SM-0805)
+Added Component: Designator=C331(SM-0805)
+Added Component: Designator=C391(SM-0805)
+Added Component: Designator=C401(SM-0805)
+Added Component: Designator=C521(SM-0805)
+Added Component: Designator=IC1(CC2530EM)
+Added Component: Designator=L1(0402 (REFLOW LF))
+Added Component: Designator=L251(SM-0805)
+Added Component: Designator=L252(SM-0805)
+Added Component: Designator=L261(SM-0805)
+Added Component: Designator=R301(SM-1206)
+Added Component: Designator=R401(SM-0805)
+Added Component: Designator=X1(XTAL_SMD_3_2x2_5 (3.2 x 2.5 mm))
+Added Component: Designator=X2(XTAL_SMD_85SMX (8.7x3.8mm))
+Added Pin To Net: NetName=GND Pin=ANTEN-2
+Added Pin To Net: NetName=GND Pin=ANTEN-2
+Added Pin To Net: NetName=GND Pin=ANTEN-2
+Added Pin To Net: NetName=GND Pin=ANTEN-2
+Added Pin To Net: NetName=GND Pin=C1-1
+Added Pin To Net: NetName=GND Pin=C101-1
+Added Pin To Net: NetName=GND Pin=C211-1
+Added Pin To Net: NetName=GND Pin=C221-1
+Added Pin To Net: NetName=GND Pin=C231-1
+Added Pin To Net: NetName=GND Pin=C241-1
+Added Pin To Net: NetName=GND Pin=C253-1
+Added Pin To Net: NetName=GND Pin=C255-1
+Added Pin To Net: NetName=GND Pin=C271-1
+Added Pin To Net: NetName=GND Pin=C272-1
+Added Pin To Net: NetName=GND Pin=C311-1
+Added Pin To Net: NetName=GND Pin=C321-1
+Added Pin To Net: NetName=GND Pin=C331-1
+Added Pin To Net: NetName=GND Pin=C391-1
+Added Pin To Net: NetName=GND Pin=C401-1
+Added Pin To Net: NetName=GND Pin=C521-1
+Added Pin To Net: NetName=GND Pin=IC1-1
+Added Pin To Net: NetName=GND Pin=IC1-2
+Added Pin To Net: NetName=GND Pin=IC1-3
+Added Pin To Net: NetName=GND Pin=IC1-4
+Added Pin To Net: NetName=GND Pin=IC1-41
+Added Pin To Net: NetName=GND Pin=L252-2
+Added Pin To Net: NetName=GND Pin=R301-1
+Added Net: Name=GND
+Added Pin To Net: NetName=NetANTEN_1 Pin=ANTEN-1
+Added Pin To Net: NetName=NetANTEN_1 Pin=C254-1
+Added Pin To Net: NetName=NetANTEN_1 Pin=C255-2
+Added Net: Name=NetANTEN_1
+Added Pin To Net: NetName=NetC1_2 Pin=C1-2
+Added Pin To Net: NetName=NetC1_2 Pin=C101-2
+Added Pin To Net: NetName=NetC1_2 Pin=C211-2
+Added Pin To Net: NetName=NetC1_2 Pin=C241-2
+Added Pin To Net: NetName=NetC1_2 Pin=C271-2
+Added Pin To Net: NetName=NetC1_2 Pin=C272-2
+Added Pin To Net: NetName=NetC1_2 Pin=C311-2
+Added Pin To Net: NetName=NetC1_2 Pin=C391-2
+Added Pin To Net: NetName=NetC1_2 Pin=IC1-10
+Added Pin To Net: NetName=NetC1_2 Pin=IC1-21
+Added Pin To Net: NetName=NetC1_2 Pin=IC1-24
+Added Pin To Net: NetName=NetC1_2 Pin=IC1-27
+Added Pin To Net: NetName=NetC1_2 Pin=IC1-28
+Added Pin To Net: NetName=NetC1_2 Pin=IC1-29
+Added Pin To Net: NetName=NetC1_2 Pin=IC1-31
+Added Pin To Net: NetName=NetC1_2 Pin=IC1-39
+Added Pin To Net: NetName=NetC1_2 Pin=L1-1
+Added Net: Name=NetC1_2
+Added Pin To Net: NetName=NetC221_2 Pin=C221-2
+Added Pin To Net: NetName=NetC221_2 Pin=IC1-22
+Added Pin To Net: NetName=NetC221_2 Pin=X1-2
+Added Net: Name=NetC221_2
+Added Pin To Net: NetName=NetC231_2 Pin=C231-2
+Added Pin To Net: NetName=NetC231_2 Pin=IC1-23
+Added Pin To Net: NetName=NetC231_2 Pin=X1-1
+Added Net: Name=NetC231_2
+Added Pin To Net: NetName=NetC251_1 Pin=C251-1
+Added Pin To Net: NetName=NetC251_1 Pin=IC1-25
+Added Net: Name=NetC251_1
+Added Pin To Net: NetName=NetC251_2 Pin=C251-2
+Added Pin To Net: NetName=NetC251_2 Pin=C252-1
+Added Pin To Net: NetName=NetC251_2 Pin=L251-1
+Added Pin To Net: NetName=NetC251_2 Pin=L252-1
+Added Net: Name=NetC251_2
+Added Pin To Net: NetName=NetC252_2 Pin=C252-2
+Added Pin To Net: NetName=NetC252_2 Pin=C253-2
+Added Pin To Net: NetName=NetC252_2 Pin=C254-2
+Added Pin To Net: NetName=NetC252_2 Pin=L261-2
+Added Net: Name=NetC252_2
+Added Pin To Net: NetName=NetC261_1 Pin=C261-1
+Added Pin To Net: NetName=NetC261_1 Pin=IC1-26
+Added Net: Name=NetC261_1
+Added Pin To Net: NetName=NetC261_2 Pin=C261-2
+Added Pin To Net: NetName=NetC261_2 Pin=L251-2
+Added Pin To Net: NetName=NetC261_2 Pin=L261-1
+Added Net: Name=NetC261_2
+Added Pin To Net: NetName=NetC321_2 Pin=C321-2
+Added Pin To Net: NetName=NetC321_2 Pin=IC1-32
+Added Pin To Net: NetName=NetC321_2 Pin=X2-2
+Added Net: Name=NetC321_2
+Added Pin To Net: NetName=NetC331_2 Pin=C331-2
+Added Pin To Net: NetName=NetC331_2 Pin=IC1-33
+Added Pin To Net: NetName=NetC331_2 Pin=X2-1
+Added Net: Name=NetC331_2
+Added Pin To Net: NetName=NetC401_2 Pin=C401-2
+Added Pin To Net: NetName=NetC401_2 Pin=IC1-40
+Added Net: Name=NetC401_2
+Added Pin To Net: NetName=NetC521_2 Pin=C521-2
+Added Pin To Net: NetName=NetC521_2 Pin=IC1-20
+Added Pin To Net: NetName=NetC521_2 Pin=R401-1
+Added Net: Name=NetC521_2
+Added Pin To Net: NetName=NetIC1_30 Pin=IC1-30
+Added Pin To Net: NetName=NetIC1_30 Pin=R301-2
+Added Net: Name=NetIC1_30
+Added Pin To Net: NetName=VDD Pin=L1-2
+Added Pin To Net: NetName=VDD Pin=R401-2
+Added Net: Name=VDD
+Added Class: Name=CC2530Controller
+Added Room: Name=CC2530Controller

@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=VDD_CHARGE Pin=POWER-2
+Removed Member From Class: ClassName=CC2530Controller Member=POWER
+Added Pin To Net: NetName=VDD_CHARGE Pin=L1-2
+Added Pin To Net: NetName=VDD_CHARGE Pin=R201-2
+Change Net Name : Old Net Name=VDD_CHARGE New Net Name=VDD

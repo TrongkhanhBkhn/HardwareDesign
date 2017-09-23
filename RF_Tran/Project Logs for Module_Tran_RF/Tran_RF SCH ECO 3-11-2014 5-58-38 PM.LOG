@@ -1,0 +1,4 @@
+Remove Pin=U2-9 From Net=AN9
+Change Component Footprint: Designator=C8 Old Footprint=CP-SMD New Footprint=CP1/2.5_SM
+Change Component Footprint: Designator=C9 Old Footprint=CP-SMD New Footprint=CP1/2.5_SM
+Add Pin To Net: Pin=DC-12V-1 Old Net=NetDC-12V_1 New Net=GND

@@ -1,0 +1,2 @@
+Change Component DesignItemId : Designator=X2 Old DesignItemId=XT2 New DesignItemId=XT2_SMD_32KHz
+Change Component Comment : Designator=X2 Old Comment=X_32.768/20/50/40/12 New Comment=32Khz

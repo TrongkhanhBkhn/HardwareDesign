@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=GND Pin=INPUT-1
+Removed Pin From Net: NetName=VCC Pin=INPUT-2
+Removed Member From Class: ClassName=USB Member=INPUT
+Added Room: Name=USB

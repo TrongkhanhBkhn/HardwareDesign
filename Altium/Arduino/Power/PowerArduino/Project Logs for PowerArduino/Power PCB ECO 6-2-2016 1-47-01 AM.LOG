@@ -1,0 +1,5 @@
+Change Component DesignItemId : Designator=Q201 Old DesignItemId=IRF840 New DesignItemId=IRF9540
+Change Component Footprint: Designator=IN Old Footprint=CON2 New Footprint=HED2
+Change Component Footprint: Designator=OUT Old Footprint=CON2 New Footprint=HED2
+Change Component Footprint: Designator=Q201 Old Footprint=QTO-220 New Footprint=SOT23
+Change Component Comment : Designator=Q201 Old Comment=IRF840 New Comment=IRF9540

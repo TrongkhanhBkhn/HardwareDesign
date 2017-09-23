@@ -1,0 +1,14 @@
+Removed Pin From Net: NetName=ANTEN Pin=ANTEN-1
+Removed Pin From Net: NetName=GND Pin=ANTEN-2
+Removed Pin From Net: NetName=GND Pin=ANTEN-2
+Removed Pin From Net: NetName=GND Pin=ANTEN-2
+Removed Pin From Net: NetName=GND Pin=ANTEN-2
+Removed Member From Class: ClassName=CC2530Controller Member=ANTEN
+Change Component Footprint: Designator=C321 Old Footprint=SM-0805 New Footprint=0402 (REFLOW LF)
+Added Component: Designator=ANTEN?(SMA_SMD (Straight))
+Added Pin To Net: NetName=ANTEN Pin=ANTEN?-1
+Added Pin To Net: NetName=GND Pin=ANTEN?-2
+Added Pin To Net: NetName=GND Pin=ANTEN?-3
+Added Pin To Net: NetName=GND Pin=ANTEN?-4
+Added Pin To Net: NetName=GND Pin=ANTEN?-5
+Added Member To Class: ClassName=CC2530Controller Member=Component ANTEN? ANTENNA

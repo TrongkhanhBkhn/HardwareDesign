@@ -1,0 +1,72 @@
+Removed Pin From Net: NetName=VDD Pin=C703-1
+Removed Pin From Net: NetName=NetD701_2 Pin=D701-2
+Removed Pin From Net: NetName=NetD701_2 Pin=D702-1
+Removed Pin From Net: NetName=NetD702_2 Pin=D702-2
+Removed Pin From Net: NetName=VDD Pin=L1-2
+Removed Pin From Net: NetName=VDD Pin=Q201-2
+Removed Pin From Net: NetName=VDD Pin=R201-2
+Removed Pin From Net: NetName=NetD702_2 Pin=R705-1
+Removed Pin From Net: NetName=VDD Pin=R705-2
+Removed Pin From Net: NetName=VCC_SOON Pin=VIN-1
+Removed Pin From Net: NetName=GND Pin=VIN-2
+Removed Member From Class: ClassName=CC2530Controller Member=D703
+Removed Member From Class: ClassName=CC2530Controller Member=R705
+Change Component Designator: OldDesignator=D703 NewDesignator=D702
+Added Component: Designator=C801(SM-0805)
+Added Component: Designator=C901(SM-0805)
+Added Component: Designator=C902(SM-0805)
+Added Component: Designator=C903(SM-0805)
+Added Component: Designator=D901(SS1X-SMD)
+Added Component: Designator=IC-BOOST(SOT89)
+Added Component: Designator=IC-STA(SOT223-4N)
+Added Component: Designator=L901(LXX)
+Added Component: Designator=R801(SM-1206)
+Added Component: Designator=R802(SM-1206)
+Added Pin To Net: NetName=GND Pin=C801-2
+Added Pin To Net: NetName=GND Pin=C901-2
+Added Pin To Net: NetName=GND Pin=C902-2
+Added Pin To Net: NetName=GND Pin=C903-2
+Added Pin To Net: NetName=VDD Pin=D901-1
+Added Pin To Net: NetName=GND Pin=IC-BOOST-1
+Added Pin To Net: NetName=VDD Pin=IC-BOOST-3
+Added Pin To Net: NetName=GND Pin=IC-STA-1
+Added Pin To Net: NetName=VDD Pin=L901-2
+Added Pin To Net: NetName=NetD702_2 Pin=R801-1
+Added Pin To Net: NetName=NetD701_2 Pin=R802-1
+Added Pin To Net: NetName=GND Pin=VIN-1
+Added Pin To Net: NetName=VCC_SOON Pin=VIN-2
+Change Net Name : Old Net Name=BAT New Net Name=V_BAT
+Change Net Name : Old Net Name=NetD701_2 New Net Name=SDA
+Change Net Name : Old Net Name=NetD702_2 New Net Name=SCK
+Change Net Name : Old Net Name=NetD703_2 New Net Name=NetD702_2
+Change Net Name : Old Net Name=VDD New Net Name=NetD901_1
+Added Pin To Net: NetName=VDD_3.3V Pin=C801-1
+Added Pin To Net: NetName=VDD_3.3V Pin=C903-1
+Added Pin To Net: NetName=VDD_3.3V Pin=IC-STA-2
+Added Pin To Net: NetName=VDD_3.3V Pin=IC-STA-4
+Added Pin To Net: NetName=VDD_3.3V Pin=L1-2
+Added Pin To Net: NetName=VDD_3.3V Pin=R201-2
+Added Pin To Net: NetName=VDD_3.3V Pin=R801-2
+Added Pin To Net: NetName=VDD_3.3V Pin=R802-2
+Added Net: Name=VDD_3.3V
+Added Pin To Net: NetName=VDD_5V Pin=C902-1
+Added Pin To Net: NetName=VDD_5V Pin=D901-2
+Added Pin To Net: NetName=VDD_5V Pin=IC-BOOST-2
+Added Pin To Net: NetName=VDD_5V Pin=IC-STA-3
+Added Net: Name=VDD_5V
+Added Pin To Net: NetName=VDD_SEMI Pin=C703-1
+Added Pin To Net: NetName=VDD_SEMI Pin=C901-1
+Added Pin To Net: NetName=VDD_SEMI Pin=D701-2
+Added Pin To Net: NetName=VDD_SEMI Pin=L901-1
+Added Pin To Net: NetName=VDD_SEMI Pin=Q201-2
+Added Net: Name=VDD_SEMI
+Added Member To Class: ClassName=CC2530Controller Member=Component C801 103
+Added Member To Class: ClassName=CC2530Controller Member=Component C901 103
+Added Member To Class: ClassName=CC2530Controller Member=Component C902 103
+Added Member To Class: ClassName=CC2530Controller Member=Component C903 103
+Added Member To Class: ClassName=CC2530Controller Member=Component D901 3V3
+Added Member To Class: ClassName=CC2530Controller Member=Component IC-BOOST CE8301
+Added Member To Class: ClassName=CC2530Controller Member=Component IC-STA LM1117
+Added Member To Class: ClassName=CC2530Controller Member=Component L901 150mH
+Added Member To Class: ClassName=CC2530Controller Member=Component R801 1k
+Added Member To Class: ClassName=CC2530Controller Member=Component R802 1k

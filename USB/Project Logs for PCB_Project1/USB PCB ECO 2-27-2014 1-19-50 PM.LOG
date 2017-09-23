@@ -1,0 +1,113 @@
+Added Component: Designator=C1(SM-0805)
+Added Component: Designator=C2(SM-0805)
+Added Component: Designator=C4(SM-0805)
+Added Component: Designator=C5(SM-0805)
+Added Component: Designator=D1(D1A)
+Added Component: Designator=HD1(HED2)
+Added Component: Designator=LCD(CON7)
+Added Component: Designator=LED1(SM-0805)
+Added Component: Designator=LED2(LED-3)
+Added Component: Designator=P1(CON5)
+Added Component: Designator=R1(SM-0805)
+Added Component: Designator=R2(SM-0805)
+Added Component: Designator=R3(SM-0805)
+Added Component: Designator=RESET(SW2)
+Added Component: Designator=SOURCE(HED2)
+Added Component: Designator=U1(SOP-20)
+Added Component: Designator=USB1(USB-A-RA)
+Added Component: Designator=USB2(USB-A)
+Added Component: Designator=X?(XT2)
+Added Pin To Net: NetName=D4 Pin=LCD-4
+Added Pin To Net: NetName=D4 Pin=U1-7
+Added Net: Name=D4
+Added Pin To Net: NetName=D5 Pin=LCD-3
+Added Pin To Net: NetName=D5 Pin=U1-6
+Added Net: Name=D5
+Added Pin To Net: NetName=D6 Pin=LCD-2
+Added Pin To Net: NetName=D6 Pin=U1-5
+Added Net: Name=D6
+Added Pin To Net: NetName=D7 Pin=LCD-1
+Added Pin To Net: NetName=D7 Pin=U1-8
+Added Net: Name=D7
+Added Pin To Net: NetName=D+/PGD Pin=P1-4
+Added Pin To Net: NetName=D+/PGD Pin=U1-19
+Added Net: Name=D+/PGD
+Added Pin To Net: NetName=D+ Pin=USB1-3
+Added Net: Name=D+
+Added Pin To Net: NetName=D-/PGC Pin=P1-5
+Added Pin To Net: NetName=D-/PGC Pin=U1-18
+Added Net: Name=D-/PGC
+Added Pin To Net: NetName=D- Pin=USB1-2
+Added Net: Name=D-
+Added Pin To Net: NetName=EN Pin=LCD-5
+Added Pin To Net: NetName=EN Pin=U1-14
+Added Net: Name=EN
+Added Pin To Net: NetName=GND Pin=C1-1
+Added Pin To Net: NetName=GND Pin=C2-1
+Added Pin To Net: NetName=GND Pin=C4-1
+Added Pin To Net: NetName=GND Pin=C5-1
+Added Pin To Net: NetName=GND Pin=D1-1
+Added Pin To Net: NetName=GND Pin=LED1-2
+Added Pin To Net: NetName=GND Pin=LED2-2
+Added Pin To Net: NetName=GND Pin=P1-3
+Added Pin To Net: NetName=GND Pin=RESET-1
+Added Pin To Net: NetName=GND Pin=SOURCE-1
+Added Pin To Net: NetName=GND Pin=U1-20
+Added Pin To Net: NetName=GND Pin=USB1-4
+Added Pin To Net: NetName=GND Pin=USB2-4
+Added Net: Name=GND
+Added Pin To Net: NetName=LED Pin=R2-1
+Added Pin To Net: NetName=LED Pin=U1-11
+Added Net: Name=LED
+Added Pin To Net: NetName=MCLR Pin=P1-1
+Added Pin To Net: NetName=MCLR Pin=R1-1
+Added Pin To Net: NetName=MCLR Pin=RESET-2
+Added Pin To Net: NetName=MCLR Pin=U1-4
+Added Net: Name=MCLR
+Added Pin To Net: NetName=NetC4_2 Pin=C4-2
+Added Pin To Net: NetName=NetC4_2 Pin=U1-17
+Added Net: Name=NetC4_2
+Added Pin To Net: NetName=NetLED1_1 Pin=LED1-1
+Added Pin To Net: NetName=NetLED1_1 Pin=R2-2
+Added Net: Name=NetLED1_1
+Added Pin To Net: NetName=NetLED2_1 Pin=LED2-1
+Added Pin To Net: NetName=NetLED2_1 Pin=R3-2
+Added Net: Name=NetLED2_1
+Added Pin To Net: NetName=OSC1 Pin=C1-2
+Added Pin To Net: NetName=OSC1 Pin=U1-2
+Added Pin To Net: NetName=OSC1 Pin=X?-2
+Added Net: Name=OSC1
+Added Pin To Net: NetName=OSC2 Pin=C2-2
+Added Pin To Net: NetName=OSC2 Pin=U1-3
+Added Pin To Net: NetName=OSC2 Pin=X?-1
+Added Net: Name=OSC2
+Added Pin To Net: NetName=RB4 Pin=HD1-1
+Added Pin To Net: NetName=RB4 Pin=U1-13
+Added Net: Name=RB4
+Added Pin To Net: NetName=RC7 Pin=HD1-2
+Added Pin To Net: NetName=RC7 Pin=U1-9
+Added Net: Name=RC7
+Added Pin To Net: NetName=RS Pin=LCD-7
+Added Pin To Net: NetName=RS Pin=U1-16
+Added Net: Name=RS
+Added Pin To Net: NetName=RW Pin=LCD-6
+Added Pin To Net: NetName=RW Pin=U1-15
+Added Net: Name=RW
+Added Pin To Net: NetName=RX Pin=U1-12
+Added Pin To Net: NetName=RX Pin=USB2-2
+Added Net: Name=RX
+Added Pin To Net: NetName=TX Pin=U1-10
+Added Pin To Net: NetName=TX Pin=USB2-3
+Added Net: Name=TX
+Added Pin To Net: NetName=VCC Pin=C5-2
+Added Pin To Net: NetName=VCC Pin=D1-2
+Added Pin To Net: NetName=VCC Pin=P1-2
+Added Pin To Net: NetName=VCC Pin=R1-2
+Added Pin To Net: NetName=VCC Pin=R3-1
+Added Pin To Net: NetName=VCC Pin=SOURCE-2
+Added Pin To Net: NetName=VCC Pin=U1-1
+Added Pin To Net: NetName=VCC Pin=USB1-1
+Added Pin To Net: NetName=VCC Pin=USB2-1
+Added Net: Name=VCC
+Added Class: Name=USB
+Added Room: Name=USB

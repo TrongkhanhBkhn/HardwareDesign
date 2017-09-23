@@ -1,0 +1,9 @@
+DRC Rules Export File for PCB: F:\PROJECT\PCB\ABRF315\tatca\RF315Mhz (3).PcbDoc
+RuleKind=Clearance|RuleName=3.3|Scope=Board|Minimum=30.00
+RuleKind=ShortCircuit|RuleName=ShortCircuit|Scope=Board|Allowed=1
+RuleKind=Clearance|RuleName=Clearance|Scope=Board|Minimum=10.00
+RuleKind=Width|RuleName=Width|Scope=Board|Minimum=10.00
+RuleKind=SolderMaskExpansion|RuleName=SolderMaskExpansion|Scope=Board|Minimum=4.00
+RuleKind=Width|RuleName=3.3v|Scope=Board|Minimum=10.00
+RuleKind=Width|RuleName=5v|Scope=Board|Minimum=40.00
+RuleKind=Clearance|RuleName=5|Scope=Board|Minimum=40.00

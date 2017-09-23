@@ -1,0 +1,91 @@
+Added Component: Designator=BAT1(CON2)
+Added Component: Designator=BT1(LED0805-Blue)
+Added Component: Designator=BT2(LED0805-Blue)
+Added Component: Designator=C101(CAP-B-22UF/16V)
+Added Component: Designator=C102(CAP-B-22UF/16V)
+Added Component: Designator=C201(CAP-B-22UF/16V)
+Added Component: Designator=C301(SM-0805)
+Added Component: Designator=C302(SM-0805)
+Added Component: Designator=CHARGER(CON2)
+Added Component: Designator=D201(Diode1206)
+Added Component: Designator=D202(Diode1206)
+Added Component: Designator=IC3(SOT223-4N)
+Added Component: Designator=IC4(TP4056-1A)
+Added Component: Designator=IN(HED2)
+Added Component: Designator=LED301(LED0805-Blue)
+Added Component: Designator=OUT(HED2)
+Added Component: Designator=Q201(QTO-220)
+Added Component: Designator=R101(SM-0805)
+Added Component: Designator=R102(SM-0805)
+Added Component: Designator=R103(SM-0805)
+Added Component: Designator=R201(SM-0805)
+Added Component: Designator=R301(SM-0805)
+Added Component: Designator=SWITCH(CON2)
+Added Pin To Net: NetName=BAT+ Pin=BAT1-1
+Added Pin To Net: NetName=BAT+ Pin=C102-1
+Added Pin To Net: NetName=BAT+ Pin=CHARGER-1
+Added Pin To Net: NetName=BAT+ Pin=D202-1
+Added Pin To Net: NetName=BAT+ Pin=IC4-5
+Added Net: Name=BAT+
+Added Pin To Net: NetName=GND Pin=BAT1-2
+Added Pin To Net: NetName=GND Pin=C101-2
+Added Pin To Net: NetName=GND Pin=C102-2
+Added Pin To Net: NetName=GND Pin=C201-2
+Added Pin To Net: NetName=GND Pin=C301-1
+Added Pin To Net: NetName=GND Pin=C302-1
+Added Pin To Net: NetName=GND Pin=CHARGER-2
+Added Pin To Net: NetName=GND Pin=IC3-1
+Added Pin To Net: NetName=GND Pin=IC4-3
+Added Pin To Net: NetName=GND Pin=IN-1
+Added Pin To Net: NetName=GND Pin=OUT-1
+Added Pin To Net: NetName=GND Pin=R103-1
+Added Pin To Net: NetName=GND Pin=R201-1
+Added Pin To Net: NetName=GND Pin=R301-1
+Added Net: Name=GND
+Added Pin To Net: NetName=NetBT1_2 Pin=BT1-2
+Added Pin To Net: NetName=NetBT1_2 Pin=R101-2
+Added Net: Name=NetBT1_2
+Added Pin To Net: NetName=NetBT2_2 Pin=BT2-2
+Added Pin To Net: NetName=NetBT2_2 Pin=R102-2
+Added Net: Name=NetBT2_2
+Added Pin To Net: NetName=NetD202_2 Pin=D202-2
+Added Pin To Net: NetName=NetD202_2 Pin=Q201-3
+Added Net: Name=NetD202_2
+Added Pin To Net: NetName=NetIC4_2 Pin=IC4-2
+Added Pin To Net: NetName=NetIC4_2 Pin=R103-2
+Added Net: Name=NetIC4_2
+Added Pin To Net: NetName=NetIC4_6 Pin=IC4-6
+Added Pin To Net: NetName=NetIC4_6 Pin=R101-1
+Added Net: Name=NetIC4_6
+Added Pin To Net: NetName=NetIC4_7 Pin=IC4-7
+Added Pin To Net: NetName=NetIC4_7 Pin=R102-1
+Added Net: Name=NetIC4_7
+Added Pin To Net: NetName=NetLED301_2 Pin=LED301-2
+Added Pin To Net: NetName=NetLED301_2 Pin=R301-2
+Added Net: Name=NetLED301_2
+Added Pin To Net: NetName=VCC_3.3V Pin=C302-2
+Added Pin To Net: NetName=VCC_3.3V Pin=IC3-2
+Added Pin To Net: NetName=VCC_3.3V Pin=LED301-1
+Added Pin To Net: NetName=VCC_3.3V Pin=OUT-2
+Added Net: Name=VCC_3.3V
+Added Pin To Net: NetName=VCC_5V1 Pin=C201-1
+Added Pin To Net: NetName=VCC_5V1 Pin=D201-2
+Added Pin To Net: NetName=VCC_5V1 Pin=Q201-2
+Added Pin To Net: NetName=VCC_5V1 Pin=SWITCH-2
+Added Net: Name=VCC_5V1
+Added Pin To Net: NetName=VCC_5V2 Pin=C301-2
+Added Pin To Net: NetName=VCC_5V2 Pin=IC3-3
+Added Pin To Net: NetName=VCC_5V2 Pin=SWITCH-1
+Added Net: Name=VCC_5V2
+Added Pin To Net: NetName=VCC_SOON Pin=BT1-1
+Added Pin To Net: NetName=VCC_SOON Pin=BT2-1
+Added Pin To Net: NetName=VCC_SOON Pin=C101-1
+Added Pin To Net: NetName=VCC_SOON Pin=D201-1
+Added Pin To Net: NetName=VCC_SOON Pin=IC4-4
+Added Pin To Net: NetName=VCC_SOON Pin=IC4-8
+Added Pin To Net: NetName=VCC_SOON Pin=IN-2
+Added Pin To Net: NetName=VCC_SOON Pin=Q201-1
+Added Pin To Net: NetName=VCC_SOON Pin=R201-2
+Added Net: Name=VCC_SOON
+Added Class: Name=Power
+Added Room: Name=Power

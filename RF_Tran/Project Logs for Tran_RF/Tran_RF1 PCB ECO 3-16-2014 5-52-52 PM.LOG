@@ -1,0 +1,7 @@
+Removed Pin From Net: NetName=GND Pin=D1-1
+Removed Pin From Net: NetName=VCC Pin=D1-2
+Removed Pin From Net: NetName=GND Pin=RESET-1
+Removed Pin From Net: NetName=MCLR Pin=RESET-2
+Removed Member From Class: ClassName=Tran_RF Member=D1
+Removed Member From Class: ClassName=Tran_RF Member=RESET
+Change Component Footprint: Designator=USB1 Old Footprint=USB-A New Footprint=USB-A-RA

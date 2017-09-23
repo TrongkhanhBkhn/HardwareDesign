@@ -1,0 +1,17 @@
+Component Name : MIC29302
+
+Part Count : 2
+
+Part : *
+     Pins - (Normal) : 0
+          Hidden Pins : 
+
+Part : *
+     Pins - (Normal) : 5
+          IN             2              Passive
+          OUT            7              Passive
+          EN             1              Passive
+          GND            3              Passive
+          ADJ            5              Passive
+          Hidden Pins : 
+

@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=N Pin=B1-3
+Added Pin To Net: NetName=SCL_2 Pin=IC1-14
+Added Pin To Net: NetName=SDA_2 Pin=IC1-15
+Added Room: Name=CC2530Controller

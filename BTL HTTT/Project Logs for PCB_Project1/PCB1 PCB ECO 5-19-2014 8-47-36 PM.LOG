@@ -1,0 +1,13 @@
+Added Component: Designator=UART(CON6)
+Added Pin To Net: NetName=GND Pin=UART-1
+Added Pin To Net: NetName=NC Pin=UART-6
+Added Pin To Net: NetName=3.3V Pin=UART-2
+Added Net: Name=3.3V
+Added Pin To Net: NetName=5V Pin=UART-3
+Added Net: Name=5V
+Added Pin To Net: NetName=RX Pin=UART-5
+Added Net: Name=RX
+Added Pin To Net: NetName=TX Pin=UART-4
+Added Net: Name=TX
+Added Member To Class: ClassName=Sheet1 Member=Component UART JP6
+Added Room: Name=Sheet1

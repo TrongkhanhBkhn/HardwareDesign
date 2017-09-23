@@ -1,0 +1,9 @@
+Removed Pin From Net: NetName=VDD_3.3V Pin=C801-1
+Removed Pin From Net: NetName=GND Pin=C801-2
+Removed Pin From Net: NetName=SCK Pin=R801-1
+Removed Pin From Net: NetName=VDD_3.3V Pin=R801-2
+Removed Pin From Net: NetName=SDA Pin=R802-1
+Removed Pin From Net: NetName=VDD_3.3V Pin=R802-2
+Removed Member From Class: ClassName=CC2530Controller Member=C801
+Removed Member From Class: ClassName=CC2530Controller Member=R801
+Removed Member From Class: ClassName=CC2530Controller Member=R802

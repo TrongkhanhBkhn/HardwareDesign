@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=DC Pin=FLASH-3
+Removed Pin From Net: NetName=DD Pin=FLASH-4
+Added Pin To Net: NetName=DD Pin=FLASH-3
+Added Pin To Net: NetName=DC Pin=FLASH-4

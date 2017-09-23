@@ -1,0 +1,73 @@
+Added Component: Designator=7-12V(CON2)
+Added Component: Designator=C1(CN1)
+Added Component: Designator=C2(CN1)
+Added Component: Designator=C3(SM-0805)
+Added Component: Designator=C4(SM-0805)
+Added Component: Designator=C5(SM-0805)
+Added Component: Designator=C6(CN4)
+Added Component: Designator=C7(CN4)
+Added Component: Designator=C8(CN4)
+Added Component: Designator=IC1(DIP28/W0.3)
+Added Component: Designator=LED1(LED-3)
+Added Component: Designator=LED2(LED-3)
+Added Component: Designator=LM1117-5V(SOT223-4N)
+Added Component: Designator=OUPUT(CON2)
+Added Component: Designator=R1(R1/4W)
+Added Component: Designator=R2(R1/4W)
+Added Component: Designator=R3(R1/4W)
+Added Component: Designator=X1(XT2)
+Added Pin To Net: NetName=+5V Pin=C5-2
+Added Pin To Net: NetName=+5V Pin=C6-2
+Added Pin To Net: NetName=+5V Pin=C7-2
+Added Pin To Net: NetName=+5V Pin=C8-2
+Added Pin To Net: NetName=+5V Pin=IC1-8
+Added Pin To Net: NetName=+5V Pin=IC1-19
+Added Pin To Net: NetName=+5V Pin=IC1-20
+Added Pin To Net: NetName=+5V Pin=LM1117-5V-2
+Added Pin To Net: NetName=+5V Pin=OUPUT-1
+Added Pin To Net: NetName=+5V Pin=R1-2
+Added Net: Name=+5V
+Added Pin To Net: NetName=GND Pin=7-12V-1
+Added Pin To Net: NetName=GND Pin=C1-1
+Added Pin To Net: NetName=GND Pin=C2-1
+Added Pin To Net: NetName=GND Pin=C3-1
+Added Pin To Net: NetName=GND Pin=C4-1
+Added Pin To Net: NetName=GND Pin=C5-1
+Added Pin To Net: NetName=GND Pin=C6-1
+Added Pin To Net: NetName=GND Pin=C7-1
+Added Pin To Net: NetName=GND Pin=C8-1
+Added Pin To Net: NetName=GND Pin=LM1117-5V-1
+Added Pin To Net: NetName=GND Pin=OUPUT-2
+Added Pin To Net: NetName=GND Pin=R2-2
+Added Pin To Net: NetName=GND Pin=R3-2
+Added Net: Name=GND
+Added Pin To Net: NetName=Net7-12V_2 Pin=7-12V-2
+Added Pin To Net: NetName=Net7-12V_2 Pin=C4-2
+Added Pin To Net: NetName=Net7-12V_2 Pin=LM1117-5V-3
+Added Net: Name=Net7-12V_2
+Added Pin To Net: NetName=NetLED1_2 Pin=LED1-2
+Added Pin To Net: NetName=NetLED1_2 Pin=R2-1
+Added Net: Name=NetLED1_2
+Added Pin To Net: NetName=NetLED2_2 Pin=LED2-2
+Added Pin To Net: NetName=NetLED2_2 Pin=R3-1
+Added Net: Name=NetLED2_2
+Added Pin To Net: NetName=OSC1 Pin=C1-2
+Added Pin To Net: NetName=OSC1 Pin=IC1-9
+Added Pin To Net: NetName=OSC1 Pin=X1-1
+Added Net: Name=OSC1
+Added Pin To Net: NetName=OSC2 Pin=C2-2
+Added Pin To Net: NetName=OSC2 Pin=IC1-10
+Added Pin To Net: NetName=OSC2 Pin=X1-2
+Added Net: Name=OSC2
+Added Pin To Net: NetName=PB0 Pin=IC1-21
+Added Pin To Net: NetName=PB0 Pin=LED1-1
+Added Net: Name=PB0
+Added Pin To Net: NetName=PB1 Pin=IC1-22
+Added Pin To Net: NetName=PB1 Pin=LED2-1
+Added Net: Name=PB1
+Added Pin To Net: NetName=RESET Pin=C3-2
+Added Pin To Net: NetName=RESET Pin=IC1-1
+Added Pin To Net: NetName=RESET Pin=R1-1
+Added Net: Name=RESET
+Added Class: Name=Sheet1
+Added Room: Name=Sheet1

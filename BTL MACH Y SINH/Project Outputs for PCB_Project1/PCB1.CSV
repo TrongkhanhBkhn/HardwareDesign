@@ -1,0 +1,12 @@
+"Bill of Material for "
+"On 2/6/2014 at 8:26:46 AM"
+
+"Comment","Pattern","Quantity","Components"
+
+"74HC595","SOP16","8","U1, U2, U3, U4, U5, U6, U7, U8",""
+"JP2","CON2","2","VIN1, VIN2","Connector 2"
+"JP3","CON2","1","VIN3","Connector 2"
+"JP4","CON4","7","JP1, JP2, JP3, JP4, JP5, JP6, JP7","Connector 4"
+"JP5","CON5","1","JP0","Connector 5"
+"JP8","CON8","10","INPUT, OUT1, OUT2, OUT3, OUT4, OUT5, OUT6, OUT7, OUT8, OUTPUT","Connector 8"
+"ULN2803A","DIP18/W0.3","1","IC1","High-Voltage, High-Current Darlington Array"

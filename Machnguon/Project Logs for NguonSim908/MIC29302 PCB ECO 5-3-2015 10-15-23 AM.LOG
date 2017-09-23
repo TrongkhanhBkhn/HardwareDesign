@@ -1,0 +1,2 @@
+Change Component Footprint: Designator=LED1 Old Footprint=LED1206-Yellow New Footprint=LED-5-RED
+Change Net Name : Old Net Name=NetC3_1 New Net Name=OUT

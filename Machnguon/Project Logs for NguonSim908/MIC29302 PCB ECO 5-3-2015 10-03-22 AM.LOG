@@ -1,0 +1,55 @@
+Added Component: Designator=C1(Diode1206)
+Added Component: Designator=C2(CAP0805)
+Added Component: Designator=C3(CAP-D8-220uF/16V)
+Added Component: Designator=C4(SM-0805)
+Added Component: Designator=D1(DIODE-M7)
+Added Component: Designator=LED1(LED-5-RED)
+Added Component: Designator=P1(LM2576_TO-263)
+Added Component: Designator=R1(RES0805)
+Added Component: Designator=R2(RES0805)
+Added Component: Designator=R3(RES0805)
+Added Component: Designator=VIN(CON2)
+Added Component: Designator=VOUT(HED2X5_cen)
+Added Pin To Net: NetName=GND Pin=C1-2
+Added Pin To Net: NetName=GND Pin=C2-2
+Added Pin To Net: NetName=GND Pin=C3-2
+Added Pin To Net: NetName=GND Pin=C4-1
+Added Pin To Net: NetName=GND Pin=LED1-2
+Added Pin To Net: NetName=GND Pin=P1-1
+Added Pin To Net: NetName=GND Pin=P1-3
+Added Pin To Net: NetName=GND Pin=R2-1
+Added Pin To Net: NetName=GND Pin=VIN-1
+Added Pin To Net: NetName=GND Pin=VOUT-6
+Added Pin To Net: NetName=GND Pin=VOUT-7
+Added Pin To Net: NetName=GND Pin=VOUT-8
+Added Pin To Net: NetName=GND Pin=VOUT-9
+Added Pin To Net: NetName=GND Pin=VOUT-10
+Added Net: Name=GND
+Added Pin To Net: NetName=NetC1_1 Pin=C1-1
+Added Pin To Net: NetName=NetC1_1 Pin=C2-1
+Added Pin To Net: NetName=NetC1_1 Pin=D1-2
+Added Pin To Net: NetName=NetC1_1 Pin=P1-2
+Added Net: Name=NetC1_1
+Added Pin To Net: NetName=NetC3_1 Pin=C3-1
+Added Pin To Net: NetName=NetC3_1 Pin=C4-2
+Added Pin To Net: NetName=NetC3_1 Pin=P1-4
+Added Pin To Net: NetName=NetC3_1 Pin=R1-1
+Added Pin To Net: NetName=NetC3_1 Pin=R3-2
+Added Pin To Net: NetName=NetC3_1 Pin=VOUT-1
+Added Pin To Net: NetName=NetC3_1 Pin=VOUT-2
+Added Pin To Net: NetName=NetC3_1 Pin=VOUT-3
+Added Pin To Net: NetName=NetC3_1 Pin=VOUT-4
+Added Pin To Net: NetName=NetC3_1 Pin=VOUT-5
+Added Net: Name=NetC3_1
+Added Pin To Net: NetName=NetD1_1 Pin=D1-1
+Added Pin To Net: NetName=NetD1_1 Pin=VIN-2
+Added Net: Name=NetD1_1
+Added Pin To Net: NetName=NetLED1_1 Pin=LED1-1
+Added Pin To Net: NetName=NetLED1_1 Pin=R3-1
+Added Net: Name=NetLED1_1
+Added Pin To Net: NetName=NetP1_5 Pin=P1-5
+Added Pin To Net: NetName=NetP1_5 Pin=R1-2
+Added Pin To Net: NetName=NetP1_5 Pin=R2-2
+Added Net: Name=NetP1_5
+Added Class: Name=Sheet2
+Added Room: Name=Sheet2

@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=+3.3V Pin=NGUON-4
+Removed Pin From Net: NetName=VCC Pin=P1-2
+Change Component Footprint: Designator=D1 Old Footprint=D1A New Footprint=DIODE-M7
+Added Pin To Net: NetName=+3.3V Pin=P1-2

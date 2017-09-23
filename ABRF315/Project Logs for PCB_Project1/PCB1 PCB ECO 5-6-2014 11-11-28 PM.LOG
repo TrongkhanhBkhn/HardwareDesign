@@ -1,0 +1,146 @@
+Added Component: Designator=C3(SM-0805)
+Added Component: Designator=C4(SM-0805)
+Added Component: Designator=C5(SM-0805)
+Added Component: Designator=C6(CP1.5/3.4)
+Added Component: Designator=C7(SM-0805)
+Added Component: Designator=C8(SM-0805)
+Added Component: Designator=C9(SM-0805)
+Added Component: Designator=CON1(LED0805)
+Added Component: Designator=CON2(LED0805)
+Added Component: Designator=LCD(CON7)
+Added Component: Designator=NAPCODE(CON5)
+Added Component: Designator=NGUON(LED0805)
+Added Component: Designator=R1(SM-0805)
+Added Component: Designator=R2(SM-0805)
+Added Component: Designator=R3(SM-0805)
+Added Component: Designator=R6(SM-0805)
+Added Component: Designator=R7(SM-0805)
+Added Component: Designator=U2(QFN-ML44_N)
+Added Component: Designator=USB1(USB-A)
+Added Component: Designator=X2(XT2)
+Added Pin To Net: NetName=+3.3V Pin=C4-1
+Added Pin To Net: NetName=+3.3V Pin=C7-2
+Added Pin To Net: NetName=+3.3V Pin=NAPCODE-4
+Added Pin To Net: NetName=GND Pin=NGUON-2
+Added Pin To Net: NetName=+3.3V Pin=R2-1
+Added Pin To Net: NetName=+3.3V Pin=R6-2
+Added Pin To Net: NetName=SI Pin=U2-1
+Added Pin To Net: NetName=+3.3V Pin=U2-7
+Added Pin To Net: NetName=+3.3V Pin=U2-8
+Added Pin To Net: NetName=GDO0 Pin=U2-11
+Added Pin To Net: NetName=GDO2 Pin=U2-12
+Added Pin To Net: NetName=SCK Pin=U2-14
+Added Pin To Net: NetName=SO Pin=U2-15
+Added Pin To Net: NetName=CSN Pin=U2-24
+Added Pin To Net: NetName=+3.3V Pin=U2-28
+Added Pin To Net: NetName=+3.3V Pin=U2-29
+Added Pin To Net: NetName=+5V Pin=USB1-1
+Added Pin To Net: NetName=D1 Pin=LCD-1
+Added Pin To Net: NetName=D1 Pin=U2-38
+Added Net: Name=D1
+Added Pin To Net: NetName=D2 Pin=LCD-2
+Added Pin To Net: NetName=D2 Pin=U2-39
+Added Net: Name=D2
+Added Pin To Net: NetName=D3 Pin=LCD-3
+Added Pin To Net: NetName=D3 Pin=U2-40
+Added Net: Name=D3
+Added Pin To Net: NetName=D4 Pin=LCD-4
+Added Pin To Net: NetName=D4 Pin=U2-41
+Added Net: Name=D4
+Added Pin To Net: NetName=D5 Pin=LCD-5
+Added Pin To Net: NetName=D5 Pin=U2-2
+Added Net: Name=D5
+Added Pin To Net: NetName=D6 Pin=LCD-6
+Added Pin To Net: NetName=D6 Pin=U2-3
+Added Net: Name=D6
+Added Pin To Net: NetName=D7 Pin=LCD-7
+Added Pin To Net: NetName=D7 Pin=U2-4
+Added Net: Name=D7
+Added Pin To Net: NetName=D+ Pin=U2-43
+Added Pin To Net: NetName=D+ Pin=USB1-3
+Added Net: Name=D+
+Added Pin To Net: NetName=D- Pin=U2-42
+Added Pin To Net: NetName=D- Pin=USB1-2
+Added Net: Name=D-
+Added Pin To Net: NetName=GND1 Pin=C3-2
+Added Pin To Net: NetName=GND1 Pin=C4-2
+Added Pin To Net: NetName=GND1 Pin=C5-1
+Added Pin To Net: NetName=GND1 Pin=C6-2
+Added Pin To Net: NetName=GND1 Pin=C7-1
+Added Pin To Net: NetName=GND1 Pin=C8-1
+Added Pin To Net: NetName=GND1 Pin=C9-1
+Added Pin To Net: NetName=GND1 Pin=CON1-2
+Added Pin To Net: NetName=GND1 Pin=CON2-2
+Added Pin To Net: NetName=GND1 Pin=NAPCODE-3
+Added Pin To Net: NetName=GND1 Pin=U2-6
+Added Pin To Net: NetName=GND1 Pin=U2-30
+Added Pin To Net: NetName=GND1 Pin=U2-31
+Added Pin To Net: NetName=GND1 Pin=USB1-4
+Added Net: Name=GND1
+Added Pin To Net: NetName=LED1 Pin=R1-1
+Added Pin To Net: NetName=LED1 Pin=U2-9
+Added Net: Name=LED1
+Added Pin To Net: NetName=LED2 Pin=R3-1
+Added Pin To Net: NetName=LED2 Pin=U2-10
+Added Net: Name=LED2
+Added Pin To Net: NetName=NetC3_1 Pin=C3-1
+Added Pin To Net: NetName=NetC3_1 Pin=U2-37
+Added Net: Name=NetC3_1
+Added Pin To Net: NetName=NetC5_2 Pin=C5-2
+Added Pin To Net: NetName=NetC5_2 Pin=R6-1
+Added Pin To Net: NetName=NetC5_2 Pin=R7-1
+Added Net: Name=NetC5_2
+Added Pin To Net: NetName=NetC6_1 Pin=C6-1
+Added Pin To Net: NetName=NetC6_1 Pin=U2-23
+Added Net: Name=NetC6_1
+Added Pin To Net: NetName=NetCON1_1 Pin=CON1-1
+Added Pin To Net: NetName=NetCON1_1 Pin=R1-2
+Added Net: Name=NetCON1_1
+Added Pin To Net: NetName=NetCON2_1 Pin=CON2-1
+Added Pin To Net: NetName=NetCON2_1 Pin=R3-2
+Added Net: Name=NetCON2_1
+Added Pin To Net: NetName=NetNAPCODE_5 Pin=NAPCODE-5
+Added Pin To Net: NetName=NetNAPCODE_5 Pin=R7-2
+Added Pin To Net: NetName=NetNAPCODE_5 Pin=U2-18
+Added Net: Name=NetNAPCODE_5
+Added Pin To Net: NetName=NetNGUON_1 Pin=NGUON-1
+Added Pin To Net: NetName=NetNGUON_1 Pin=R2-2
+Added Net: Name=NetNGUON_1
+Added Pin To Net: NetName=OSC1 Pin=C9-2
+Added Pin To Net: NetName=OSC1 Pin=U2-32
+Added Pin To Net: NetName=OSC1 Pin=X2-2
+Added Net: Name=OSC1
+Added Pin To Net: NetName=OSC2 Pin=C8-2
+Added Pin To Net: NetName=OSC2 Pin=U2-33
+Added Pin To Net: NetName=OSC2 Pin=X2-1
+Added Net: Name=OSC2
+Added Pin To Net: NetName=PGC Pin=NAPCODE-1
+Added Pin To Net: NetName=PGC Pin=U2-16
+Added Net: Name=PGC
+Added Pin To Net: NetName=PGD Pin=NAPCODE-2
+Added Pin To Net: NetName=PGD Pin=U2-17
+Added Net: Name=PGD
+Added Member To Class: ClassName=RF315Mhz Member=Component C1 104
+Added Member To Class: ClassName=RF315Mhz Member=Component C2 104
+Added Member To Class: ClassName=RF315Mhz Member=Component C3 103
+Added Member To Class: ClassName=RF315Mhz Member=Component C4 103
+Added Member To Class: ClassName=RF315Mhz Member=Component C5 103
+Added Member To Class: ClassName=RF315Mhz Member=Component C6 100uF/35V
+Added Member To Class: ClassName=RF315Mhz Member=Component C7 103
+Added Member To Class: ClassName=RF315Mhz Member=Component C8 33pF
+Added Member To Class: ClassName=RF315Mhz Member=Component C9 33pF
+Added Member To Class: ClassName=RF315Mhz Member=Component CON1 LED
+Added Member To Class: ClassName=RF315Mhz Member=Component CON2 LED
+Added Member To Class: ClassName=RF315Mhz Member=Component LCD JP7
+Added Member To Class: ClassName=RF315Mhz Member=Component NAPCODE JP5
+Added Member To Class: ClassName=RF315Mhz Member=Component NGUON LED
+Added Member To Class: ClassName=RF315Mhz Member=Component R1 220
+Added Member To Class: ClassName=RF315Mhz Member=Component R2 220
+Added Member To Class: ClassName=RF315Mhz Member=Component R3 220
+Added Member To Class: ClassName=RF315Mhz Member=Component R6 1k
+Added Member To Class: ClassName=RF315Mhz Member=Component R7 1k
+Added Member To Class: ClassName=RF315Mhz Member=Component U1 CC1101
+Added Member To Class: ClassName=RF315Mhz Member=Component U2 PIC18F45J50-I/ML
+Added Member To Class: ClassName=RF315Mhz Member=Component USB1 USB-S
+Added Member To Class: ClassName=RF315Mhz Member=Component X2 20Mhz
+Added Room: Name=RF315Mhz

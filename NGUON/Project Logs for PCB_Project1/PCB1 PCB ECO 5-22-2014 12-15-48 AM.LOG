@@ -1,0 +1,45 @@
+Added Component: Designator=C1(CP1/2.5_SM)
+Added Component: Designator=C2(CP1/470uF)
+Added Component: Designator=C3(SM-0805)
+Added Component: Designator=D1(SM-DIODE)
+Added Component: Designator=D2(TPS5430)
+Added Component: Designator=L1(L01)
+Added Component: Designator=R1(SM-0805)
+Added Component: Designator=R2(SM-0805)
+Added Component: Designator=VIN(CON2)
+Added Component: Designator=VOUT(CON2)
+Added Pin To Net: NetName=12V Pin=C1-1
+Added Pin To Net: NetName=GND Pin=C1-2
+Added Pin To Net: NetName=NetC2_1 Pin=C2-1
+Added Pin To Net: NetName=NetC2_2 Pin=C2-2
+Added Pin To Net: NetName=GND Pin=C3-1
+Added Pin To Net: NetName=NetC3_2 Pin=C3-2
+Added Pin To Net: NetName=GND Pin=D1-1
+Added Pin To Net: NetName=NetC2_2 Pin=D1-2
+Added Pin To Net: NetName=NetC2_1 Pin=D2-1
+Added Pin To Net: NetName=NetD2_4 Pin=D2-4
+Added Pin To Net: NetName=NC Pin=D2-5
+Added Pin To Net: NetName=GND Pin=D2-6
+Added Pin To Net: NetName=12V Pin=D2-7
+Added Pin To Net: NetName=NetC2_2 Pin=D2-8
+Added Pin To Net: NetName=NetC3_2 Pin=L1-1
+Added Pin To Net: NetName=NetC2_2 Pin=L1-2
+Added Pin To Net: NetName=NetD2_4 Pin=R1-1
+Added Pin To Net: NetName=NetC3_2 Pin=R1-2
+Added Pin To Net: NetName=GND Pin=R2-1
+Added Pin To Net: NetName=NetD2_4 Pin=R2-2
+Added Pin To Net: NetName=12V Pin=VIN-1
+Added Pin To Net: NetName=GND Pin=VIN-2
+Added Pin To Net: NetName=GND Pin=VOUT-1
+Added Pin To Net: NetName=NetC3_2 Pin=VOUT-2
+Added Member To Class: ClassName=Sheet1 Member=Component C1 10uF
+Added Member To Class: ClassName=Sheet1 Member=Component C2 0.01uF
+Added Member To Class: ClassName=Sheet1 Member=Component C3 103
+Added Member To Class: ClassName=Sheet1 Member=Component D1 3V3
+Added Member To Class: ClassName=Sheet1 Member=Component D2 TPS5430
+Added Member To Class: ClassName=Sheet1 Member=Component L1 150mH
+Added Member To Class: ClassName=Sheet1 Member=Component R1 1k
+Added Member To Class: ClassName=Sheet1 Member=Component R2 1k
+Added Member To Class: ClassName=Sheet1 Member=Component VIN JP2
+Added Member To Class: ClassName=Sheet1 Member=Component VOUT JP2
+Added Room: Name=Sheet1

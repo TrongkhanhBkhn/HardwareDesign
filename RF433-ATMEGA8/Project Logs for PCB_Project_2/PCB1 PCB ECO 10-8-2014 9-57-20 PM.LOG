@@ -1,0 +1,42 @@
+Removed Pin From Net: NetName=GND Pin=U1-6
+Change Component Footprint: Designator=R1 Old Footprint=SM-0805 New Footprint=R1/2W
+Added Component: Designator=ISP(HED2X5_cen)
+Added Component: Designator=USB1(USB-A)
+Added Pin To Net: NetName=MOSI Pin=ISP-1
+Added Pin To Net: NetName=NC Pin=ISP-2
+Added Pin To Net: NetName=RESET Pin=ISP-3
+Added Pin To Net: NetName=SCK Pin=ISP-4
+Added Pin To Net: NetName=MISO Pin=ISP-5
+Added Pin To Net: NetName=3.3V Pin=ISP-6
+Added Pin To Net: NetName=GND Pin=ISP-7
+Added Pin To Net: NetName=GND Pin=ISP-8
+Added Pin To Net: NetName=GND Pin=ISP-9
+Added Pin To Net: NetName=GND Pin=ISP-10
+Added Pin To Net: NetName=VCC Pin=USB1-1
+Added Pin To Net: NetName=GND Pin=USB1-4
+Added Member To Class: ClassName=RF433 Member=Component C1 104
+Added Member To Class: ClassName=RF433 Member=Component C2 104
+Added Member To Class: ClassName=RF433 Member=Component C3 104
+Added Member To Class: ClassName=RF433 Member=Component C4 104
+Added Member To Class: ClassName=RF433 Member=Component C5 104
+Added Member To Class: ClassName=RF433 Member=Component C6 103
+Added Member To Class: ClassName=RF433 Member=Component C7 103
+Added Member To Class: ClassName=RF433 Member=Component C8 104
+Added Member To Class: ClassName=RF433 Member=Component ISP Header 5x2
+Added Member To Class: ClassName=RF433 Member=Component L1 led
+Added Member To Class: ClassName=RF433 Member=Component L2 LED
+Added Member To Class: ClassName=RF433 Member=Component L3 LED
+Added Member To Class: ClassName=RF433 Member=Component L4 LED
+Added Member To Class: ClassName=RF433 Member=Component NGUON3.3V LM1117
+Added Member To Class: ClassName=RF433 Member=Component NGUON Header 5x2
+Added Member To Class: ClassName=RF433 Member=Component R1 10
+Added Member To Class: ClassName=RF433 Member=Component R4 1k
+Added Member To Class: ClassName=RF433 Member=Component R5 1k
+Added Member To Class: ClassName=RF433 Member=Component R6 1k
+Added Member To Class: ClassName=RF433 Member=Component R7 1k
+Added Member To Class: ClassName=RF433 Member=Component RF433 Header 5x2
+Added Member To Class: ClassName=RF433 Member=Component U1 ATmega8A-PU
+Added Member To Class: ClassName=RF433 Member=Component UART JP3
+Added Member To Class: ClassName=RF433 Member=Component USB1 USB-S
+Added Member To Class: ClassName=RF433 Member=Component X1 4MHz
+Added Room: Name=RF433

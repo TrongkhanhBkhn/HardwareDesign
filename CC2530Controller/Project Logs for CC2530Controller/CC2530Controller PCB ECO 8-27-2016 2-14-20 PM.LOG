@@ -1,0 +1,43 @@
+Removed Pin From Net: NetName=GND Pin=C253-1
+Removed Pin From Net: NetName=ANTEN Pin=C254-1
+Removed Pin From Net: NetName=GND Pin=C255-1
+Removed Pin From Net: NetName=ANTEN Pin=C255-2
+Removed Pin From Net: NetName=GND Pin=C262-1
+Removed Pin From Net: NetName=SDA_2 Pin=IC1-34
+Removed Pin From Net: NetName=SCL_2 Pin=IC1-35
+Removed Pin From Net: NetName=SDA_1 Pin=IC1-36
+Removed Pin From Net: NetName=SCL_1 Pin=IC1-37
+Removed Pin From Net: NetName=GND Pin=L252-2
+Removed Member From Class: ClassName=CC2530Controller Member=C251
+Removed Member From Class: ClassName=CC2530Controller Member=C252
+Removed Member From Class: ClassName=CC2530Controller Member=C253
+Removed Member From Class: ClassName=CC2530Controller Member=C254
+Removed Member From Class: ClassName=CC2530Controller Member=C255
+Removed Member From Class: ClassName=CC2530Controller Member=C261
+Removed Member From Class: ClassName=CC2530Controller Member=C262
+Removed Member From Class: ClassName=CC2530Controller Member=L251
+Removed Member From Class: ClassName=CC2530Controller Member=L252
+Removed Member From Class: ClassName=CC2530Controller Member=L261
+Added Component: Designator=B1(2450BM_2450BM15A0002(Primary))
+Added Component: Designator=FLASH(CON5)
+Added Pin To Net: NetName=ANTEN Pin=B1-1
+Added Pin To Net: NetName=GND Pin=B1-2 5 6
+Added Pin To Net: NetName=GND Pin=B1-2 5 6
+Added Pin To Net: NetName=GND Pin=B1-2 5 6
+Added Pin To Net: NetName=GND Pin=FLASH-1
+Added Pin To Net: NetName=NetC201_2 Pin=FLASH-2
+Added Pin To Net: NetName=VDD_3.3V Pin=FLASH-5
+Change Net Name : Old Net Name=101 New Net Name=VDD_CC2530
+Change Net Name : Old Net Name=NetC201_2 New Net Name=RESET
+Added Pin To Net: NetName=DC Pin=FLASH-3
+Added Pin To Net: NetName=DC Pin=IC1-34
+Added Net: Name=DC
+Added Pin To Net: NetName=DD Pin=FLASH-4
+Added Pin To Net: NetName=DD Pin=IC1-35
+Added Net: Name=DD
+Added Pin To Net: NetName=NetB1_4 Pin=B1-4
+Added Pin To Net: NetName=NetB1_4 Pin=IC1-25
+Added Net: Name=NetB1_4
+Added Member To Class: ClassName=CC2530Controller Member=Component B1 2450BM15A0002
+Added Member To Class: ClassName=CC2530Controller Member=Component FLASH JP5
+Added Room: Name=CC2530Controller

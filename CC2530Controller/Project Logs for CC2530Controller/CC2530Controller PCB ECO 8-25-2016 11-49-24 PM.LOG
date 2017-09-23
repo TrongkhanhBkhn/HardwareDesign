@@ -1,0 +1,4 @@
+Added Pin To Net: NetName=SCK Pin=IC1-18
+Added Pin To Net: NetName=SDA Pin=IC1-19
+Added Member To Class: ClassName=CC2530Controller Member=Component C703 10uF/16V
+Added Member To Class: ClassName=CC2530Controller Member=Component D702 3V3

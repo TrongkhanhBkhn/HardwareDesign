@@ -1,0 +1,10 @@
+Removed Pin From Net: NetName=N Pin=B1-3
+Removed Pin From Net: NetName=GND Pin=FLIGHT-1
+Removed Pin From Net: NetName=GND Pin=FLIGHT-2
+Removed Pin From Net: NetName=VDD_5V Pin=FLIGHT-5
+Added Pin To Net: NetName=VDD_5V Pin=FLIGHT-1
+Added Pin To Net: NetName=GND Pin=FLIGHT-4
+Added Pin To Net: NetName=GND Pin=FLIGHT-5
+Change Net Name : Old Net Name=SDA_1 New Net Name=SCL_1
+Added Pin To Net: NetName=SDA_1 Pin=FLIGHT-2
+Added Net: Name=SDA_1

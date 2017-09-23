@@ -1,0 +1,3 @@
+Change Net Name : Old Net Name=VDD_CC2530 New Net Name=NETLABEL28
+Added Pin To Net: NetName=N Pin=IC1-26
+Added Net: Name=N

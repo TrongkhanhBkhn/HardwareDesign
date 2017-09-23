@@ -1,0 +1,8 @@
+Change Component Footprint: Designator=C6 Old Footprint=CP1/2.5_SM New Footprint=CP1.5/3.4
+Change Component Footprint: Designator=U2 Old Footprint=QFN-ML44_N New Footprint=PIC18F45J50SMD
+Change Component Footprint: Designator=L121 Old Footprint=SM-2512 New Footprint=SM-0805
+Change Component Footprint: Designator=L123 Old Footprint=SM-2512 New Footprint=SM-0805
+Change Component Footprint: Designator=L131 Old Footprint=SM-2512 New Footprint=SM-0805
+Change Component Comment : Designator=C131 Old Comment=6.8pF New Comment=27
+Change Component Comment : Designator=C181 Old Comment=220pF New Comment=27pF
+Added Room: Name=RF315Mhz
